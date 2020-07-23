@@ -31,4 +31,5 @@ See the file 'consensus_kidney_model.ipynb' for the steps.
 4. vtkplotter
 
 # References
-[3] Cignoni, P., et al., MeshLab: an Open-Source Mesh Processing Tool. Sixth Eurographics Italian Chapter Conference, 2008: p. 129 - 136.
+[1] Cignoni, P., et al., MeshLab: an Open-Source Mesh Processing Tool. Sixth Eurographics Italian Chapter Conference, 2008: p. 129 - 136.
+[2] Trimesh [Computer software]. 2019  07/10/2020]; Available from: https://github.com/mikedh/trimesh.

@@ -21,7 +21,7 @@ For creating a consensus kidney model, the mappings are computed between pairs o
 
 See the file 'consensus_kidney_model.ipynb' for the steps.
 
-#### Libraries and modules required
+# Libraries and modules required
 1. ants (visit https://github.com/ANTsX/ANTsPy for installation guide)
 
 2. trimesh

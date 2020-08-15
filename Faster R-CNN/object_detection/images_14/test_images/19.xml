@@ -1,0 +1,38 @@
+<annotation>
+	<folder>test</folder>
+	<filename>19.jpg</filename>
+	<path>C:\Users\jashj\Desktop\RA\Images for mask RCNN\Images for Faster RCNN\retrain images V13\test\19.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1800</width>
+		<height>1800</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Glomeruli</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1558</xmin>
+			<ymin>1401</ymin>
+			<xmax>1753</xmax>
+			<ymax>1663</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Glomeruli</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1755</xmin>
+			<ymin>1446</ymin>
+			<xmax>1800</xmax>
+			<ymax>1642</ymax>
+		</bndbox>
+	</object>
+</annotation>

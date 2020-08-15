@@ -1,0 +1,38 @@
+<annotation>
+	<folder>train</folder>
+	<filename>35.jpg</filename>
+	<path>C:\Users\jashj\Desktop\RA\Images for mask RCNN\Images for Faster RCNN\retrain images V13\train\35.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1600</width>
+		<height>1200</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Glomeruli</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>554</xmin>
+			<ymin>1064</ymin>
+			<xmax>804</xmax>
+			<ymax>1200</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Glomeruli</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>821</xmin>
+			<ymin>841</ymin>
+			<xmax>1015</xmax>
+			<ymax>1046</ymax>
+		</bndbox>
+	</object>
+</annotation>

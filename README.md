@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/cns-iu/ccf-research-ftu">
-    <img src="images/cns-logo-1.png" alt="Logo" width="80" height="80">
+    <img src="images/cns-logo-1.png" alt="Logo">
   </a>
 
   <h3 align="center">CCF Research FTU</h3>

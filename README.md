@@ -59,11 +59,11 @@ Describe data used here.
 
 ### Algorithms
 
-Describe algorithm framework here.
-Link to each algorithm's repository folder.
-* [Faster R-CNN]()
-* [Mask R-CNN]()
-* [AlexNet]()
+Overview of algorithms here.
+
+#### Faster R-CNN
+#### Mask R-CNN
+#### AlexNet
 
 
 

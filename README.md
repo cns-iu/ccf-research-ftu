@@ -37,12 +37,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Provide thorough project description here.
+(Provide thorough project description here.)
 
 
 ### Data
 
-Describe data used here.
+(Describe data used here.)
 
 #### Kidney
 
@@ -52,6 +52,8 @@ Describe data used here.
 * [Vanderbilt Segmentation](https://drive.google.com/drive/folders/1pLfQcY-cPeZ0RJQC3dNb9NnushusUcZj?usp=sharing)
 
 #### Colon
+
+This data has yet to be segmented by our ML algorithms, but it is next on the list.
 
 * [TMC-Stanford Raw Data - Accessible to IU Users Only](https://drive.google.com/drive/folders/1CL59rcrqlYFnug9B0XMn1KVMDQJFgy9D?usp=sharing)
 * [TMC-Stanford Manual Annotation Data - Accessible to IU Users Only](https://drive.google.com/drive/folders/14HFeXnBfysOfnPdoynVwjxNEvChL1Jvz?usp=sharing)
@@ -72,22 +74,19 @@ Overview of algorithms here.
 
 Refer to each algorithm's documentation for how it was implemented.
 
-Insert link(s) to documentation here.
-* [Faster R-CNN](https://github.com/cns-iu/ccf-research-ftu/blob/master/documentation/FasterRCNNDocumentation.md)
-* [Mask R-CNN](https://github.com/cns-iu/ccf-research-ftu/blob/master/documentation/MaskRCNNDocumentation.md)
-* [AlexNet]()
+* [Faster R-CNN Documentation](https://github.com/cns-iu/ccf-research-ftu/blob/master/documentation/FasterRCNNDocumentation.md)
+* [Mask R-CNN Documentation](https://github.com/cns-iu/ccf-research-ftu/blob/master/documentation/MaskRCNNDocumentation.md)
+* [AlexNet Documentation]()
 
 
 <!-- ML Pipelines-->
 ## ML Pipelines
 
-Insert graphics of pipelines here.
-
 ![Faster R-CNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Faster%20RCNN%20Pipeline.jpg)
 
 ![Mask R-CNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Mask%20RCNN%20Pipeline.jpg)
 
-[AlexNet Pipeline]()
+(Insert AlexNet Pipeline image here.)
 
 
 <!-- CONTRIBUTING -->

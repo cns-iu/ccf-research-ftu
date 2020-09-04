@@ -123,7 +123,8 @@ Project Link: [https://github.com/cns-iu/ccf-research-ftu](https://github.com/cn
 ## Acknowledgements
 
 * [HuBMAP](https://www.hubmapconsortium.org/)
-* [BIOmolecular Multimodal Imaging Center (BIOMIC)](https://medschool.vanderbilt.edu/biomic/)
+* [BIOmolecular Multimodal Imaging Center (BIOMIC) at Vanderbilt University](https://medschool.vanderbilt.edu/biomic/)
+* [Snyder Lab at Stanford University's Department of Genetics](http://med.stanford.edu/snyderlab.html)
 
 
 

@@ -47,15 +47,15 @@ Describe data used here.
 #### Kidney
 
 * [Raw Data](https://drive.google.com/drive/folders/14aLxPR9LlzdWXPomAX1moqL0UnRm_RbW?usp=sharing)
-* [IU Manual Annotations](https://drive.google.com/drive/folders/1YdOvkIWyWBOc-zSxClC1kVwST8YxVKXc?usp=sharing)
+* [IU Manual Annotations - Accessible to IU Users Only](https://drive.google.com/drive/folders/1YdOvkIWyWBOc-zSxClC1kVwST8YxVKXc?usp=sharing)
 * [IU Segmentation - Needs Link]()
 * [Vanderbilt Segmentation](https://drive.google.com/drive/folders/1pLfQcY-cPeZ0RJQC3dNb9NnushusUcZj?usp=sharing)
 
 #### Colon
 
-* [TMC-Stanford Raw Data]()
-* [TMC-Stanford Manual Annotation Data](https://drive.google.com/drive/folders/14HFeXnBfysOfnPdoynVwjxNEvChL1Jvz?usp=sharing)
-* [TMC-Stanford Manual Annotation Images](https://drive.google.com/drive/folders/1jXjAYel2TTmQ1vo9JWGuO0SlNkuxjKnb?usp=sharing)
+* [TMC-Stanford Raw Data - Accessible to IU Users Only](https://drive.google.com/drive/folders/1CL59rcrqlYFnug9B0XMn1KVMDQJFgy9D?usp=sharing)
+* [TMC-Stanford Manual Annotation Data - Accessible to IU Users Only](https://drive.google.com/drive/folders/14HFeXnBfysOfnPdoynVwjxNEvChL1Jvz?usp=sharing)
+* [TMC-Stanford Manual Annotation Images - Accessible to IU Users Only](https://drive.google.com/drive/folders/1jXjAYel2TTmQ1vo9JWGuO0SlNkuxjKnb?usp=sharing)
 
 ### Algorithms
 
@@ -80,8 +80,11 @@ Insert link(s) to documentation here.
 ## ML Pipelines
 
 Insert graphics of pipelines here.
+
 [Faster RCNN Pipeline]()
+
 [Mask RCNN Pipeline]()
+
 [AlexNet Pipeline]()
 
 
@@ -121,7 +124,6 @@ Project Link: [https://github.com/cns-iu/ccf-research-ftu](https://github.com/cn
 
 * [HuBMAP](https://www.hubmapconsortium.org/)
 * [BIOmolecular Multimodal Imaging Center (BIOMIC)](https://medschool.vanderbilt.edu/biomic/)
-* []()
 
 
 

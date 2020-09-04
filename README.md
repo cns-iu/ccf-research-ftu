@@ -43,11 +43,19 @@ Provide thorough project description here.
 ### Data
 
 Describe data used here.
-Link to data.
-* [Raw Kidney Data]()
-* [IU Kidney Manual Annotations]()
-* [IU Kidney Segmentation]()
-* [Vanderbilt Kidney Segmentation]()
+
+#### Kidney
+
+* [Raw Data](https://drive.google.com/drive/folders/14aLxPR9LlzdWXPomAX1moqL0UnRm_RbW?usp=sharing)
+* [IU Manual Annotations](https://drive.google.com/drive/folders/1YdOvkIWyWBOc-zSxClC1kVwST8YxVKXc?usp=sharing)
+* [IU Segmentation - Needs Link]()
+* [Vanderbilt Segmentation](https://drive.google.com/drive/folders/1pLfQcY-cPeZ0RJQC3dNb9NnushusUcZj?usp=sharing)
+
+#### Colon
+
+* [TMC-Stanford Raw Data]()
+* [TMC-Stanford Manual Annotation Data](https://drive.google.com/drive/folders/14HFeXnBfysOfnPdoynVwjxNEvChL1Jvz?usp=sharing)
+* [TMC-Stanford Manual Annotation Images](https://drive.google.com/drive/folders/1jXjAYel2TTmQ1vo9JWGuO0SlNkuxjKnb?usp=sharing)
 
 ### Algorithms
 

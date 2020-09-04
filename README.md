@@ -65,14 +65,16 @@ Overview of algorithms here.
 
 #### Faster R-CNN
 The Faster RCNN algorithm is one type of CNN used for object detection in images. CNNs employ neural networks for   deep learning and allow unsupervised feature generation. This algorithm takes an image as input, which it then divides into smaller rectangular regions. From then on, it considers each region to be a separate image. Next, these regions are passed to the CNN, which provides classes and bounding boxes for detected objects. In the case of kidney segmentation, the classes are ”Glomeruli” or ”Non-Glomeruli”. After this is complete for all regions, they are combined to make the original image with glomeruli detected in rectangular boxes. The algorithm outputs the data describing these detection boxes as separate rows in a CSV file which describes each annotation prediction as a single row of data. Fields include ”filename”, ”xmin”, ”xmax”, ”ymin”, and ”ymax”. The ”filename” refers to the unique number given to the region of the original image where the annotation was detected.
-![Faster R-CNN Diagram]()
+
+![Faster R-CNN Diagram](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/FasterRCNNblockdiagram.png)
 
 #### Mask R-CNN
 The Mask RCNN algorithm is built upon the Faster RCNN algorithm, but it employs an instance segmentation extension that allows prediction of segmentation masks for each annotation. Rather than relying on the rectangular regions of the Faster RCNN algorithm for outputting detection boxes, the Mask RCNN provides a classification of ”Glomeruli” or ”Non-Glomeruli” to each pixel in the original image. This allows the resulting annotations to be any shape describable by pixels and enables the creation of binary mask overlays for use on the original image.
-![Mask R-CNN Diagram]()
+![Mask R-CNN Diagram](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/MaskRCNNdiagram.png)
 
 #### AlexNet
 (Insert AlexNet overview.)
+
 ![AlexNet Diagram]()
 
 

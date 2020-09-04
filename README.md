@@ -108,6 +108,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
+Yingnan Ju - 
+
 Leah Scherschel - [@LeahScherschel](https://twitter.com/LeahScherschel) - llschers@iu.edu
 
 Project Link: [https://github.com/cns-iu/ccf-research-ftu](https://github.com/cns-iu/ccf-research-ftu)
@@ -117,8 +119,8 @@ Project Link: [https://github.com/cns-iu/ccf-research-ftu](https://github.com/cn
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [HuBMAP]()
-* [BIOMIC team at Vanderbilt]()
+* [HuBMAP](https://www.hubmapconsortium.org/)
+* [BIOmolecular Multimodal Imaging Center (BIOMIC)](https://medschool.vanderbilt.edu/biomic/)
 * []()
 
 

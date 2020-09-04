@@ -70,7 +70,7 @@ The Faster RCNN algorithm is one type of CNN used for object detection in images
 
 #### Mask R-CNN
 The Mask RCNN algorithm is built upon the Faster RCNN algorithm, but it employs an instance segmentation extension that allows prediction of segmentation masks for each annotation. Rather than relying on the rectangular regions of the Faster RCNN algorithm for outputting detection boxes, the Mask RCNN provides a classification of ”Glomeruli” or ”Non-Glomeruli” to each pixel in the original image. This allows the resulting annotations to be any shape describable by pixels and enables the creation of binary mask overlays for use on the original image.
-![Mask R-CNN Diagram](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/MaskRCNNdiagram.png)
+![Mask R-CNN Diagram](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/MaskRCNNdiagram.jpg)
 
 #### AlexNet
 (Insert AlexNet overview.)

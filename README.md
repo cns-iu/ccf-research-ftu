@@ -26,7 +26,7 @@
   * [Data](#data)
   * [Algorithms](#algorithms)
 * [Documentation](#documentation)
-* [Roadmap](#roadmap)
+* [ML Pipelines](#ml-pipelines)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -37,50 +37,44 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-***Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`cns-iu`, `ccf-research-ftu`, `LeahScherschel`, `llschers@iu.edu`***
+Provide thorough project description here.
 
 
 ### Data
 
-* []()
-* []()
-* []()
+Describe data used here.
+Link to data.
+* [Raw Kidney Data]()
+* [IU Kidney Manual Annotations]()
+* [IU Kidney Segmentation]()
+* [Vanderbilt Kidney Segmentation]()
 
 ### Algorithms
 
-* []()
-* []()
-* []()
+Describe algorithm framework here.
+Link to each algorithm's repository folder.
+* [Faster RCNN]()
+* [Mask RCNN]()
+* [AlexNet]()
 
 
 
 <!-- GETTING STARTED -->
 ## Documentation
 
-* []()
-* []()
-* []()
+Insert link(s) to documentation here.
+* [Faster RCNN]()
+* [Mask RCNN]()
+* [AlexNet]()
 
 
+<!-- ML Pipelines-->
+## ML Pipelines
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/cns-iu/ccf-research-ftu/issues) for a list of proposed features (and known issues).
-
+Insert graphics of pipelines here.
+[Faster RCNN Pipeline]()
+[Mask RCNN Pipeline]()
+[AlexNet Pipeline]()
 
 
 <!-- CONTRIBUTING -->
@@ -115,8 +109,8 @@ Project Link: [https://github.com/cns-iu/ccf-research-ftu](https://github.com/cn
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
+* [HuBMAP]()
+* [BIOMIC team at Vanderbilt]()
 * []()
 
 

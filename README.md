@@ -81,9 +81,9 @@ Insert link(s) to documentation here.
 
 Insert graphics of pipelines here.
 
-[Faster RCNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Faster%20RCNN%20Pipeline.jpg)
+[![Faster RCNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Faster%20RCNN%20Pipeline.jpg)]
 
-[Mask RCNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Mask%20RCNN%20Pipeline.jpg)
+[![Mask RCNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Mask%20RCNN%20Pipeline.jpg)]
 
 [AlexNet Pipeline]()
 

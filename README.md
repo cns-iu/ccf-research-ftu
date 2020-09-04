@@ -70,6 +70,8 @@ Link to each algorithm's repository folder.
 <!-- GETTING STARTED -->
 ## Documentation
 
+Refer to each algorithm's documentation for how it was implemented.
+
 Insert link(s) to documentation here.
 * [Faster RCNN]()
 * [Mask RCNN]()

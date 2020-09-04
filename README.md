@@ -45,6 +45,8 @@ Future work will include application of more ML algorithms, such as AlexNet, to 
 
 ### Data
 
+Our raw microscopy image data is provided by Tissue Mapping Centers (TMCs) affiliated with HuBMAP. The first [Data Portal](https://portal.hubmapconsortium.org/) release has made this data open access and free for anyone's use.
+
 Current work has focused on segmentation of glomeruli in PAS stained kidney whole slide images. Manual annotations of glomeruli within these images were produced as training material for the algorithms. The output segmentation results vary in form and include bounding boxes and binary, pixel-wise masks.
 
 Future work will also incoorporate alternative imaging methods and tissue types.
@@ -133,8 +135,8 @@ Project Link: [https://github.com/cns-iu/ccf-research-ftu](https://github.com/cn
 ## Acknowledgements
 
 * [HuBMAP](https://www.hubmapconsortium.org/)
-* [BIOmolecular Multimodal Imaging Center (BIOMIC) at Vanderbilt University](https://medschool.vanderbilt.edu/biomic/)
-* [Snyder Lab at Stanford University's Department of Genetics](http://med.stanford.edu/snyderlab.html)
+* TMC-Vanderbilt
+* TMC-Stanford
 
 
 

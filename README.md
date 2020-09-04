@@ -51,7 +51,7 @@ Future work will also incoorporate alternative imaging methods and tissue types.
 
 #### Kidney
 
-* [Raw Data](https://drive.google.com/drive/folders/14aLxPR9LlzdWXPomAX1moqL0UnRm_RbW?usp=sharing)
+* [TMC-Vanderbilt Raw Data](https://drive.google.com/drive/folders/14aLxPR9LlzdWXPomAX1moqL0UnRm_RbW?usp=sharing)
 
 #### Colon
 

@@ -61,8 +61,8 @@ Describe data used here.
 
 Describe algorithm framework here.
 Link to each algorithm's repository folder.
-* [Faster RCNN]()
-* [Mask RCNN]()
+* [Faster R-CNN]()
+* [Mask R-CNN]()
 * [AlexNet]()
 
 
@@ -73,8 +73,8 @@ Link to each algorithm's repository folder.
 Refer to each algorithm's documentation for how it was implemented.
 
 Insert link(s) to documentation here.
-* [Faster RCNN]()
-* [Mask RCNN]()
+* [Faster R-CNN](https://github.com/cns-iu/ccf-research-ftu/blob/master/documentation/FasterRCNNDocumentation.md)
+* [Mask R-CNN](https://github.com/cns-iu/ccf-research-ftu/blob/master/documentation/MaskRCNNDocumentation.md)
 * [AlexNet]()
 
 
@@ -83,9 +83,9 @@ Insert link(s) to documentation here.
 
 Insert graphics of pipelines here.
 
-![Faster RCNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Faster%20RCNN%20Pipeline.jpg)
+![Faster R-CNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Faster%20RCNN%20Pipeline.jpg)
 
-![Mask RCNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Mask%20RCNN%20Pipeline.jpg)
+![Mask R-CNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Mask%20RCNN%20Pipeline.jpg)
 
 [AlexNet Pipeline]()
 

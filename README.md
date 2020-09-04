@@ -52,9 +52,6 @@ Future work will also incoorporate alternative imaging methods and tissue types.
 #### Kidney
 
 * [Raw Data](https://drive.google.com/drive/folders/14aLxPR9LlzdWXPomAX1moqL0UnRm_RbW?usp=sharing)
-* [IU Manual Annotations - Accessible to IU Users Only](https://drive.google.com/drive/folders/1YdOvkIWyWBOc-zSxClC1kVwST8YxVKXc?usp=sharing)
-* [IU Segmentation - Needs Link]()
-* [Vanderbilt Segmentation](https://drive.google.com/drive/folders/1pLfQcY-cPeZ0RJQC3dNb9NnushusUcZj?usp=sharing)
 
 #### Colon
 

@@ -6,10 +6,10 @@
     <img src="images/cns-logo-1.png" alt="Logo">
   </a>
 
-  <h3 align="center">CCF Research FTU</h3>
+  <h3 align="center">Common Coordinate Framework (CCF) Research on Functional Tissue Units (FTU)</h3>
 
   <p align="center">
-    Functional Tissue Unit Segmentation
+    FTU Segmentation through Machine Learning (ML) Algorithms
     <br />
     <a href="https://github.com/cns-iu/ccf-research-ftu"><strong>Explore the docs »</strong></a>
     <br />
@@ -111,7 +111,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Yingnan Ju - 
+Yingnan Ju - yiju@iu.edu
 
 Leah Scherschel - [@LeahScherschel](https://twitter.com/LeahScherschel) - llschers@iu.edu
 

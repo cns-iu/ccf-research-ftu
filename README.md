@@ -37,12 +37,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-(Provide thorough project description here.)
+The Human BioMolecular Atlas Program (HuBMAP) aims to create an open, global atlas of the human body at the cellular level. One component of this overarching goal is to identify glomeruli, functional tissue units (FTUs) consisting of capillaries that facilitate filtration of blood, within whole slide images of kidney tissue. Once these glomeruli are detected in the microscopy images, information on size and location within the kidney samples can be used to build a spatially accurate model of human kidneys for the HuBMAP.
 
+Manual identification and classification of FTUs from microscopy images requires highly trained experts and is labor intensive. Many ML algorithms have been previously applied to automate detection of glomeruli. For this work, the Faster R-CNN and Mask R-CNN ML algorithms were utilized to detect glomeruli in Periodic acid-Schiff (PAS) stained whole slide images of kidney tissue samples. Faster R-CNN and Mask R-CNN are both convolutional neural network (CNN) algorithms designed for object detection in images. The Faster R-CNN algorithm outputs bounding  boxes around identified glomeruli, which are described by x-min, x-max, y-min, and y-max measures within the context of the original slide image. The Mask R-CNN algorithm takes this a step further, outputting a pixel-wise map of glomeruli vs. non-glomeruli sections of arbitrary shape from the input image.
+A
+Future work will include application of more ML algorithms, such as AlexNet, to FTUs from other tissues, such as colonic crypts.
 
 ### Data
 
-(Describe data used here.)
+Current work has focused on segmentation of glomeruli in PAS stained kidney whole slide images. Manual annotations of glomeruli within these images were produced as training material for the algorithms. The output segmentation results vary in form and include bounding boxes and binary, pixel-wise masks.
+
+Future work will also incoorporate alternative imaging methods and tissue types.
 
 #### Kidney
 
@@ -53,15 +58,13 @@
 
 #### Colon
 
-This data has yet to be segmented by our ML algorithms, but it is next on the list.
+This data has yet to be segmented by our ML algorithms, but it is the focus of future developments.
 
 * [TMC-Stanford Raw Data - Accessible to IU Users Only](https://drive.google.com/drive/folders/1CL59rcrqlYFnug9B0XMn1KVMDQJFgy9D?usp=sharing)
 * [TMC-Stanford Manual Annotation Data - Accessible to IU Users Only](https://drive.google.com/drive/folders/14HFeXnBfysOfnPdoynVwjxNEvChL1Jvz?usp=sharing)
 * [TMC-Stanford Manual Annotation Images - Accessible to IU Users Only](https://drive.google.com/drive/folders/1jXjAYel2TTmQ1vo9JWGuO0SlNkuxjKnb?usp=sharing)
 
 ### Algorithms
-
-Overview of algorithms here.
 
 #### Faster R-CNN
 The Faster RCNN algorithm is one type of CNN used for object detection in images. CNNs employ neural networks for   deep learning and allow unsupervised feature generation. This algorithm takes an image as input, which it then divides into smaller rectangular regions. From then on, it considers each region to be a separate image. Next, these regions are passed to the CNN, which provides classes and bounding boxes for detected objects. In the case of kidney segmentation, the classes are ”Glomeruli” or ”Non-Glomeruli”. After this is complete for all regions, they are combined to make the original image with glomeruli detected in rectangular boxes. The algorithm outputs the data describing these detection boxes as separate rows in a CSV file which describes each annotation prediction as a single row of data. Fields include ”filename”, ”xmin”, ”xmax”, ”ymin”, and ”ymax”. The ”filename” refers to the unique number given to the region of the original image where the annotation was detected.

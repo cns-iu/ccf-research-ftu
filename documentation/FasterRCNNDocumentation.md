@@ -59,7 +59,7 @@ Once the training loss was acceptable, the process was stopped using "Ctrl+C". I
  
 `python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-2425 --output_directory inference_graph`
 
-*Note: The "2425" could be different depending on which was the final checkpoint in the training process.*
+*Note: The "2425" could be different in other cases. It refers to the final checkpoint in the training process.*
 
 ### Segmentation
 

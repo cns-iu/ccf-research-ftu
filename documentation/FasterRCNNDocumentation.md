@@ -69,3 +69,5 @@ The path to the desired image tile to be tested was updated in the notebook, and
 Once it ran successfully, the path to a directory of test images was provided, and the resulting segmentation was compared to the ground truth.
 
 ## Results
+
+The Faster R-CNN Glomeruli Detection model we trained was able to detect glomeruli in image tiles with an average precision of 0.941 and average recall of 0.697.

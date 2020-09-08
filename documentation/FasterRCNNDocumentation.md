@@ -28,8 +28,8 @@ The Faster R-CNN algorithm is one type of convolutional neural network (CNN) use
 ![Faster R-CNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Faster%20RCNN%20Pipeline.jpg)
 ### Getting Started
 
-First, we set up a directory to work out of, such as C:/Users/*your-username*/Tensorflow, then used the command 'git clone https://github.com/tensorflow/models' to clone the tensorflow files into this directory. The COCO API and Proto Buff files were extracted and placed in the ".../Tensorflow/model/research/object_detection" folder. 
-We ran the ".../object_detection/bin/protoc.exe" file ('object_detection/protos/*.proto --python_out=.'), then opened the jupyter notebook ".../object_detection/object_detection_tutorial.ipynb" to ensure that the model was working and installation was complete.
+First, we set up a directory to work out of, such as C:/Users/*your-username*/Tensorflow, then used the command `git clone https://github.com/tensorflow/models` to clone the tensorflow files into this directory. The COCO API and Proto Buff files were extracted and placed in the ".../Tensorflow/model/research/object_detection" folder. 
+We ran the ".../object_detection/bin/protoc.exe" file (`object_detection/protos/*.proto --python_out=.`), then opened the jupyter notebook ".../object_detection/object_detection_tutorial.ipynb" to ensure that the model was working and installation was complete.
 
 ### Kidney Data Preprocessing and Manual Annotation Data
 

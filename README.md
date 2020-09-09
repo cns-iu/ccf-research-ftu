@@ -75,9 +75,11 @@ The Mask RCNN algorithm is built upon the Faster RCNN algorithm, but it employs 
 ![Mask R-CNN Diagram](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/MaskRCNNdiagram.jpg)
 
 #### AlexNet
-(Insert AlexNet overview.)
+The architecture of Alexnet [4] consists of eight layers: five convolutional layers and three fully-connected layers. Rectified Linear Unit (ReLU) nonlinearity is applied after all the convolution and fully-connected layers. The ReLU nonlinearity of the first and second layers of convolution follow a local normalization step before pooling. To classify and detect glomeruli in WSIs, a pre-trained AlexNet model was used to distinguish glomeruli through pixel-wise classification and segmentation, constructing a binary mask containing glomeruli in WSIs.
+AlexNet requires an input form of 227x227 pixels, so an augmented training dataset of that resolution was used with this method. Once the classification model was trained, the 227-pixel-height horizontal strips of WSI were input for the model to provide predictions. In order to predict glomeruli regions in their respective tiles, pixel-wise analysis was conducted at each 227x227 pixel fraction of these horizontal strips using a sliding window. Once the segmentation was completed, all the tiles were stitched together to  form a binary glomeruli mask of the WSI. 
 
-![AlexNet Diagram]()
+
+![AlexNet Diagram](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/AlexNet%20diagram.png)
 
 
 <!-- GETTING STARTED -->

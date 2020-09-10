@@ -4,7 +4,6 @@
 
 * jupyter
 * [QuPath](https://qupath.github.io/) or [ImageJ](https://imagej.nih.gov/ij/download.html)
-* 
 
 ## Data
 

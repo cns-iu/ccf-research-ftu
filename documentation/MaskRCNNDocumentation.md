@@ -1,5 +1,9 @@
 # Mask R-CNN Documentation
 
+## Requirements
+
+* 
+
 ## Data
 
 ### Kidney Raw Data
@@ -8,17 +12,23 @@ This work utilized a dataset of human kidney whole slide images provided by the 
 
 [Kidney Raw Data](https://drive.google.com/drive/folders/14aLxPR9LlzdWXPomAX1moqL0UnRm_RbW?usp=sharing)
 
-### Manual Annotation Data
+## Algorithm
+
+The Mask RCNN algorithm is built upon the Faster RCNN algorithm, but it employs an instance segmentation extension that allows prediction of segmentation masks for each annotation. Rather than relying on the rectangular regions of the Faster RCNN algorithm for outputting detection boxes, the Mask RCNN provides a classification of ”Glomeruli” or ”Non-Glomeruli” to each pixel in the original image. This allows the resulting annotations to be any shape describable by pixels and enables the creation of binary mask overlays for use on the original image.
+![Mask R-CNN Diagram](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/MaskRCNNdiagram.jpg)
+
+## Workflow
+![Mask R-CNN Pipeline](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/pipeline%20images/Mask%20RCNN%20Pipeline.jpg)
+### Getting Started
+
+### Kidney Data Preprocessing and Manual Annotation Data
 
 From these 13 samples, a subset of six PAS  stain images were used to generate the ML training dataset. This glomeruli detection training dataset of manually generated glomeruli annotations was created by four users who marked areas corresponding to glomeruli on the six images. All users performed their annotations on laptops that included Windows 10 OS, a trackpad, and 1920x1080 screen resolution. Half of the users made annotations with the software QuPath and its brush tool, while the other half utilized ImageJ with its oval tool. 
 
-***double check this***
 [Manual Glomeruli Annotation Data - Accessible to IU Users Only](https://drive.google.com/drive/folders/1YdOvkIWyWBOc-zSxClC1kVwST8YxVKXc?usp=sharing)
 
-### Data Preprocessing
+### Training
 
-## Algorithm
-
-## Workflow
+### Segmentation
 
 ## Results

@@ -41,3 +41,5 @@ To train the Mask R-CNN model, the jupyter notebook [MaskRCNN Glomeruli - Traini
 Once training was complete, the jupyter notebook [MaskRCNN Glomeruli - Detection and Saving.ipynb](https://github.com/cns-iu/ccf-research-ftu/blob/master/Mask%20R-CNN/MaskRCNN%20Glomeruli%20-%20Detection%20and%20Saving.ipynb) was used to detect glomeruli in the image tiles and save the binary mask output in the desired format. The tiles and masks of detected glomeruli were stitched back into WSIs using [Combining images.ipynb](https://github.com/cns-iu/ccf-research-ftu/blob/master/Mask%20R-CNN/Combining%20images.ipynb), and accuracy metrics including Intersection over Union (IoU), precision, and recall were calculated using [Accuracy Metrics.ipynb](https://github.com/cns-iu/ccf-research-ftu/blob/master/Mask%20R-CNN/Accuracy%20Metrics.ipynb) and the ground truth. 
 
 ## Results
+
+Our trained Mask R-CNN Glomeruli Detection model exhibited an IoU value of 0.604, precision of 0.612, and recall of 0.959.

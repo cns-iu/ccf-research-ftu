@@ -66,7 +66,7 @@ This data has yet to be segmented by our ML algorithms, but it is the focus of f
 ### Algorithms
 
 #### Faster R-CNN
-The Faster RCNN algorithm is one type of CNN used for object detection in images. CNNs employ neural networks for   deep learning and allow unsupervised feature generation. This algorithm takes an image as input, which it then divides into smaller rectangular regions. From then on, it considers each region to be a separate image. Next, these regions are passed to the CNN, which provides classes and bounding boxes for detected objects. In the case of kidney segmentation, the classes are ”Glomeruli” or ”Non-Glomeruli”. After this is complete for all regions, they are combined to make the original image with glomeruli detected in rectangular boxes. The algorithm outputs the data describing these detection boxes as separate rows in a CSV file which describes each annotation prediction as a single row of data. Fields include ”filename”, ”xmin”, ”xmax”, ”ymin”, and ”ymax”. The ”filename” refers to the unique number given to the region of the original image where the annotation was detected.
+The Faster RCNN algorithm is one type of CNN used for object detection in images. CNNs employ neural networks for   deep learning and allow unsupervised feature generation. This algorithm takes an image as input, which it then divides into smaller rectangular regions. From then on, it considers each region to be a separate image. Next, these regions are passed to the CNN, which provides classes and bounding boxes for detected objects. In the case of kidney segmentation, the classes are ”Glomeruli” or ”Non-Glomeruli”. After this is complete for all regions, they are combined to make the original image with glomeruli detected in rectangular boxes. The algorithm outputs the data describing these detection boxes as separate rows in a .csv file which describes each annotation prediction as a single row of data. Fields include ”filename”, ”xmin”, ”xmax”, ”ymin”, and ”ymax”. The ”filename” refers to the unique number given to the region of the original image where the annotation was detected.
 
 ![Faster R-CNN Diagram](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/FasterRCNNblockdiagram.png)
 
@@ -75,9 +75,11 @@ The Mask RCNN algorithm is built upon the Faster RCNN algorithm, but it employs 
 ![Mask R-CNN Diagram](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/MaskRCNNdiagram.jpg)
 
 #### AlexNet
-(Insert AlexNet overview.)
+The architecture of Alexnet consists of eight layers: five convolutional layers and three fully-connected layers. Rectified Linear Unit (ReLU) nonlinearity is applied after all the convolution and fully-connected layers. The ReLU nonlinearity of the first and second layers of convolution follow a local normalization step before pooling. To classify and detect glomeruli in WSIs, a pre-trained AlexNet model was used to distinguish glomeruli through pixel-wise classification and segmentation, constructing a binary mask containing glomeruli in WSIs.
+AlexNet requires an input form of 227x227 pixels, so an augmented training dataset of that resolution was used with this method. Once the classification model was trained, the 227-pixel-height horizontal strips of WSI were input for the model to provide predictions. In order to predict glomeruli regions in their respective tiles, pixel-wise analysis was conducted at each 227x227 pixel fraction of these horizontal strips using a sliding window. Once the segmentation was completed, all the tiles were stitched together to  form a binary glomeruli mask of the WSI. 
 
-![AlexNet Diagram]()
+
+![AlexNet Diagram](https://github.com/cns-iu/ccf-research-ftu/blob/master/images/AlexNet%20diagram.png)
 
 
 <!-- GETTING STARTED -->

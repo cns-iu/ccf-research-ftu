@@ -2,7 +2,7 @@ import json
 # from collections import OrderedDict
 from bokeh.io import show, output_file
 from bokeh.plotting import figure
-# from bokeh.models import HoverTool
+from bokeh.models import HoverTool
 import numpy as np
 from PIL import Image
 import os
@@ -15,7 +15,8 @@ if __name__ == '__main__':
                  "wheel_zoom," \
                  "reset," \
                  "save," \
-                 "help"
+                 "help," \
+                 # "hover"
 
     folder = './annotations'
     file_names = os.listdir(folder)
@@ -77,6 +78,9 @@ if __name__ == '__main__':
         p.axis.visible = False
         p.background_fill_alpha = 0.0
         p.outline_line_color = None
+        p.add_tools(HoverTool(show_arrow=False,
+                              line_policy='nearest',
+                              tooltips=None))
 
-        p.patches(x_list, y_list, fill_alpha=0, line_alpha=0.5, color='pink', line_width=3)
+        p.patches(x_list, y_list, fill_alpha=0, line_alpha=0.5, color='pink', line_width=3, hover_line_alpha=0.05)
         show(p)

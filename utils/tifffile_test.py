@@ -76,6 +76,6 @@ for shrink_index in shrink_list:
                                                  },
             # resolution=((tif_tags['XResolution'][0] // unit_index // int(shrink_index), tif_tags['XResolution'][1]),
             #             (tif_tags['YResolution'][0] // unit_index // int(shrink_index), tif_tags['YResolution'][1])),
-            resolution=((tif_tags['XResolution'][0] * int(shrink_index), tif_tags['XResolution'][1]),
-                        (tif_tags['YResolution'][0] * int(shrink_index), tif_tags['YResolution'][1])),
+            resolution=((tif_tags['XResolution'][0], tif_tags['XResolution'][1] * int(shrink_index) // 2),
+                        (tif_tags['YResolution'][0], tif_tags['YResolution'][1] * int(shrink_index) // 2)),
             imagej=True)

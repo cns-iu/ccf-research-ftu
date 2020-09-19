@@ -16,28 +16,20 @@ if __name__ == '__main__':
                  "reset," \
                  "save," \
                  "help," \
-                 # "hover"
+        # "hover"
 
     folder = './annotations'
     file_names = os.listdir(folder)
-    size_index_list = [1.02,
-                       1.02,
-                       1.02,
-                       1.02,
-                       1.02,
-                       1.02,
-                       1.02,
-                       1.02,
-                       1.02,
-                       1.02,
-                       1.02, ]
     rescale_index = 8
+    size_index = 1.0
 
-    for file_name, size_index in zip(file_names[:], size_index_list[:]):
+    types = ['PAS', 'AF_preIMS']
+    image_type = types[1]
+    for file_name in file_names[2:]:
         # file_name = './annotations/VAN0006-LK-2-85-AF_preIMS_registered_glomerulus_detections.json'
-        output_name = file_name.split('_')[0]
-        image_name = f'result/images/{output_name}_preIMS_registered_8.jpg'
-        output_file(f"result/{output_name}.html")
+        output_name = file_name.split('AF')[0]
+        image_name = f'result/images/{image_type}/{output_name}{image_type}_registered_8.jpg'
+        output_file(f"result/{output_name}{image_type}.html")
         with open(os.path.join(folder, file_name)) as data_file:
             data = json.load(data_file)
 

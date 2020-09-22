@@ -11,7 +11,7 @@ pages = []
 imagehandler = Image.open(INFILE)
 for page in ImageSequence.Iterator(imagehandler):
     # page = page.rotate(90, expand=True)
-    new_size = (page.size[0]//8, page.size[1]//8)
+    new_size = (page.size_index[0] // 8, page.size_index[1] // 8)
     page = page.resize(new_size)
     pages.append(page)
 

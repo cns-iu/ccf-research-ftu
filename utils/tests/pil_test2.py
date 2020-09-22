@@ -10,7 +10,7 @@ Image.MAX_IMAGE_PIXELS = None
 def PIL2array(img):
     """ Convert a PIL/Pillow image to a numpy array """
     return numpy.array(img.getdata(),
-                       numpy.uint16).reshape(1,img.size[1], img.size[0], 1)
+                       numpy.uint16).reshape(1, img.size_index[1], img.size_index[0], 1)
 
 
 FRAMES = []  # Empty list of frames
@@ -22,12 +22,12 @@ filelist = glob.glob(
 for fn in filelist:  # For each name in the list
     img = Image.open(fn)  # Read the image
     if FIRST_SIZE is None:  # Don't have a size
-        FIRST_SIZE = img.size  # So use this one
-    if img.size == FIRST_SIZE:  # Check the current image size if it is OK we can use it
+        FIRST_SIZE = img.size_index  # So use this one
+    if img.size_index == FIRST_SIZE:  # Check the current image size if it is OK we can use it
         print("Adding:", fn)  # Show some progress
         FRAMES.append(img)  # Add it to our frames list
     else:
-        print("Discard:", fn, img.size, "<>", FIRST_SIZE)  # You could resize and append here!
+        print("Discard:", fn, img.size_index, "<>", FIRST_SIZE)  # You could resize and append here!
 
 print("Writing", len(FRAMES), "frames to", OUT_NAME)
 with tifffile.TiffWriter(OUT_NAME) as tiff:

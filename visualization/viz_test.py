@@ -24,12 +24,19 @@ if __name__ == '__main__':
     size_index = 1.0
 
     types = ['PAS', 'AF_preIMS']
-    image_type = types[1]
-    for file_name in file_names[:]:
+    image_type = types[0]
+
+    shift_dict = {
+        "VAN0010-LK-155-40-PAS": (1, 0, -13, 0, 1, - 4),
+        "VAN0014-LK-203-108-PAS": (1.015, -0.010, 0, 0, 1, -2),
+    }
+
+    for file_name in file_names[9:10]:
         # file_name = './annotations/VAN0006-LK-2-85-AF_preIMS_registered_glomerulus_detections.json'
         output_name = file_name.split('AF')[0]
         image_name = f'result/images/{image_type}/{output_name}{image_type}_registered_8.jpg'
-        output_file(f"result/{output_name}{image_type}.html")
+        html_name = f"{output_name}{image_type}"
+        output_file(f"result/{html_name}.html")
         with open(os.path.join(folder, file_name)) as data_file:
             data = json.load(data_file)
 
@@ -50,6 +57,9 @@ if __name__ == '__main__':
         y_list = [[xy[1] // rescale_index for xy in coor] for coor in coor_list]
 
         background_img = Image.open(image_name).convert('RGBA')
+        if html_name in shift_dict:
+            background_img = background_img.transform(background_img.size, Image.AFFINE, shift_dict[html_name])
+        # background_img = np.roll(background_img,(10,0,0))
         xdim, ydim = background_img.size
         a_layer = np.empty((ydim, xdim), dtype=np.uint32)
         view = a_layer.view(dtype=np.uint8).reshape((ydim, xdim, 4))

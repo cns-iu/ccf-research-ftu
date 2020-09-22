@@ -31,7 +31,7 @@ if __name__ == '__main__':
         "VAN0014-LK-203-108-PAS": (1.015, -0.010, 0, 0, 1, -2),
     }
 
-    for file_name in file_names[9:10]:
+    for file_name in file_names[:]:
         # file_name = './annotations/VAN0006-LK-2-85-AF_preIMS_registered_glomerulus_detections.json'
         output_name = file_name.split('AF')[0]
         image_name = f'result/images/{image_type}/{output_name}{image_type}_registered_8.jpg'

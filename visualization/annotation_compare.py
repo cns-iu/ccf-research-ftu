@@ -139,6 +139,29 @@ if __name__ == '__main__':
                   hover_line_alpha=0.05,
                   legend_label=name)
 
+    # ML csv reading
+    import csv
+
+    rx, ry, widths, heights = [], [], [], []
+    with open(os.path.join('./student_annotations', 'VAN0008ML.csv'), newline='') as inputfile:
+        for row in csv.reader(inputfile):
+            tlx = int(row[0]) // rescale_index_list[0]
+            tly = int(row[1]) // rescale_index_list[0]
+            brx = int(row[2]) // rescale_index_list[0]
+            bry = int(row[3]) // rescale_index_list[0]
+            widths.append(brx - tlx)
+            heights.append(bry - tly)
+            rx.append(tlx + widths[-1] // 2)
+            ry.append(tly + heights[-1] // 2)
+    p.rect(x=rx, y=ry, width=widths, height=heights,
+           fill_alpha=0,
+           line_alpha=0.5,
+           # color='pink',
+           color='red',
+           line_width=3,
+           hover_line_alpha=0.05,
+           legend_label='ML')
+
     p.legend.location = "top_left"
     p.legend.click_policy = "hide"
 

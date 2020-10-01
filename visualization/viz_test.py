@@ -7,6 +7,8 @@ import numpy as np
 from PIL import Image
 import os
 
+Image.MAX_IMAGE_PIXELS = None
+
 if __name__ == '__main__':
     tools_list = "pan," \
                  "box_select," \

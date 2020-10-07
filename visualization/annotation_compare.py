@@ -126,6 +126,8 @@ if __name__ == '__main__':
                   color=color,
                   line_width=3,
                   hover_line_alpha=0.05,
+                  muted_alpha=0,
+                  muted=True,
                   legend_label=name)
 
     for coord, name, color in zip(annotation_list[json_count:], name_list[json_count:],
@@ -137,6 +139,8 @@ if __name__ == '__main__':
                   color=color,
                   line_width=3,
                   hover_line_alpha=0.05,
+                  muted_alpha=0,
+                  muted=True,
                   legend_label=name)
 
     # ML csv reading
@@ -160,9 +164,70 @@ if __name__ == '__main__':
            color='red',
            line_width=3,
            hover_line_alpha=0.05,
+           muted_alpha=0,
+           muted=True,
            legend_label='ML')
 
+    # find difference
+    center_list_VU = []
+    for i in range(len(annotation_list[0][0])):
+        mean_x = sum(annotation_list[0][0][i]) / len(annotation_list[0][0][i])
+        mean_y = sum(annotation_list[0][1][i]) / len(annotation_list[0][1][i])
+        center_list_VU.append((mean_x, mean_y))
+
+    center_list_ML = [(rx[i], ry[i]) for i in range(len(rx))]
+
+    VU_false_positive_list = []
+    ML_false_positive_list = []
+
+    threshold = 20
+    for x, y in center_list_VU:
+        _flag = False
+        for _x, _y in center_list_ML:
+            if (x - _x) ** 2 + (y - _y) ** 2 <= threshold ** 2:
+                _flag = True
+                break
+        if not _flag:
+            VU_false_positive_list.append(center_list_VU.index((x, y)))
+
+    for x, y in center_list_ML:
+        _flag = False
+        for _x, _y in center_list_VU:
+            if (x - _x) ** 2 + (y - _y) ** 2 <= threshold ** 2:
+                _flag = True
+                break
+        if not _flag:
+            ML_false_positive_list.append(center_list_ML.index((x, y)))
+
+    _rx = [rx[i] for i in range(len(rx)) if i in ML_false_positive_list]
+    _ry = [ry[i] for i in range(len(ry)) if i in ML_false_positive_list]
+    _widths = [widths[i] for i in range(len(widths)) if i in ML_false_positive_list]
+    _heights = [heights[i] for i in range(len(heights)) if i in ML_false_positive_list]
+    p.rect(x=_rx, y=_ry, width=_widths, height=_heights,
+           fill_alpha=0,
+           line_alpha=0.5,
+           # color='pink',
+           color='red',
+           line_width=3,
+           hover_line_alpha=0.05,
+           muted_alpha=0,
+           muted=False,
+           legend_label='ML_false_positive')
+    # ML_fp.muted = True
+
+    p.patches([annotation_list[0][0][i] for i in range(len(annotation_list[0][0])) if i in VU_false_positive_list],
+              [annotation_list[0][1][i] for i in range(len(annotation_list[0][1])) if i in VU_false_positive_list],
+              fill_alpha=0,
+              line_alpha=0.5,
+              # color='pink',
+              color=Set2_5[0],
+              line_width=3,
+              hover_line_alpha=0.05,
+              muted_alpha=0,
+              muted=False,
+              legend_label='VU_false_positive')
+
     p.legend.location = "top_left"
-    p.legend.click_policy = "hide"
+    p.legend.click_policy = "mute"
 
     show(p)

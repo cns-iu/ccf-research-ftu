@@ -73,8 +73,9 @@ def crop_patch(x_list, y_list, id_list, title):
         margin = np.zeros((cropped_patch.shape[0], 10, 3))
         margin = 255 - margin
         merge = np.concatenate((left, margin, cropped_patch), axis=1)
-
-        io.imsave(os.path.join(output_path, f'{text}.jpg'), merge)
+        output_path = os.path.join(output_dir, f'{text}.jpg')
+        io.imsave(output_path, merge.astype("uint8"))
+        print(f"Image saved to {output_path}")
         _i += 1
 
 
@@ -88,7 +89,6 @@ if __name__ == '__main__':
 
     edge = 1000
     shift_dict = {
-        "VAN0008-RK-403-100-PAS": (1, 0, -4 * 8, 0, 1, - 13 * 8),
         "VAN0009-LK-102-7-PAS": (1, 0, -4 * 8, 0, 1, - 13 * 8),
         "VAN0010-LK-155-40-PAS": (1, 0, -4 * 8, 0, 1, - 13 * 8),
         "VAN0014-LK-203-108-PAS": (1.015, -0.010, 0, 0, 1, -2),
@@ -106,8 +106,8 @@ if __name__ == '__main__':
     raw_image = np.transpose(raw_image.reshape(raw_image.shape[2:]), (1, 0, 2))
 
     file_prefix = raw_image_path.split('\\')[-1].split('_registered')[0]
-    output_path = os.path.join(os.path.dirname(raw_image_path), file_prefix)
-    make_dir(output_path)
+    output_dir = os.path.join(os.path.dirname(raw_image_path), file_prefix)
+    make_dir(output_dir)
 
     if file_prefix in shift_dict:
         img_trans = Image.fromarray(raw_image, 'RGB')

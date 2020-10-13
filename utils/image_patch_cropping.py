@@ -34,6 +34,7 @@ def crop_patch(x_list, y_list, id_list, title):
         x_end = mid_x + int(edge // 2)
         y_start = mid_y - int(edge // 2)
         y_end = mid_y + int(edge // 2)
+
         if x_start < 0:
             x_end -= x_start
             x_start = 0
@@ -48,9 +49,8 @@ def crop_patch(x_list, y_list, id_list, title):
             y_end = raw_image.shape[1]
         mid_x = (x_start + x_end) // 2
         mid_y = (y_start + y_end) // 2
+
         cropped_patch = raw_image[x_start:x_end, y_start:y_end]
-        # cropped_patch = raw_image[mid_x - int(w * 1.5):mid_x + int(w * 1.5),
-        #                 mid_y - int(h * 1.5):mid_y + int(h * 1.5)]
         cropped_patch = np.transpose(cropped_patch, (1, 0, 2))
 
         # left - image processing
@@ -66,13 +66,13 @@ def crop_patch(x_list, y_list, id_list, title):
         ImageDraw.Draw(img).rectangle(((15, 95), (95, 150)), outline="white", width=2)
         ImageDraw.Draw(img).rectangle(((95, 95), (175, 150)), outline="white", width=2)
         polygon = [(xs[j] - (mid_x - int(edge // 2)), ys[j] - (mid_y - int(edge // 2))) for j in range(len(xs))]
-        # polygon.append((xs[0], ys[0]))
         ImageDraw.Draw(img).line(polygon, fill="#4666FF", width=5)
         left = np.array(img)
 
         margin = np.zeros((cropped_patch.shape[0], 10, 3))
         margin = 255 - margin
         merge = np.concatenate((left, margin, cropped_patch), axis=1)
+
         output_path = os.path.join(output_dir, f'{text}.jpg')
         io.imsave(output_path, merge.astype("uint8"))
         print(f"Image saved to {output_path}")
@@ -127,7 +127,7 @@ if __name__ == '__main__':
 
     # B - ML
     B_x_list, B_y_list, widths, heights = [], [], [], []
-    tl_xy, br_xy = [], []
+    tl_x, tl_y, br_x, br_y = [], [], [], []
     with open(file_B_path, newline='') as inputfile:
         for row in csv.reader(inputfile):
             tlx = int(row[0]) // file_B_index
@@ -138,8 +138,10 @@ if __name__ == '__main__':
             heights.append(bry - tly)
             B_x_list.append(tlx + widths[-1] // 2)
             B_y_list.append(tly + heights[-1] // 2)
-            tl_xy.append((tlx, tly))
-            br_xy.append((brx, bry))
+            tl_x.append(tlx)
+            tl_y.append(tly)
+            br_x.append(brx)
+            br_y.append(bry)
 
     # find difference
     center_list_VU = []
@@ -178,8 +180,8 @@ if __name__ == '__main__':
     crop_patch(selected_A_x_list, selected_A_y_list, VU_false_positive_list, "VU")
 
     # export ML images
-    selected_B_x_list = [[tl_xy[i][0], tl_xy[i][0], br_xy[i][0], br_xy[i][0], tl_xy[i][0]]
+    selected_B_x_list = [[tl_x[i], tl_x[i], br_x[i], br_x[i], tl_x[i]]
                          for i in range(len(B_x_list)) if i in ML_false_positive_list]
-    selected_B_y_list = [[tl_xy[i][1], br_xy[i][1], br_xy[i][1], tl_xy[i][1], tl_xy[i][1]]
+    selected_B_y_list = [[tl_y[i], br_y[i], br_y[i], tl_y[i], tl_y[i]]
                          for i in range(len(B_y_list)) if i in ML_false_positive_list]
     crop_patch(selected_B_x_list, selected_B_y_list, ML_false_positive_list, "ML")

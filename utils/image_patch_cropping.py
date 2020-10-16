@@ -1,22 +1,26 @@
 import json
 import csv
+import shutil
+import os
+import sys
 from skimage import io
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
-import os
-import sys
+from bokeh.io import output_file
+from bokeh.plotting import figure
+from bokeh.models import HoverTool
+from bokeh.palettes import Set2_5
+from bokeh.plotting import save, show
 
 
-# from collections import OrderedDict
-# from bokeh.io import show, output_file
-# from bokeh.plotting import figure
-# from bokeh.models import HoverTool
-# from bokeh.palettes import Set2_5
 # from read_roi import read_roi_zip
-
+# from collections import OrderedDict
 
 def make_dir(path):
     if not os.path.exists(path):
+        os.makedirs(path)
+    else:
+        shutil.rmtree(path)
         os.makedirs(path)
 
 
@@ -89,8 +93,8 @@ if __name__ == '__main__':
 
     edge = 1000
     shift_dict = {
-        "VAN0009-LK-102-7-PAS": (1, 0, -4 * 8, 0, 1, - 13 * 8),
-        "VAN0010-LK-155-40-PAS": (1, 0, -4 * 8, 0, 1, - 13 * 8),
+        "VAN0009-LK-102-7-PAS": (1, 0, -4, 0, 1, - 13),
+        "VAN0010-LK-155-40-PAS": (1, 0, -4, 0, 1, - 13),
         "VAN0014-LK-203-108-PAS": (1.015, -0.010, 0, 0, 1, -2),
     }
 
@@ -103,16 +107,22 @@ if __name__ == '__main__':
         file_B_index = int(sys.argv[5])
 
     raw_image = io.imread(raw_image_path)
-    raw_image = np.transpose(raw_image.reshape(raw_image.shape[2:]), (1, 0, 2))
+    if len(raw_image.shape) == 5:
+        raw_image = np.transpose(raw_image.reshape(raw_image.shape[2:]), (1, 0, 2))
+    elif len(raw_image.shape) == 3:
+        raw_image = np.transpose(raw_image.reshape(raw_image.shape), (1, 0, 2))
+    else:
+        print('raw image shape is not 3 or 5: exit')
+        sys.exit()
 
     file_prefix = raw_image_path.split('\\')[-1].split('_registered')[0]
     output_dir = os.path.join(os.path.dirname(raw_image_path), file_prefix)
     make_dir(output_dir)
 
-    if file_prefix in shift_dict:
-        img_trans = Image.fromarray(raw_image, 'RGB')
-        img_trans = img_trans.transform(img_trans.size, Image.AFFINE, shift_dict[file_prefix])
-        raw_image = np.array(img_trans)
+    # if file_prefix in shift_dict:
+    #     img_trans = Image.fromarray(raw_image, 'RGB')
+    #     img_trans = img_trans.transform(img_trans.size, Image.AFFINE, shift_dict[file_prefix])
+    #     raw_image = np.array(img_trans)
 
     # A - VU json
     with open(file_A_path) as data_file:
@@ -130,10 +140,10 @@ if __name__ == '__main__':
     tl_x, tl_y, br_x, br_y = [], [], [], []
     with open(file_B_path, newline='') as inputfile:
         for row in csv.reader(inputfile):
-            tlx = int(row[0]) // file_B_index
-            tly = int(row[1]) // file_B_index
-            brx = int(row[2]) // file_B_index
-            bry = int(row[3]) // file_B_index
+            tlx = int(row[-5]) // file_B_index
+            tly = int(row[-4]) // file_B_index
+            brx = int(row[-3]) // file_B_index
+            bry = int(row[-2]) // file_B_index
             widths.append(brx - tlx)
             heights.append(bry - tly)
             B_x_list.append(tlx + widths[-1] // 2)
@@ -155,7 +165,7 @@ if __name__ == '__main__':
     VU_false_positive_list = []
     ML_false_positive_list = []
 
-    threshold = 150 // file_A_index
+    threshold = 200 // file_A_index
     for x, y in center_list_VU:
         _flag = False
         for _x, _y in center_list_ML:
@@ -185,3 +195,79 @@ if __name__ == '__main__':
     selected_B_y_list = [[tl_y[i], br_y[i], br_y[i], tl_y[i], tl_y[i]]
                          for i in range(len(B_y_list)) if i in ML_false_positive_list]
     crop_patch(selected_B_x_list, selected_B_y_list, ML_false_positive_list, "ML")
+
+    # visualization
+    tools_list = "pan," \
+                 "box_select," \
+                 "lasso_select," \
+                 "box_zoom, " \
+                 "wheel_zoom," \
+                 "reset," \
+                 "save," \
+                 "help,"
+    types = ['PAS', 'AF_preIMS']
+    image_type = types[0]
+
+    image_name = f'../visualization/result/images/{image_type}/{file_prefix}_registered_8.jpg'
+    html_name = f"{file_prefix}"
+    output_file(os.path.join(output_dir, f'{html_name}.html'))
+    background_img = Image.open(image_name).convert('RGBA')
+    # if html_name in shift_dict:
+    #     background_img = background_img.transform(background_img.size, Image.AFFINE, shift_dict[html_name])
+    # background_img = np.roll(background_img,(10,0,0))
+    xdim, ydim = background_img.size
+    a_layer = np.empty((ydim, xdim), dtype=np.uint32)
+    view = a_layer.view(dtype=np.uint8).reshape((ydim, xdim, 4))
+    # view[:, :, :] = np.flipud(np.asarray(lena_img))
+    view[:, :, :] = np.asarray(background_img)
+
+    p = figure(match_aspect=True,
+               plot_width=int(xdim), plot_height=int(ydim),
+               tools=tools_list,
+               # title='nuclei/vessel distance',
+               )
+
+    p.image_rgba(image=[a_layer], x=0, y=0, dw=xdim, dh=ydim)
+    p.xgrid.visible = False
+    p.ygrid.visible = False
+    p.axis.visible = False
+    p.background_fill_alpha = 0.0
+    p.outline_line_color = None
+    p.add_tools(HoverTool(show_arrow=False,
+                          line_policy='nearest',
+                          tooltips=None))
+
+    selected_A_x_list = [[item // 8 for item in A_x_list[i]] for i in range(len(A_x_list)) if
+                         i in VU_false_positive_list]
+    selected_A_y_list = [[item // 8 for item in A_y_list[i]] for i in range(len(A_y_list)) if
+                         i in VU_false_positive_list]
+    selected_B_x_list = [[tl_x[i] // 8, tl_x[i] // 8, br_x[i] // 8, br_x[i] // 8, tl_x[i] // 8]
+                         for i in range(len(B_x_list)) if i in ML_false_positive_list]
+    selected_B_y_list = [[tl_y[i] // 8, br_y[i] // 8, br_y[i] // 8, tl_y[i] // 8, tl_y[i] // 8]
+                         for i in range(len(B_y_list)) if i in ML_false_positive_list]
+    for xs_list, ys_list, color, name in zip(
+            (selected_A_x_list, selected_B_x_list),
+            (selected_A_y_list, selected_B_y_list),
+            (Set2_5[0], 'red'),
+            ('VU_false_positive', 'ML_false_positive')):
+        p.patches(xs_list,
+                  ys_list,
+                  fill_alpha=0,
+                  line_alpha=0.5,
+                  # color='pink',
+                  color=color,
+                  line_width=3,
+                  hover_line_alpha=0.05,
+                  muted_alpha=0,
+                  muted=False,
+                  legend_label=name)
+
+    p.legend.location = "top_left"
+    p.legend.click_policy = "mute"
+
+    show_image = False
+
+    if show_image:
+        show(p)
+    else:
+        save(p)

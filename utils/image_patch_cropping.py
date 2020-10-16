@@ -8,7 +8,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 from bokeh.io import output_file
 from bokeh.plotting import figure
-from bokeh.models import HoverTool
+from bokeh.models import HoverTool, ColumnDataSource
 from bokeh.palettes import Set2_5
 from bokeh.plotting import save, show
 
@@ -93,9 +93,10 @@ if __name__ == '__main__':
 
     edge = 1000
     shift_dict = {
-        "VAN0009-LK-102-7-PAS": (1, 0, -4, 0, 1, - 13),
-        "VAN0010-LK-155-40-PAS": (1, 0, -4, 0, 1, - 13),
-        "VAN0014-LK-203-108-PAS": (1.015, -0.010, 0, 0, 1, -2),
+        "VAN0009-LK-102-7-PAS": (1, 0, -6, 0, 1, -3),
+        "VAN0010-LK-155-40-PAS": (1, 0, -14, 0, 1, -5),
+        "VAN0014-LK-203-108-PAS": (1.015, -0.010, 14, 0, 1, -5),
+        "VAN0016-LK-202-89-PAS": (1, 0, -3, 0, 1, -3),
     }
 
     if len(sys.argv) >= 4:
@@ -132,8 +133,12 @@ if __name__ == '__main__':
 
     for item in data:
         coor_list.extend(item["geometry"]["coordinates"])
-    A_x_list = [[xy[0] // file_A_index for xy in coor] for coor in coor_list]
-    A_y_list = [[xy[1] // file_A_index for xy in coor] for coor in coor_list]
+    if file_prefix in shift_dict:
+        A_x_list = [[(xy[0] + shift_dict[file_prefix][2] * 8) // file_A_index for xy in coor] for coor in coor_list]
+        A_y_list = [[(xy[1] + shift_dict[file_prefix][5] * 8) // file_A_index for xy in coor] for coor in coor_list]
+    else:
+        A_x_list = [[xy[0] // file_A_index for xy in coor] for coor in coor_list]
+        A_y_list = [[xy[1] // file_A_index for xy in coor] for coor in coor_list]
 
     # B - ML
     B_x_list, B_y_list, widths, heights = [], [], [], []
@@ -204,7 +209,13 @@ if __name__ == '__main__':
                  "wheel_zoom," \
                  "reset," \
                  "save," \
-                 "help,"
+                 "help," \
+                 # "hover"
+    custom_tooltip = [
+        ("id", "$id"),
+        # ("(x,y)", "($x, $y)"),
+        # ("label", "@label"),
+    ]
     types = ['PAS', 'AF_preIMS']
     image_type = types[0]
 
@@ -245,16 +256,27 @@ if __name__ == '__main__':
                          for i in range(len(B_x_list)) if i in ML_false_positive_list]
     selected_B_y_list = [[tl_y[i] // 8, br_y[i] // 8, br_y[i] // 8, tl_y[i] // 8, tl_y[i] // 8]
                          for i in range(len(B_y_list)) if i in ML_false_positive_list]
-    for xs_list, ys_list, color, name in zip(
-            (selected_A_x_list, selected_B_x_list),
-            (selected_A_y_list, selected_B_y_list),
+
+    VU_source = ColumnDataSource(data={
+        'x_list': selected_A_x_list,
+        'y_list': selected_A_y_list,
+        'id': VU_false_positive_list,
+    })
+    ML_source = ColumnDataSource(data={
+        'x_list': selected_B_x_list,
+        'y_list': selected_B_y_list,
+        'id': ML_false_positive_list,
+    })
+
+    for data_source, color, name in zip(
+            (VU_source, ML_source),
             (Set2_5[0], 'red'),
             ('VU_false_positive', 'ML_false_positive')):
-        p.patches(xs_list,
-                  ys_list,
+        p.patches(xs='x_list',
+                  ys='y_list',
+                  source=data_source,
                   fill_alpha=0,
                   line_alpha=0.5,
-                  # color='pink',
                   color=color,
                   line_width=3,
                   hover_line_alpha=0.05,

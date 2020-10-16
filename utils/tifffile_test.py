@@ -3,7 +3,7 @@ from skimage.transform import rescale
 import numpy as np
 import sys
 
-image_path = rf'X:\VAN0005-RK-4-172-AF_preIMS_registered.ome.tiff'
+image_path = rf'X:\VAN0005-RK-1-1-PAS_registered.ome.tiff'
 
 shrink_list = [2, 4, 8, 16]
 
@@ -45,12 +45,20 @@ for shrink_index in shrink_list:
         i += 1
     print("\tstacking layers")
     resized_data = np.stack(layers, axis=0)
-    resized_data = np.reshape(resized_data,
-                              (1,
-                               1,
-                               resized_data.shape[0],
-                               resized_data.shape[1],
-                               resized_data.shape[2])).astype(data.dtype)
+    if 'PAS' in image_path:
+        resized_data = np.reshape(resized_data,
+                                  (
+                                      resized_data.shape[0],
+                                      resized_data.shape[1],
+                                      resized_data.shape[2])).astype(data.dtype)
+        resized_data = np.transpose(resized_data, (1, 2, 0))
+    else:
+        resized_data = np.reshape(resized_data,
+                                  (1,
+                                   1,
+                                   resized_data.shape[0],
+                                   resized_data.shape[1],
+                                   resized_data.shape[2])).astype(data.dtype)
 
     print("\tafter resizing: ", resized_data.shape, "\tdata type: ", resized_data.dtype)
     output_path = ""
@@ -68,7 +76,7 @@ for shrink_index in shrink_list:
 
     print(f"\twriting file at {output_path}")
     unit_index = 10000
-    imwrite(output_path, resized_data, metadata={'axes': 'TZCYX',
+    imwrite(output_path, resized_data, metadata={'axes': 'YXC',
                                                  # 'PhysicalSizeX': 0.5 * int(shrink_index),
                                                  # 'PhysicalSizeY': 0.5 * int(shrink_index),
                                                  # 'PhysicalSizeXUnit': 'um',

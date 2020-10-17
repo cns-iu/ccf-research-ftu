@@ -3,7 +3,7 @@ from skimage.transform import rescale
 import numpy as np
 import sys
 
-image_path = rf'X:\VAN0005-RK-1-1-PAS_registered.ome.tiff'
+image_path = rf'X:\VAN0005-RK-4-172-PAS_registered.ome.tiff'
 
 shrink_list = [2, 4, 8, 16]
 
@@ -28,7 +28,8 @@ print("raw size: ", data.shape, "\tdata type: ", data.dtype)
 
 if len(data.shape) == 3:
     print("3-D data converting to 5-D data, TZCYX")
-    data = np.reshape(data, (1, 1, data.shape[0], data.shape[1], data.shape[2])).astype(data.dtype)
+    data = np.transpose(data, (2, 0, 1))
+    data = np.reshape(data, (1, 1, data.shape[0], data.shape[1], data.shape[2],)).astype(data.dtype)
 
 if len(data.shape) not in [3, 5]:
     print("data dimension not matched with TZCYX")

@@ -1,0 +1,6808 @@
+[
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [10503, 4384],
+          [10455, 4392],
+          [10369, 4495],
+          [10357, 4613],
+          [10393, 4661],
+          [10453, 4651],
+          [10513, 4564],
+          [10533, 4500],
+          [10539, 4424],
+          [10503, 4384]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [11829, 22209],
+          [11769, 22263],
+          [11768, 22299],
+          [11784, 22335],
+          [11842, 22381],
+          [11913, 22393],
+          [11954, 22375],
+          [11970, 22354],
+          [11975, 22324],
+          [11961, 22281],
+          [11904, 22213],
+          [11829, 22209]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [13218, 7553],
+          [13185, 7566],
+          [13149, 7593],
+          [13141, 7612],
+          [13140, 7649],
+          [13149, 7673],
+          [13182, 7702],
+          [13223, 7719],
+          [13243, 7714],
+          [13255, 7700],
+          [13286, 7633],
+          [13276, 7576],
+          [13251, 7553],
+          [13218, 7553]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [12538, 8520],
+          [12496, 8576],
+          [12491, 8609],
+          [12498, 8634],
+          [12568, 8693],
+          [12607, 8699],
+          [12647, 8679],
+          [12655, 8657],
+          [12658, 8604],
+          [12649, 8551],
+          [12612, 8520],
+          [12538, 8520]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [12612, 21905],
+          [12511, 21923],
+          [12437, 22005],
+          [12438, 22034],
+          [12470, 22091],
+          [12549, 22154],
+          [12656, 22145],
+          [12728, 22116],
+          [12747, 22090],
+          [12737, 21998],
+          [12668, 21934],
+          [12612, 21905]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [12757, 22818],
+          [12713, 22820],
+          [12659, 22858],
+          [12642, 22898],
+          [12661, 22948],
+          [12752, 22981],
+          [12855, 22965],
+          [12879, 22949],
+          [12892, 22911],
+          [12886, 22872],
+          [12868, 22850],
+          [12757, 22818]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [13631, 7520],
+          [13550, 7566],
+          [13540, 7588],
+          [13550, 7663],
+          [13631, 7760],
+          [13660, 7770],
+          [13742, 7761],
+          [13803, 7706],
+          [13814, 7648],
+          [13801, 7614],
+          [13703, 7531],
+          [13631, 7520]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [14010, 8601],
+          [13977, 8609],
+          [13919, 8644],
+          [13901, 8691],
+          [13908, 8788],
+          [13927, 8812],
+          [14001, 8818],
+          [14029, 8805],
+          [14062, 8770],
+          [14081, 8721],
+          [14082, 8650],
+          [14060, 8608],
+          [14010, 8601]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [13875, 23558],
+          [13788, 23567],
+          [13737, 23606],
+          [13713, 23665],
+          [13725, 23726],
+          [13770, 23778],
+          [13823, 23806],
+          [13877, 23807],
+          [13929, 23788],
+          [13995, 23732],
+          [14005, 23705],
+          [13996, 23669],
+          [13940, 23584],
+          [13875, 23558]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [14982, 19765],
+          [14907, 19767],
+          [14867, 19794],
+          [14842, 19847],
+          [14844, 19907],
+          [14869, 19957],
+          [14925, 20001],
+          [15053, 20040],
+          [15130, 20011],
+          [15160, 19981],
+          [15184, 19928],
+          [15185, 19880],
+          [15131, 19817],
+          [15069, 19784],
+          [14982, 19765]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [15782, 19882],
+          [15717, 19914],
+          [15708, 20005],
+          [15734, 20059],
+          [15772, 20083],
+          [15810, 20088],
+          [15902, 20036],
+          [15918, 19999],
+          [15918, 19962],
+          [15881, 19904],
+          [15822, 19882],
+          [15782, 19882]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [15830, 22744],
+          [15805, 22752],
+          [15775, 22795],
+          [15779, 22849],
+          [15793, 22886],
+          [15863, 22935],
+          [15906, 22934],
+          [15939, 22879],
+          [15944, 22817],
+          [15920, 22782],
+          [15879, 22750],
+          [15830, 22744]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16592, 6522],
+          [16477, 6529],
+          [16402, 6580],
+          [16393, 6621],
+          [16440, 6696],
+          [16508, 6741],
+          [16643, 6732],
+          [16681, 6692],
+          [16704, 6641],
+          [16683, 6580],
+          [16635, 6537],
+          [16592, 6522]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16813, 21957],
+          [16722, 21988],
+          [16690, 22026],
+          [16680, 22110],
+          [16711, 22181],
+          [16851, 22243],
+          [16911, 22242],
+          [16949, 22224],
+          [16972, 22187],
+          [16973, 22125],
+          [16909, 22014],
+          [16813, 21957]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17979, 22873],
+          [17923, 22882],
+          [17858, 22912],
+          [17822, 22952],
+          [17812, 23018],
+          [17882, 23116],
+          [17939, 23137],
+          [17999, 23137],
+          [18090, 23086],
+          [18113, 23030],
+          [18114, 22949],
+          [18041, 22884],
+          [17979, 22873]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19220, 7682],
+          [19101, 7704],
+          [19090, 7727],
+          [19096, 7787],
+          [19202, 7880],
+          [19269, 7888],
+          [19336, 7836],
+          [19344, 7766],
+          [19326, 7725],
+          [19296, 7698],
+          [19220, 7682]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18993, 11837],
+          [18972, 11848],
+          [18942, 11882],
+          [18947, 11959],
+          [18975, 12002],
+          [19039, 11997],
+          [19079, 11972],
+          [19092, 11877],
+          [19074, 11841],
+          [18993, 11837]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18752, 14748],
+          [18601, 14770],
+          [18564, 14791],
+          [18540, 14830],
+          [18563, 14942],
+          [18682, 15054],
+          [18777, 15032],
+          [18860, 14926],
+          [18837, 14815],
+          [18800, 14771],
+          [18752, 14748]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19146, 15823],
+          [19050, 15888],
+          [19040, 15924],
+          [19057, 15976],
+          [19134, 16033],
+          [19217, 16035],
+          [19288, 15996],
+          [19279, 15896],
+          [19213, 15829],
+          [19146, 15823]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19008, 15683],
+          [18939, 15699],
+          [18900, 15759],
+          [18902, 15813],
+          [18934, 15844],
+          [19044, 15888],
+          [19147, 15813],
+          [19150, 15788],
+          [19132, 15748],
+          [19069, 15698],
+          [19008, 15683]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19298, 19815],
+          [19251, 19816],
+          [19213, 19832],
+          [19197, 19856],
+          [19197, 19907],
+          [19224, 19969],
+          [19264, 20020],
+          [19321, 20030],
+          [19369, 20017],
+          [19397, 19996],
+          [19405, 19972],
+          [19398, 19912],
+          [19351, 19843],
+          [19298, 19815]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18860, 21871],
+          [18714, 21925],
+          [18673, 21990],
+          [18672, 22019],
+          [18709, 22083],
+          [18749, 22115],
+          [18861, 22132],
+          [18928, 22104],
+          [19009, 22041],
+          [19034, 21985],
+          [19008, 21932],
+          [18927, 21882],
+          [18860, 21871]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19992, 13044],
+          [19890, 13062],
+          [19856, 13093],
+          [19836, 13136],
+          [19855, 13236],
+          [19897, 13274],
+          [19939, 13291],
+          [20037, 13284],
+          [20070, 13267],
+          [20098, 13237],
+          [20108, 13153],
+          [20089, 13116],
+          [19992, 13044]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19666, 15701],
+          [19573, 15743],
+          [19562, 15864],
+          [19603, 15979],
+          [19656, 16016],
+          [19712, 16027],
+          [19807, 15977],
+          [19846, 15905],
+          [19848, 15866],
+          [19807, 15784],
+          [19723, 15709],
+          [19666, 15701]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20207, 17681],
+          [20146, 17733],
+          [20134, 17799],
+          [20148, 17845],
+          [20258, 17947],
+          [20299, 17959],
+          [20361, 17949],
+          [20431, 17909],
+          [20456, 17875],
+          [20456, 17803],
+          [20433, 17763],
+          [20336, 17692],
+          [20207, 17681]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20304, 20859],
+          [20184, 20906],
+          [20122, 20959],
+          [20134, 21028],
+          [20180, 21076],
+          [20239, 21105],
+          [20381, 21104],
+          [20428, 21056],
+          [20451, 20946],
+          [20375, 20870],
+          [20304, 20859]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20014, 20800],
+          [19945, 20805],
+          [19897, 20825],
+          [19864, 20857],
+          [19843, 20898],
+          [19856, 20950],
+          [19913, 20971],
+          [19969, 20970],
+          [20004, 20955],
+          [20036, 20910],
+          [20042, 20830],
+          [20035, 20808],
+          [20014, 20800]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20013, 21962],
+          [19979, 22018],
+          [19981, 22100],
+          [20042, 22144],
+          [20103, 22142],
+          [20121, 22127],
+          [20138, 22054],
+          [20128, 21998],
+          [20096, 21968],
+          [20013, 21962]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [21070, 10606],
+          [21022, 10651],
+          [20978, 10795],
+          [20985, 10837],
+          [21005, 10862],
+          [21093, 10871],
+          [21184, 10829],
+          [21218, 10750],
+          [21220, 10712],
+          [21139, 10614],
+          [21070, 10606]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [21183, 12673],
+          [21078, 12751],
+          [21054, 12810],
+          [21054, 12865],
+          [21078, 12912],
+          [21160, 12984],
+          [21227, 13021],
+          [21269, 13023],
+          [21346, 12949],
+          [21382, 12819],
+          [21309, 12712],
+          [21183, 12673]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [21324, 19801],
+          [21212, 19811],
+          [21152, 19869],
+          [21133, 19910],
+          [21132, 19956],
+          [21151, 20008],
+          [21191, 20044],
+          [21257, 20064],
+          [21301, 20063],
+          [21375, 20035],
+          [21394, 20006],
+          [21404, 19901],
+          [21364, 19823],
+          [21324, 19801]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [22029, 17569],
+          [21992, 17577],
+          [21948, 17611],
+          [21921, 17669],
+          [21921, 17761],
+          [21936, 17818],
+          [22006, 17873],
+          [22064, 17863],
+          [22092, 17839],
+          [22121, 17792],
+          [22137, 17725],
+          [22136, 17666],
+          [22121, 17632],
+          [22080, 17589],
+          [22029, 17569]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [22024, 18218],
+          [21976, 18265],
+          [21969, 18297],
+          [21976, 18344],
+          [21996, 18380],
+          [22025, 18397],
+          [22103, 18398],
+          [22133, 18380],
+          [22154, 18351],
+          [22161, 18314],
+          [22148, 18266],
+          [22105, 18224],
+          [22024, 18218]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [13278, 23747],
+          [13191, 23766],
+          [13139, 23836],
+          [13156, 23938],
+          [13192, 23985],
+          [13227, 24004],
+          [13335, 23983],
+          [13374, 23922],
+          [13373, 23878],
+          [13339, 23798],
+          [13314, 23765],
+          [13278, 23747]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [14705, 4939],
+          [14609, 4941],
+          [14577, 4970],
+          [14558, 5014],
+          [14549, 5126],
+          [14577, 5190],
+          [14618, 5220],
+          [14664, 5221],
+          [14749, 5191],
+          [14787, 5149],
+          [14817, 5083],
+          [14807, 5012],
+          [14705, 4939]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [14261, 5936],
+          [14132, 5999],
+          [14094, 6048],
+          [14057, 6160],
+          [14069, 6211],
+          [14110, 6244],
+          [14164, 6245],
+          [14279, 6197],
+          [14381, 6104],
+          [14407, 6043],
+          [14403, 5955],
+          [14261, 5936]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [14217, 20253],
+          [14139, 20273],
+          [14068, 20333],
+          [14039, 20378],
+          [14030, 20446],
+          [14040, 20476],
+          [14123, 20555],
+          [14173, 20545],
+          [14238, 20501],
+          [14297, 20418],
+          [14289, 20342],
+          [14217, 20253]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [14368, 22386],
+          [14314, 22411],
+          [14271, 22458],
+          [14262, 22514],
+          [14282, 22568],
+          [14321, 22610],
+          [14371, 22629],
+          [14426, 22628],
+          [14499, 22602],
+          [14539, 22547],
+          [14521, 22466],
+          [14442, 22395],
+          [14368, 22386]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [14285, 24562],
+          [14218, 24580],
+          [14208, 24600],
+          [14209, 24654],
+          [14261, 24759],
+          [14321, 24784],
+          [14356, 24785],
+          [14399, 24768],
+          [14425, 24743],
+          [14432, 24706],
+          [14417, 24651],
+          [14349, 24574],
+          [14285, 24562]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [15237, 21477],
+          [15156, 21512],
+          [15127, 21547],
+          [15127, 21589],
+          [15153, 21637],
+          [15264, 21727],
+          [15374, 21772],
+          [15473, 21746],
+          [15500, 21610],
+          [15412, 21502],
+          [15324, 21478],
+          [15237, 21477]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [15632, 22345],
+          [15585, 22352],
+          [15512, 22398],
+          [15513, 22480],
+          [15529, 22511],
+          [15550, 22526],
+          [15611, 22548],
+          [15668, 22542],
+          [15698, 22508],
+          [15705, 22422],
+          [15653, 22352],
+          [15632, 22345]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [14956, 24513],
+          [14877, 24539],
+          [14873, 24599],
+          [14904, 24678],
+          [14996, 24733],
+          [15048, 24740],
+          [15097, 24724],
+          [15140, 24687],
+          [15148, 24641],
+          [15139, 24612],
+          [15061, 24533],
+          [14956, 24513]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16200, 8007],
+          [16134, 8031],
+          [16091, 8069],
+          [16057, 8138],
+          [16056, 8189],
+          [16079, 8256],
+          [16113, 8293],
+          [16180, 8326],
+          [16233, 8327],
+          [16317, 8264],
+          [16351, 8156],
+          [16274, 8030],
+          [16200, 8007]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [15994, 21371],
+          [15937, 21393],
+          [15887, 21438],
+          [15878, 21589],
+          [15909, 21642],
+          [15950, 21663],
+          [16097, 21654],
+          [16182, 21566],
+          [16182, 21482],
+          [16148, 21430],
+          [16088, 21382],
+          [15994, 21371]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16033, 25461],
+          [15987, 25494],
+          [15985, 25556],
+          [15996, 25577],
+          [16123, 25654],
+          [16223, 25639],
+          [16279, 25575],
+          [16279, 25542],
+          [16249, 25502],
+          [16173, 25464],
+          [16033, 25461]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16585, 26498],
+          [16526, 26564],
+          [16533, 26675],
+          [16581, 26765],
+          [16636, 26787],
+          [16701, 26776],
+          [16736, 26754],
+          [16754, 26702],
+          [16754, 26645],
+          [16721, 26541],
+          [16682, 26507],
+          [16585, 26498]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16267, 26115],
+          [16241, 26128],
+          [16231, 26165],
+          [16241, 26219],
+          [16271, 26269],
+          [16331, 26318],
+          [16383, 26322],
+          [16436, 26308],
+          [16485, 26263],
+          [16515, 26203],
+          [16515, 26135],
+          [16503, 26118],
+          [16267, 26115]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17694, 5924],
+          [17620, 5966],
+          [17605, 5993],
+          [17603, 6033],
+          [17615, 6084],
+          [17633, 6113],
+          [17669, 6141],
+          [17710, 6147],
+          [17742, 6132],
+          [17759, 6105],
+          [17760, 5990],
+          [17746, 5927],
+          [17694, 5924]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17659, 9218],
+          [17540, 9323],
+          [17539, 9382],
+          [17614, 9428],
+          [17737, 9413],
+          [17812, 9367],
+          [17811, 9276],
+          [17730, 9220],
+          [17659, 9218]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17164, 10104],
+          [17133, 10114],
+          [17085, 10159],
+          [17066, 10201],
+          [17066, 10252],
+          [17085, 10315],
+          [17112, 10351],
+          [17153, 10380],
+          [17216, 10391],
+          [17292, 10328],
+          [17320, 10235],
+          [17252, 10125],
+          [17164, 10104]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17791, 26392],
+          [17715, 26401],
+          [17647, 26428],
+          [17618, 26466],
+          [17599, 26527],
+          [17618, 26637],
+          [17714, 26718],
+          [17762, 26694],
+          [17820, 26595],
+          [17820, 26435],
+          [17791, 26392]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18365, 6170],
+          [18308, 6205],
+          [18296, 6233],
+          [18306, 6275],
+          [18378, 6338],
+          [18432, 6353],
+          [18557, 6353],
+          [18594, 6332],
+          [18606, 6307],
+          [18597, 6267],
+          [18572, 6238],
+          [18447, 6176],
+          [18365, 6170]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17971, 7028],
+          [17926, 7082],
+          [17933, 7199],
+          [17991, 7278],
+          [18018, 7289],
+          [18082, 7279],
+          [18173, 7190],
+          [18158, 7105],
+          [18123, 7063],
+          [18077, 7036],
+          [17971, 7028]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18396, 8096],
+          [18352, 8116],
+          [18314, 8164],
+          [18296, 8260],
+          [18337, 8343],
+          [18364, 8363],
+          [18413, 8373],
+          [18451, 8363],
+          [18500, 8321],
+          [18536, 8269],
+          [18545, 8229],
+          [18535, 8195],
+          [18478, 8127],
+          [18447, 8106],
+          [18396, 8096]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18776, 8177],
+          [18710, 8223],
+          [18692, 8282],
+          [18694, 8386],
+          [18704, 8412],
+          [18749, 8412],
+          [18849, 8351],
+          [18877, 8252],
+          [18876, 8206],
+          [18855, 8177],
+          [18776, 8177]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18382, 9357],
+          [18354, 9366],
+          [18336, 9389],
+          [18298, 9507],
+          [18317, 9550],
+          [18355, 9589],
+          [18427, 9607],
+          [18479, 9588],
+          [18534, 9533],
+          [18552, 9495],
+          [18551, 9440],
+          [18533, 9405],
+          [18475, 9364],
+          [18382, 9357]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18506, 9999],
+          [18446, 10025],
+          [18416, 10064],
+          [18416, 10132],
+          [18437, 10151],
+          [18487, 10169],
+          [18536, 10169],
+          [18570, 10156],
+          [18593, 10129],
+          [18608, 10081],
+          [18605, 10042],
+          [18577, 10005],
+          [18506, 9999]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18674, 12167],
+          [18590, 12188],
+          [18524, 12254],
+          [18504, 12297],
+          [18505, 12348],
+          [18525, 12392],
+          [18631, 12457],
+          [18672, 12457],
+          [18723, 12434],
+          [18790, 12336],
+          [18791, 12252],
+          [18778, 12224],
+          [18737, 12187],
+          [18674, 12167]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18694, 15199],
+          [18610, 15200],
+          [18544, 15284],
+          [18525, 15402],
+          [18534, 15443],
+          [18561, 15465],
+          [18641, 15477],
+          [18696, 15467],
+          [18768, 15433],
+          [18803, 15391],
+          [18814, 15333],
+          [18801, 15295],
+          [18694, 15199]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18336, 20191],
+          [18301, 20210],
+          [18259, 20264],
+          [18242, 20330],
+          [18249, 20378],
+          [18344, 20464],
+          [18427, 20476],
+          [18511, 20417],
+          [18522, 20369],
+          [18514, 20318],
+          [18437, 20212],
+          [18336, 20191]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18522, 21294],
+          [18410, 21381],
+          [18386, 21451],
+          [18448, 21552],
+          [18620, 21537],
+          [18717, 21458],
+          [18718, 21420],
+          [18696, 21372],
+          [18623, 21303],
+          [18522, 21294]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18717, 22364],
+          [18638, 22442],
+          [18640, 22557],
+          [18671, 22616],
+          [18729, 22658],
+          [18780, 22659],
+          [18839, 22637],
+          [18922, 22553],
+          [18922, 22428],
+          [18834, 22365],
+          [18717, 22364]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18816, 24412],
+          [18721, 24422],
+          [18633, 24479],
+          [18613, 24599],
+          [18645, 24654],
+          [18699, 24684],
+          [18763, 24695],
+          [18821, 24685],
+          [18875, 24645],
+          [18906, 24516],
+          [18875, 24454],
+          [18816, 24412]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19517, 7364],
+          [19464, 7371],
+          [19423, 7406],
+          [19399, 7471],
+          [19400, 7511],
+          [19421, 7552],
+          [19466, 7568],
+          [19509, 7562],
+          [19564, 7537],
+          [19601, 7492],
+          [19609, 7453],
+          [19600, 7418],
+          [19552, 7371],
+          [19517, 7364]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19837, 8049],
+          [19711, 8080],
+          [19680, 8123],
+          [19682, 8164],
+          [19709, 8206],
+          [19849, 8322],
+          [19885, 8334],
+          [19937, 8325],
+          [19948, 8301],
+          [19947, 8137],
+          [19918, 8092],
+          [19837, 8049]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19568, 11494],
+          [19485, 11496],
+          [19429, 11526],
+          [19407, 11558],
+          [19415, 11635],
+          [19511, 11700],
+          [19542, 11700],
+          [19639, 11662],
+          [19667, 11633],
+          [19658, 11590],
+          [19602, 11517],
+          [19568, 11494]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19732, 16237],
+          [19666, 16274],
+          [19640, 16322],
+          [19644, 16360],
+          [19664, 16397],
+          [19716, 16429],
+          [19777, 16435],
+          [19875, 16370],
+          [19889, 16351],
+          [19889, 16309],
+          [19830, 16238],
+          [19732, 16237]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19078, 22468],
+          [18986, 22504],
+          [18966, 22548],
+          [18973, 22604],
+          [19004, 22644],
+          [19049, 22667],
+          [19105, 22673],
+          [19162, 22658],
+          [19189, 22635],
+          [19217, 22577],
+          [19208, 22515],
+          [19149, 22474],
+          [19078, 22468]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19738, 22491],
+          [19678, 22502],
+          [19632, 22549],
+          [19610, 22607],
+          [19618, 22699],
+          [19699, 22747],
+          [19752, 22732],
+          [19813, 22665],
+          [19800, 22542],
+          [19738, 22491]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20226, 8022],
+          [20166, 8037],
+          [20113, 8131],
+          [20107, 8198],
+          [20132, 8241],
+          [20159, 8258],
+          [20227, 8242],
+          [20279, 8168],
+          [20278, 8077],
+          [20226, 8022]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20497, 11176],
+          [20465, 11187],
+          [20428, 11223],
+          [20404, 11280],
+          [20403, 11317],
+          [20420, 11352],
+          [20482, 11416],
+          [20528, 11426],
+          [20568, 11408],
+          [20608, 11370],
+          [20634, 11309],
+          [20635, 11273],
+          [20577, 11187],
+          [20497, 11176]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20497, 10923],
+          [20473, 10938],
+          [20434, 10999],
+          [20434, 11067],
+          [20446, 11110],
+          [20471, 11120],
+          [20574, 11113],
+          [20609, 11092],
+          [20627, 11062],
+          [20632, 10972],
+          [20592, 10935],
+          [20497, 10923]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20531, 21476],
+          [20446, 21482],
+          [20396, 21527],
+          [20388, 21576],
+          [20398, 21607],
+          [20441, 21655],
+          [20472, 21669],
+          [20513, 21669],
+          [20606, 21619],
+          [20614, 21562],
+          [20570, 21497],
+          [20531, 21476]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20321, 23277],
+          [20171, 23285],
+          [20135, 23351],
+          [20145, 23481],
+          [20191, 23569],
+          [20249, 23611],
+          [20377, 23579],
+          [20428, 23515],
+          [20429, 23464],
+          [20372, 23364],
+          [20367, 23302],
+          [20321, 23277]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [21535, 13202],
+          [21487, 13212],
+          [21460, 13236],
+          [21438, 13288],
+          [21454, 13416],
+          [21519, 13502],
+          [21605, 13515],
+          [21640, 13477],
+          [21656, 13428],
+          [21632, 13295],
+          [21601, 13236],
+          [21574, 13214],
+          [21535, 13202]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [9608, 6864],
+          [9604, 6865],
+          [9542, 6874],
+          [9527, 6889],
+          [9518, 6893],
+          [9496, 6924],
+          [9486, 6936],
+          [9485, 6941],
+          [9483, 6944],
+          [9467, 7011],
+          [9469, 7024],
+          [9466, 7041],
+          [9482, 7103],
+          [9492, 7159],
+          [9564, 7224],
+          [9619, 7212],
+          [9653, 7183],
+          [9691, 7123],
+          [9697, 7120],
+          [9715, 6959],
+          [9713, 6956],
+          [9714, 6956],
+          [9698, 6917],
+          [9693, 6914],
+          [9692, 6911],
+          [9646, 6886],
+          [9608, 6864]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [9880, 7439],
+          [9859, 7449],
+          [9847, 7451],
+          [9838, 7461],
+          [9837, 7462],
+          [9835, 7464],
+          [9811, 7493],
+          [9798, 7528],
+          [9798, 7529],
+          [9795, 7538],
+          [9805, 7583],
+          [9815, 7657],
+          [9834, 7687],
+          [9897, 7729],
+          [9948, 7741],
+          [9984, 7720],
+          [10019, 7672],
+          [10022, 7653],
+          [10036, 7627],
+          [10038, 7579],
+          [10021, 7528],
+          [10009, 7513],
+          [10002, 7495],
+          [9986, 7482],
+          [9969, 7460],
+          [9941, 7447],
+          [9936, 7443],
+          [9932, 7443],
+          [9923, 7439],
+          [9880, 7439]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [10893, 4891],
+          [10885, 4894],
+          [10883, 4894],
+          [10870, 4900],
+          [10836, 4916],
+          [10831, 4922],
+          [10821, 4928],
+          [10814, 4944],
+          [10802, 4961],
+          [10795, 4991],
+          [10791, 5002],
+          [10792, 5008],
+          [10802, 5111],
+          [10873, 5211],
+          [10903, 5211],
+          [10964, 5178],
+          [11032, 5085],
+          [11043, 5039],
+          [11060, 5000],
+          [11056, 4987],
+          [11060, 4976],
+          [11048, 4937],
+          [11042, 4933],
+          [11041, 4926],
+          [11024, 4919],
+          [11017, 4914],
+          [11005, 4911],
+          [10983, 4903],
+          [10933, 4898],
+          [10893, 4891]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [11034, 5195],
+          [11030, 5197],
+          [11027, 5197],
+          [11004, 5214],
+          [10995, 5220],
+          [10993, 5221],
+          [10991, 5224],
+          [10977, 5249],
+          [10972, 5299],
+          [10972, 5302],
+          [10984, 5346],
+          [10987, 5353],
+          [10991, 5364],
+          [10998, 5373],
+          [11004, 5384],
+          [11008, 5385],
+          [11012, 5391],
+          [11045, 5405],
+          [11047, 5404],
+          [11052, 5407],
+          [11114, 5399],
+          [11141, 5381],
+          [11141, 5379],
+          [11142, 5379],
+          [11154, 5348],
+          [11153, 5347],
+          [11154, 5347],
+          [11154, 5293],
+          [11148, 5272],
+          [11147, 5258],
+          [11142, 5251],
+          [11141, 5247],
+          [11120, 5214],
+          [11111, 5208],
+          [11108, 5204],
+          [11103, 5203],
+          [11093, 5197],
+          [11050, 5197],
+          [11034, 5195]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [10459, 6987],
+          [10380, 7011],
+          [10371, 7018],
+          [10362, 7021],
+          [10346, 7040],
+          [10339, 7047],
+          [10335, 7054],
+          [10327, 7065],
+          [10327, 7070],
+          [10321, 7083],
+          [10320, 7154],
+          [10331, 7198],
+          [10366, 7246],
+          [10444, 7303],
+          [10469, 7305],
+          [10543, 7207],
+          [10561, 7113],
+          [10557, 7106],
+          [10558, 7104],
+          [10523, 7023],
+          [10513, 7016],
+          [10511, 7012],
+          [10493, 7003],
+          [10473, 6990],
+          [10468, 6991],
+          [10459, 6987]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [10661, 7768],
+          [10618, 7773],
+          [10559, 7812],
+          [10533, 7827],
+          [10523, 7851],
+          [10526, 7877],
+          [10526, 7887],
+          [10529, 7892],
+          [10531, 7905],
+          [10542, 7915],
+          [10558, 7944],
+          [10658, 7984],
+          [10694, 7984],
+          [10703, 7980],
+          [10746, 7967],
+          [10778, 7933],
+          [10786, 7886],
+          [10777, 7851],
+          [10747, 7820],
+          [10748, 7817],
+          [10715, 7781],
+          [10661, 7768]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [10291, 7862],
+          [10287, 7865],
+          [10275, 7866],
+          [10256, 7900],
+          [10220, 7940],
+          [10220, 8024],
+          [10246, 8069],
+          [10320, 8132],
+          [10331, 8142],
+          [10332, 8142],
+          [10337, 8146],
+          [10386, 8154],
+          [10390, 8150],
+          [10395, 8151],
+          [10407, 8139],
+          [10414, 8134],
+          [10416, 8129],
+          [10426, 8120],
+          [10431, 8099],
+          [10433, 8097],
+          [10433, 8094],
+          [10441, 8066],
+          [10433, 8015],
+          [10433, 7989],
+          [10427, 7981],
+          [10426, 7972],
+          [10370, 7897],
+          [10367, 7895],
+          [10321, 7863],
+          [10291, 7862]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [11902, 4552],
+          [11799, 4572],
+          [11772, 4708],
+          [11785, 4734],
+          [11785, 4743],
+          [11806, 4775],
+          [11825, 4811],
+          [11833, 4815],
+          [11840, 4825],
+          [11888, 4854],
+          [11915, 4857],
+          [11920, 4860],
+          [11923, 4858],
+          [11947, 4862],
+          [12041, 4823],
+          [12059, 4701],
+          [12058, 4698],
+          [12059, 4693],
+          [12044, 4661],
+          [12028, 4618],
+          [12023, 4617],
+          [12008, 4584],
+          [11969, 4560],
+          [11902, 4552]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [12181, 4130],
+          [12112, 4132],
+          [12061, 4132],
+          [12056, 4135],
+          [12044, 4136],
+          [12004, 4173],
+          [12003, 4176],
+          [11992, 4228],
+          [11994, 4233],
+          [11994, 4236],
+          [12006, 4261],
+          [12045, 4351],
+          [12053, 4358],
+          [12058, 4367],
+          [12068, 4370],
+          [12079, 4379],
+          [12106, 4382],
+          [12157, 4398],
+          [12206, 4393],
+          [12260, 4400],
+          [12334, 4361],
+          [12348, 4297],
+          [12322, 4228],
+          [12249, 4162],
+          [12243, 4156],
+          [12240, 4154],
+          [12218, 4135],
+          [12191, 4134],
+          [12181, 4130]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [12232, 5409],
+          [12193, 5414],
+          [12184, 5413],
+          [12180, 5415],
+          [12171, 5417],
+          [12081, 5478],
+          [12071, 5493],
+          [12071, 5494],
+          [12066, 5502],
+          [12030, 5564],
+          [12028, 5573],
+          [12020, 5590],
+          [12001, 5663],
+          [12010, 5694],
+          [12165, 5666],
+          [12230, 5626],
+          [12249, 5588],
+          [12284, 5541],
+          [12293, 5503],
+          [12255, 5418],
+          [12232, 5409]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [12002, 6553],
+          [11935, 6564],
+          [11856, 6651],
+          [11841, 6712],
+          [11835, 6727],
+          [11844, 6767],
+          [11932, 6829],
+          [11934, 6829],
+          [11937, 6831],
+          [11948, 6831],
+          [11976, 6836],
+          [12003, 6834],
+          [12086, 6839],
+          [12114, 6828],
+          [12129, 6828],
+          [12158, 6799],
+          [12184, 6736],
+          [12179, 6726],
+          [12158, 6669],
+          [12043, 6564],
+          [12002, 6553]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [13221, 5889],
+          [13204, 5891],
+          [13185, 5892],
+          [13179, 5895],
+          [13170, 5897],
+          [13130, 5928],
+          [13118, 5937],
+          [13060, 6054],
+          [13062, 6064],
+          [13067, 6089],
+          [13071, 6094],
+          [13077, 6114],
+          [13126, 6133],
+          [13139, 6132],
+          [13157, 6138],
+          [13169, 6132],
+          [13177, 6132],
+          [13209, 6115],
+          [13210, 6112],
+          [13215, 6110],
+          [13294, 5977],
+          [13293, 5974],
+          [13294, 5974],
+          [13293, 5945],
+          [13267, 5909],
+          [13255, 5903],
+          [13251, 5898],
+          [13236, 5893],
+          [13231, 5891],
+          [13227, 5891],
+          [13221, 5889]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [12409, 7770],
+          [12403, 7773],
+          [12401, 7773],
+          [12358, 7795],
+          [12351, 7801],
+          [12350, 7803],
+          [12341, 7813],
+          [12314, 7845],
+          [12312, 7850],
+          [12312, 7851],
+          [12312, 7852],
+          [12302, 7891],
+          [12312, 7960],
+          [12312, 7965],
+          [12312, 7966],
+          [12313, 7967],
+          [12343, 8017],
+          [12403, 8065],
+          [12494, 8086],
+          [12496, 8084],
+          [12498, 8085],
+          [12517, 8069],
+          [12577, 8027],
+          [12581, 8017],
+          [12585, 8015],
+          [12586, 8008],
+          [12598, 7983],
+          [12599, 7932],
+          [12597, 7929],
+          [12598, 7929],
+          [12590, 7912],
+          [12566, 7857],
+          [12561, 7852],
+          [12519, 7804],
+          [12513, 7800],
+          [12509, 7796],
+          [12496, 7790],
+          [12477, 7779],
+          [12466, 7777],
+          [12458, 7774],
+          [12436, 7773],
+          [12409, 7770]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [12392, 23048],
+          [12346, 23075],
+          [12314, 23109],
+          [12311, 23179],
+          [12355, 23233],
+          [12357, 23233],
+          [12360, 23237],
+          [12373, 23237],
+          [12396, 23244],
+          [12425, 23241],
+          [12436, 23242],
+          [12442, 23239],
+          [12452, 23239],
+          [12458, 23234],
+          [12474, 23229],
+          [12489, 23212],
+          [12505, 23202],
+          [12505, 23174],
+          [12507, 23166],
+          [12505, 23140],
+          [12505, 23112],
+          [12482, 23074],
+          [12450, 23050],
+          [12392, 23048]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [13403, 6875],
+          [13350, 6897],
+          [13290, 6952],
+          [13271, 6987],
+          [13270, 7028],
+          [13292, 7090],
+          [13332, 7134],
+          [13371, 7156],
+          [13433, 7165],
+          [13479, 7144],
+          [13520, 7102],
+          [13520, 7101],
+          [13522, 7100],
+          [13540, 7046],
+          [13540, 6993],
+          [13539, 6991],
+          [13539, 6987],
+          [13516, 6954],
+          [13489, 6909],
+          [13482, 6904],
+          [13479, 6900],
+          [13455, 6887],
+          [13438, 6877],
+          [13403, 6875]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [13716, 22098],
+          [13671, 22114],
+          [13644, 22140],
+          [13632, 22164],
+          [13626, 22177],
+          [13625, 22179],
+          [13624, 22183],
+          [13620, 22210],
+          [13618, 22228],
+          [13618, 22230],
+          [13618, 22234],
+          [13623, 22253],
+          [13625, 22261],
+          [13625, 22262],
+          [13626, 22263],
+          [13629, 22267],
+          [13650, 22298],
+          [13655, 22301],
+          [13658, 22305],
+          [13685, 22322],
+          [13710, 22325],
+          [13729, 22329],
+          [13730, 22328],
+          [13733, 22329],
+          [13779, 22313],
+          [13804, 22280],
+          [13811, 22186],
+          [13810, 22183],
+          [13811, 22181],
+          [13804, 22150],
+          [13774, 22110],
+          [13716, 22098]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [15170, 4742],
+          [15162, 4744],
+          [15150, 4744],
+          [15130, 4755],
+          [15111, 4762],
+          [15092, 4777],
+          [15080, 4785],
+          [15072, 4794],
+          [15054, 4810],
+          [15020, 4861],
+          [15019, 4862],
+          [15013, 4871],
+          [15010, 4895],
+          [15009, 4901],
+          [15009, 4903],
+          [15006, 4941],
+          [15058, 4948],
+          [15077, 4955],
+          [15097, 4954],
+          [15130, 4959],
+          [15192, 4953],
+          [15196, 4951],
+          [15197, 4951],
+          [15199, 4949],
+          [15232, 4935],
+          [15237, 4929],
+          [15240, 4928],
+          [15248, 4919],
+          [15255, 4912],
+          [15255, 4910],
+          [15256, 4910],
+          [15255, 4908],
+          [15261, 4886],
+          [15251, 4849],
+          [15248, 4807],
+          [15230, 4772],
+          [15230, 4770],
+          [15229, 4769],
+          [15223, 4766],
+          [15184, 4745],
+          [15176, 4744],
+          [15170, 4742]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [15018, 20227],
+          [14961, 20228],
+          [14956, 20229],
+          [14955, 20230],
+          [14885, 20257],
+          [14823, 20308],
+          [14791, 20356],
+          [14824, 20457],
+          [14851, 20458],
+          [14851, 20508],
+          [14894, 20558],
+          [14954, 20586],
+          [15076, 20572],
+          [15131, 20505],
+          [15108, 20354],
+          [15109, 20354],
+          [15100, 20285],
+          [15062, 20247],
+          [15027, 20233],
+          [15018, 20227]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [14614, 23109],
+          [14602, 23110],
+          [14599, 23110],
+          [14590, 23112],
+          [14576, 23115],
+          [14574, 23117],
+          [14570, 23119],
+          [14551, 23143],
+          [14547, 23159],
+          [14543, 23166],
+          [14542, 23178],
+          [14541, 23186],
+          [14542, 23194],
+          [14542, 23217],
+          [14548, 23229],
+          [14551, 23247],
+          [14560, 23254],
+          [14571, 23277],
+          [14603, 23291],
+          [14615, 23301],
+          [14651, 23312],
+          [14697, 23333],
+          [14708, 23331],
+          [14714, 23333],
+          [14731, 23328],
+          [14740, 23327],
+          [14742, 23325],
+          [14743, 23325],
+          [14749, 23319],
+          [14792, 23287],
+          [14795, 23272],
+          [14798, 23259],
+          [14797, 23258],
+          [14798, 23257],
+          [14780, 23212],
+          [14779, 23211],
+          [14779, 23210],
+          [14763, 23193],
+          [14709, 23132],
+          [14614, 23109]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [15222, 26162],
+          [15218, 26163],
+          [15180, 26176],
+          [15175, 26178],
+          [15157, 26195],
+          [15142, 26227],
+          [15139, 26254],
+          [15136, 26280],
+          [15136, 26282],
+          [15145, 26308],
+          [15149, 26319],
+          [15150, 26321],
+          [15172, 26346],
+          [15176, 26351],
+          [15177, 26352],
+          [15219, 26374],
+          [15246, 26375],
+          [15246, 26374],
+          [15249, 26375],
+          [15316, 26338],
+          [15324, 26285],
+          [15284, 26186],
+          [15266, 26169],
+          [15261, 26168],
+          [15256, 26167],
+          [15222, 26162]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [15928, 20235],
+          [15897, 20238],
+          [15892, 20237],
+          [15890, 20239],
+          [15847, 20245],
+          [15810, 20354],
+          [15815, 20404],
+          [15847, 20464],
+          [15874, 20466],
+          [15875, 20500],
+          [15958, 20570],
+          [16024, 20586],
+          [16081, 20459],
+          [16082, 20459],
+          [16082, 20458],
+          [16086, 20450],
+          [16083, 20405],
+          [16085, 20340],
+          [16061, 20303],
+          [16040, 20292],
+          [16023, 20275],
+          [15984, 20263],
+          [15928, 20235]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16259, 22522],
+          [16204, 22533],
+          [16196, 22540],
+          [16195, 22541],
+          [16122, 22612],
+          [16121, 22615],
+          [16120, 22617],
+          [16120, 22620],
+          [16112, 22661],
+          [16122, 22724],
+          [16126, 22728],
+          [16181, 22783],
+          [16190, 22786],
+          [16195, 22790],
+          [16319, 22828],
+          [16331, 22832],
+          [16331, 22831],
+          [16335, 22833],
+          [16377, 22705],
+          [16361, 22627],
+          [16357, 22600],
+          [16304, 22540],
+          [16297, 22539],
+          [16293, 22534],
+          [16259, 22522]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [15994, 24206],
+          [15991, 24207],
+          [15990, 24207],
+          [15957, 24219],
+          [15927, 24231],
+          [15926, 24231],
+          [15923, 24233],
+          [15909, 24251],
+          [15906, 24271],
+          [15902, 24280],
+          [15903, 24293],
+          [15900, 24318],
+          [15910, 24381],
+          [15954, 24426],
+          [15995, 24442],
+          [16006, 24441],
+          [16046, 24441],
+          [16060, 24436],
+          [16074, 24435],
+          [16109, 24419],
+          [16120, 24416],
+          [16122, 24413],
+          [16136, 24408],
+          [16176, 24366],
+          [16210, 24337],
+          [16207, 24334],
+          [16212, 24330],
+          [16157, 24271],
+          [16143, 24254],
+          [16138, 24251],
+          [16135, 24248],
+          [16054, 24207],
+          [16052, 24207],
+          [16051, 24206],
+          [15994, 24206]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16673, 5037],
+          [16621, 5081],
+          [16576, 5148],
+          [16575, 5155],
+          [16572, 5162],
+          [16573, 5239],
+          [16575, 5242],
+          [16575, 5245],
+          [16578, 5249],
+          [16598, 5288],
+          [16618, 5302],
+          [16619, 5304],
+          [16620, 5304],
+          [16628, 5310],
+          [16705, 5326],
+          [16741, 5321],
+          [16756, 5324],
+          [16764, 5319],
+          [16774, 5318],
+          [16851, 5275],
+          [16858, 5264],
+          [16868, 5259],
+          [16883, 5230],
+          [16901, 5206],
+          [16890, 5177],
+          [16890, 5165],
+          [16881, 5154],
+          [16878, 5146],
+          [16871, 5142],
+          [16827, 5088],
+          [16771, 5048],
+          [16673, 5037]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17324, 6783],
+          [17193, 6791],
+          [17192, 6791],
+          [17191, 6792],
+          [17138, 6860],
+          [17129, 6930],
+          [17131, 6939],
+          [17131, 6948],
+          [17136, 6954],
+          [17139, 6964],
+          [17177, 7004],
+          [17233, 7073],
+          [17243, 7074],
+          [17250, 7082],
+          [17283, 7080],
+          [17303, 7084],
+          [17308, 7080],
+          [17313, 7080],
+          [17318, 7072],
+          [17338, 7058],
+          [17347, 7032],
+          [17350, 7028],
+          [17349, 7024],
+          [17357, 7004],
+          [17345, 6893],
+          [17360, 6795],
+          [17352, 6792],
+          [17340, 6786],
+          [17333, 6786],
+          [17324, 6783]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17299, 20107],
+          [17233, 20109],
+          [17224, 20112],
+          [17166, 20132],
+          [17156, 20140],
+          [17145, 20145],
+          [17141, 20153],
+          [17128, 20165],
+          [17114, 20211],
+          [17115, 20218],
+          [17113, 20225],
+          [17119, 20238],
+          [17126, 20268],
+          [17143, 20286],
+          [17154, 20308],
+          [17185, 20332],
+          [17218, 20367],
+          [17243, 20376],
+          [17260, 20389],
+          [17339, 20411],
+          [17339, 20410],
+          [17345, 20413],
+          [17394, 20410],
+          [17453, 20377],
+          [17463, 20290],
+          [17412, 20185],
+          [17382, 20154],
+          [17382, 20153],
+          [17370, 20141],
+          [17349, 20120],
+          [17346, 20119],
+          [17299, 20107]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17193, 21662],
+          [17175, 21669],
+          [17150, 21674],
+          [17137, 21684],
+          [17128, 21688],
+          [17116, 21701],
+          [17100, 21714],
+          [17094, 21725],
+          [17089, 21731],
+          [17088, 21736],
+          [17078, 21757],
+          [17077, 21868],
+          [17078, 21870],
+          [17078, 21871],
+          [17078, 21872],
+          [17099, 21930],
+          [17142, 21971],
+          [17196, 22024],
+          [17251, 22032],
+          [17308, 22008],
+          [17354, 21958],
+          [17355, 21953],
+          [17365, 21944],
+          [17389, 21884],
+          [17384, 21859],
+          [17389, 21845],
+          [17367, 21763],
+          [17319, 21701],
+          [17318, 21700],
+          [17273, 21674],
+          [17212, 21662],
+          [17203, 21663],
+          [17193, 21662]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16697, 23717],
+          [16691, 23720],
+          [16641, 23748],
+          [16604, 23785],
+          [16601, 23788],
+          [16582, 23898],
+          [16610, 23941],
+          [16627, 23947],
+          [16718, 23989],
+          [16748, 23990],
+          [16748, 23989],
+          [16749, 23990],
+          [16752, 23988],
+          [16795, 23970],
+          [16808, 23956],
+          [16820, 23950],
+          [16826, 23938],
+          [16828, 23937],
+          [16828, 23934],
+          [16849, 23898],
+          [16850, 23869],
+          [16846, 23864],
+          [16847, 23864],
+          [16812, 23816],
+          [16749, 23726],
+          [16731, 23723],
+          [16699, 23717],
+          [16697, 23717]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17248, 26103],
+          [17162, 26110],
+          [17124, 26131],
+          [17103, 26155],
+          [17099, 26159],
+          [17096, 26163],
+          [17088, 26174],
+          [17088, 26181],
+          [17082, 26194],
+          [17089, 26235],
+          [17108, 26265],
+          [17114, 26270],
+          [17116, 26272],
+          [17121, 26276],
+          [17152, 26300],
+          [17161, 26303],
+          [17167, 26307],
+          [17173, 26307],
+          [17194, 26314],
+          [17247, 26309],
+          [17248, 26307],
+          [17251, 26308],
+          [17254, 26304],
+          [17281, 26288],
+          [17294, 26264],
+          [17307, 26251],
+          [17324, 26207],
+          [17326, 26206],
+          [17326, 26205],
+          [17327, 26203],
+          [17326, 26167],
+          [17321, 26161],
+          [17309, 26139],
+          [17297, 26132],
+          [17279, 26111],
+          [17248, 26103]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16563, 25618],
+          [16541, 25633],
+          [16503, 25658],
+          [16501, 25662],
+          [16500, 25663],
+          [16499, 25665],
+          [16491, 25686],
+          [16492, 25762],
+          [16513, 25792],
+          [16531, 25803],
+          [16532, 25804],
+          [16533, 25804],
+          [16549, 25814],
+          [16564, 25816],
+          [16572, 25819],
+          [16588, 25819],
+          [16608, 25822],
+          [16614, 25819],
+          [16619, 25820],
+          [16626, 25815],
+          [16657, 25805],
+          [16689, 25780],
+          [16690, 25777],
+          [16691, 25777],
+          [16697, 25763],
+          [16708, 25745],
+          [16714, 25694],
+          [16690, 25643],
+          [16677, 25635],
+          [16657, 25620],
+          [16651, 25619],
+          [16610, 25619],
+          [16563, 25618]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16684, 27123],
+          [16637, 27130],
+          [16590, 27171],
+          [16577, 27235],
+          [16578, 27238],
+          [16578, 27242],
+          [16598, 27291],
+          [16682, 27303],
+          [16717, 27286],
+          [16718, 27284],
+          [16719, 27284],
+          [16728, 27273],
+          [16740, 27260],
+          [16751, 27229],
+          [16751, 27228],
+          [16751, 27191],
+          [16750, 27189],
+          [16750, 27184],
+          [16732, 27160],
+          [16722, 27143],
+          [16719, 27142],
+          [16710, 27130],
+          [16684, 27123]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18068, 6656],
+          [18065, 6658],
+          [18020, 6692],
+          [18014, 6703],
+          [18000, 6716],
+          [17995, 6786],
+          [18030, 6852],
+          [18106, 6917],
+          [18107, 6917],
+          [18110, 6920],
+          [18124, 6923],
+          [18139, 6928],
+          [18142, 6927],
+          [18151, 6929],
+          [18185, 6919],
+          [18187, 6917],
+          [18188, 6917],
+          [18219, 6894],
+          [18219, 6892],
+          [18220, 6892],
+          [18246, 6828],
+          [18245, 6826],
+          [18247, 6823],
+          [18229, 6757],
+          [18221, 6722],
+          [18219, 6720],
+          [18219, 6719],
+          [18154, 6665],
+          [18068, 6656]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18228, 7189],
+          [18204, 7194],
+          [18196, 7193],
+          [18190, 7197],
+          [18174, 7201],
+          [18091, 7272],
+          [18061, 7296],
+          [18060, 7299],
+          [18059, 7301],
+          [18043, 7409],
+          [18040, 7434],
+          [18040, 7436],
+          [18067, 7478],
+          [18096, 7524],
+          [18097, 7524],
+          [18098, 7525],
+          [18105, 7525],
+          [18135, 7531],
+          [18196, 7512],
+          [18202, 7505],
+          [18207, 7504],
+          [18222, 7486],
+          [18265, 7446],
+          [18272, 7430],
+          [18275, 7428],
+          [18284, 7405],
+          [18343, 7289],
+          [18333, 7245],
+          [18330, 7242],
+          [18330, 7241],
+          [18297, 7213],
+          [18288, 7205],
+          [18287, 7204],
+          [18284, 7202],
+          [18228, 7189]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17764, 9738],
+          [17742, 9749],
+          [17729, 9756],
+          [17689, 9803],
+          [17689, 9812],
+          [17683, 9836],
+          [17689, 9897],
+          [17690, 9907],
+          [17706, 9936],
+          [17743, 9964],
+          [17821, 9980],
+          [17826, 9977],
+          [17828, 9978],
+          [17831, 9975],
+          [17861, 9962],
+          [17895, 9926],
+          [17895, 9925],
+          [17896, 9925],
+          [17914, 9837],
+          [17881, 9794],
+          [17856, 9756],
+          [17850, 9754],
+          [17845, 9748],
+          [17764, 9738]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18015, 16319],
+          [17938, 16329],
+          [17923, 16385],
+          [17923, 16391],
+          [17895, 16399],
+          [17886, 16461],
+          [17925, 16542],
+          [17987, 16591],
+          [18004, 16595],
+          [18033, 16607],
+          [18043, 16604],
+          [18060, 16608],
+          [18089, 16592],
+          [18121, 16585],
+          [18127, 16573],
+          [18142, 16566],
+          [18163, 16518],
+          [18165, 16461],
+          [18160, 16451],
+          [18160, 16436],
+          [18142, 16402],
+          [18132, 16394],
+          [18131, 16393],
+          [18049, 16329],
+          [18015, 16319]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17620, 19526],
+          [17554, 19537],
+          [17537, 19538],
+          [17532, 19541],
+          [17525, 19543],
+          [17485, 19577],
+          [17464, 19593],
+          [17463, 19596],
+          [17450, 19630],
+          [17450, 19632],
+          [17450, 19635],
+          [17463, 19689],
+          [17489, 19718],
+          [17500, 19731],
+          [17503, 19732],
+          [17509, 19739],
+          [17553, 19760],
+          [17561, 19765],
+          [17620, 19775],
+          [17642, 19772],
+          [17649, 19773],
+          [17674, 19768],
+          [17702, 19765],
+          [17706, 19762],
+          [17709, 19762],
+          [17718, 19755],
+          [17742, 19742],
+          [17744, 19737],
+          [17750, 19734],
+          [17774, 19690],
+          [17773, 19686],
+          [17777, 19681],
+          [17767, 19646],
+          [17763, 19610],
+          [17757, 19605],
+          [17756, 19600],
+          [17718, 19570],
+          [17678, 19536],
+          [17672, 19536],
+          [17670, 19534],
+          [17620, 19526]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18337, 19466],
+          [18298, 19471],
+          [18277, 19471],
+          [18267, 19475],
+          [18260, 19477],
+          [18193, 19510],
+          [18191, 19514],
+          [18184, 19518],
+          [18168, 19551],
+          [18170, 19561],
+          [18166, 19571],
+          [18176, 19595],
+          [18182, 19625],
+          [18193, 19634],
+          [18199, 19648],
+          [18278, 19709],
+          [18308, 19735],
+          [18314, 19736],
+          [18330, 19749],
+          [18390, 19768],
+          [18403, 19764],
+          [18421, 19770],
+          [18501, 19715],
+          [18511, 19658],
+          [18496, 19600],
+          [18415, 19515],
+          [18415, 19512],
+          [18406, 19507],
+          [18374, 19473],
+          [18347, 19472],
+          [18337, 19466]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17464, 22135],
+          [17421, 22146],
+          [17421, 22147],
+          [17420, 22147],
+          [17396, 22154],
+          [17345, 22197],
+          [17345, 22318],
+          [17436, 22381],
+          [17461, 22400],
+          [17470, 22400],
+          [17523, 22411],
+          [17555, 22407],
+          [17579, 22409],
+          [17596, 22402],
+          [17601, 22402],
+          [17603, 22400],
+          [17628, 22391],
+          [17659, 22352],
+          [17667, 22346],
+          [17667, 22342],
+          [17671, 22338],
+          [17681, 22282],
+          [17677, 22273],
+          [17680, 22256],
+          [17642, 22187],
+          [17639, 22185],
+          [17639, 22184],
+          [17635, 22182],
+          [17596, 22154],
+          [17568, 22150],
+          [17550, 22141],
+          [17516, 22142],
+          [17464, 22135]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18124, 21858],
+          [18090, 21859],
+          [18061, 21891],
+          [18054, 21898],
+          [18053, 21899],
+          [18047, 21907],
+          [18045, 21979],
+          [18109, 22041],
+          [18142, 22046],
+          [18217, 21983],
+          [18217, 21976],
+          [18224, 21968],
+          [18221, 21938],
+          [18223, 21924],
+          [18219, 21919],
+          [18219, 21910],
+          [18196, 21888],
+          [18189, 21878],
+          [18184, 21876],
+          [18143, 21864],
+          [18124, 21858]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17799, 23640],
+          [17722, 23671],
+          [17714, 23679],
+          [17709, 23682],
+          [17704, 23692],
+          [17688, 23712],
+          [17688, 23727],
+          [17679, 23748],
+          [17688, 23804],
+          [17689, 23810],
+          [17690, 23812],
+          [17691, 23816],
+          [17702, 23830],
+          [17723, 23863],
+          [17731, 23868],
+          [17734, 23872],
+          [17745, 23878],
+          [17802, 23915],
+          [17828, 23920],
+          [17836, 23924],
+          [17842, 23922],
+          [17853, 23925],
+          [17877, 23917],
+          [17903, 23914],
+          [18009, 23840],
+          [18037, 23724],
+          [17969, 23651],
+          [17814, 23640],
+          [17811, 23641],
+          [17799, 23640]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17679, 24077],
+          [17562, 24079],
+          [17492, 24148],
+          [17473, 24207],
+          [17475, 24217],
+          [17483, 24250],
+          [17565, 24326],
+          [17666, 24335],
+          [17689, 24326],
+          [17690, 24326],
+          [17690, 24325],
+          [17692, 24325],
+          [17736, 24276],
+          [17740, 24263],
+          [17745, 24258],
+          [17745, 24250],
+          [17754, 24227],
+          [17756, 24149],
+          [17752, 24141],
+          [17753, 24139],
+          [17749, 24134],
+          [17744, 24122],
+          [17735, 24115],
+          [17721, 24097],
+          [17685, 24079],
+          [17681, 24077],
+          [17679, 24077]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18015, 25228],
+          [18006, 25230],
+          [17994, 25229],
+          [17978, 25237],
+          [17971, 25240],
+          [17965, 25245],
+          [17951, 25254],
+          [17941, 25270],
+          [17915, 25299],
+          [17904, 25414],
+          [17937, 25493],
+          [17979, 25528],
+          [17981, 25531],
+          [17982, 25531],
+          [17983, 25532],
+          [18027, 25542],
+          [18030, 25540],
+          [18039, 25542],
+          [18132, 25497],
+          [18161, 25485],
+          [18162, 25482],
+          [18164, 25482],
+          [18173, 25466],
+          [18201, 25424],
+          [18201, 25418],
+          [18204, 25414],
+          [18205, 25368],
+          [18203, 25365],
+          [18192, 25333],
+          [18186, 25327],
+          [18184, 25322],
+          [18101, 25241],
+          [18041, 25234],
+          [18015, 25228]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17789, 25670],
+          [17766, 25687],
+          [17758, 25693],
+          [17757, 25694],
+          [17753, 25698],
+          [17736, 25735],
+          [17733, 25743],
+          [17732, 25744],
+          [17730, 25751],
+          [17729, 25763],
+          [17717, 25834],
+          [17722, 25896],
+          [17722, 25904],
+          [17781, 25984],
+          [17786, 25985],
+          [17791, 25992],
+          [17819, 25997],
+          [17849, 26008],
+          [17853, 26004],
+          [17858, 26005],
+          [17931, 25948],
+          [17933, 25772],
+          [17908, 25733],
+          [17904, 25722],
+          [17899, 25719],
+          [17898, 25716],
+          [17891, 25713],
+          [17866, 25695],
+          [17789, 25670]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18042, 25796],
+          [18027, 25800],
+          [18023, 25800],
+          [18020, 25802],
+          [18013, 25805],
+          [17960, 25870],
+          [17959, 25870],
+          [17954, 25877],
+          [17944, 25910],
+          [17932, 25944],
+          [17934, 25948],
+          [17932, 25956],
+          [17960, 26008],
+          [17967, 26024],
+          [17969, 26025],
+          [17975, 26036],
+          [18008, 26053],
+          [18017, 26053],
+          [18023, 26056],
+          [18039, 26053],
+          [18060, 26053],
+          [18100, 26034],
+          [18116, 26011],
+          [18120, 25962],
+          [18131, 25926],
+          [18131, 25856],
+          [18100, 25816],
+          [18097, 25815],
+          [18094, 25811],
+          [18078, 25808],
+          [18042, 25796]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17737, 26221],
+          [17689, 26222],
+          [17645, 26242],
+          [17626, 26266],
+          [17615, 26275],
+          [17601, 26298],
+          [17601, 26299],
+          [17600, 26299],
+          [17600, 26301],
+          [17598, 26309],
+          [17594, 26335],
+          [17594, 26341],
+          [17594, 26349],
+          [17597, 26356],
+          [17601, 26379],
+          [17616, 26400],
+          [17617, 26401],
+          [17618, 26402],
+          [17652, 26414],
+          [17654, 26413],
+          [17655, 26414],
+          [17672, 26411],
+          [17701, 26409],
+          [17702, 26408],
+          [17705, 26408],
+          [17710, 26403],
+          [17740, 26387],
+          [17765, 26359],
+          [17768, 26358],
+          [17768, 26356],
+          [17775, 26350],
+          [17776, 26343],
+          [17784, 26330],
+          [17787, 26287],
+          [17788, 26285],
+          [17787, 26284],
+          [17788, 26281],
+          [17760, 26233],
+          [17758, 26230],
+          [17737, 26221]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18262, 27466],
+          [18193, 27467],
+          [18189, 27468],
+          [18159, 27480],
+          [18148, 27487],
+          [18136, 27493],
+          [18113, 27511],
+          [18092, 27526],
+          [18088, 27531],
+          [18083, 27536],
+          [18064, 27569],
+          [18064, 27570],
+          [18064, 27572],
+          [18074, 27663],
+          [18095, 27677],
+          [18178, 27673],
+          [18276, 27637],
+          [18282, 27638],
+          [18344, 27619],
+          [18338, 27583],
+          [18339, 27555],
+          [18331, 27541],
+          [18329, 27525],
+          [18315, 27511],
+          [18306, 27494],
+          [18281, 27478],
+          [18271, 27468],
+          [18265, 27468],
+          [18262, 27466]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19097, 9553],
+          [19004, 9589],
+          [18972, 9628],
+          [18967, 9659],
+          [18968, 9660],
+          [18967, 9669],
+          [18979, 9688],
+          [19183, 9695],
+          [19232, 9651],
+          [19234, 9641],
+          [19241, 9626],
+          [19239, 9620],
+          [19240, 9619],
+          [19232, 9594],
+          [19232, 9593],
+          [19231, 9592],
+          [19231, 9590],
+          [19218, 9579],
+          [19201, 9562],
+          [19197, 9561],
+          [19194, 9559],
+          [19101, 9553],
+          [19097, 9553]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18836, 11931],
+          [18756, 11943],
+          [18714, 11949],
+          [18644, 11999],
+          [18632, 12009],
+          [18631, 12009],
+          [18631, 12010],
+          [18630, 12011],
+          [18619, 12037],
+          [18622, 12063],
+          [18621, 12074],
+          [18624, 12081],
+          [18628, 12104],
+          [18657, 12143],
+          [18662, 12152],
+          [18664, 12153],
+          [18666, 12155],
+          [18713, 12173],
+          [18758, 12191],
+          [18761, 12191],
+          [18764, 12192],
+          [18802, 12192],
+          [18807, 12193],
+          [18807, 12192],
+          [18811, 12193],
+          [18872, 12174],
+          [18932, 12131],
+          [18947, 12085],
+          [18934, 12013],
+          [18925, 12001],
+          [18925, 11992],
+          [18911, 11982],
+          [18902, 11969],
+          [18856, 11942],
+          [18840, 11931],
+          [18836, 11931]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19224, 13501],
+          [19220, 13503],
+          [19219, 13503],
+          [19216, 13505],
+          [19191, 13520],
+          [19162, 13557],
+          [19160, 13560],
+          [19160, 13561],
+          [19159, 13562],
+          [19146, 13595],
+          [19146, 13625],
+          [19144, 13635],
+          [19146, 13638],
+          [19146, 13645],
+          [19199, 13727],
+          [19204, 13734],
+          [19205, 13735],
+          [19208, 13735],
+          [19246, 13753],
+          [19270, 13753],
+          [19278, 13755],
+          [19359, 13700],
+          [19363, 13645],
+          [19366, 13611],
+          [19365, 13610],
+          [19366, 13609],
+          [19362, 13601],
+          [19351, 13569],
+          [19345, 13563],
+          [19343, 13558],
+          [19309, 13528],
+          [19283, 13515],
+          [19259, 13503],
+          [19258, 13503],
+          [19254, 13501],
+          [19224, 13501]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18654, 18130],
+          [18649, 18131],
+          [18648, 18131],
+          [18597, 18147],
+          [18578, 18153],
+          [18535, 18188],
+          [18534, 18188],
+          [18534, 18189],
+          [18519, 18233],
+          [18523, 18253],
+          [18522, 18259],
+          [18528, 18281],
+          [18532, 18299],
+          [18535, 18304],
+          [18536, 18307],
+          [18540, 18313],
+          [18570, 18363],
+          [18581, 18371],
+          [18586, 18377],
+          [18606, 18388],
+          [18638, 18410],
+          [18647, 18410],
+          [18686, 18432],
+          [18768, 18421],
+          [18785, 18410],
+          [18799, 18408],
+          [18814, 18393],
+          [18861, 18366],
+          [18862, 18348],
+          [18867, 18344],
+          [18864, 18321],
+          [18871, 18252],
+          [18856, 18229],
+          [18856, 18226],
+          [18851, 18222],
+          [18835, 18197],
+          [18783, 18164],
+          [18771, 18160],
+          [18761, 18153],
+          [18685, 18138],
+          [18654, 18130]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19101, 18710],
+          [19085, 18712],
+          [19060, 18712],
+          [19028, 18721],
+          [18985, 18728],
+          [18980, 18735],
+          [18972, 18738],
+          [18967, 18760],
+          [18955, 18783],
+          [18954, 18821],
+          [18953, 18828],
+          [18954, 18830],
+          [18954, 18839],
+          [18986, 18915],
+          [19033, 18956],
+          [19080, 18975],
+          [19167, 18946],
+          [19188, 18912],
+          [19199, 18907],
+          [19226, 18860],
+          [19227, 18796],
+          [19146, 18729],
+          [19136, 18724],
+          [19130, 18719],
+          [19119, 18715],
+          [19114, 18713],
+          [19110, 18712],
+          [19101, 18710]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19134, 20737],
+          [19117, 20741],
+          [19104, 20738],
+          [19017, 20767],
+          [19016, 20767],
+          [19014, 20768],
+          [18973, 20800],
+          [18968, 20807],
+          [18963, 20813],
+          [18961, 20822],
+          [18952, 20841],
+          [18953, 20873],
+          [18953, 20877],
+          [18953, 20878],
+          [18954, 20884],
+          [19004, 20969],
+          [19069, 21011],
+          [19145, 21001],
+          [19197, 20959],
+          [19225, 20833],
+          [19224, 20830],
+          [19226, 20823],
+          [19221, 20816],
+          [19218, 20798],
+          [19184, 20757],
+          [19134, 20737]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20159, 10194],
+          [20088, 10241],
+          [20051, 10281],
+          [20036, 10316],
+          [20033, 10321],
+          [20033, 10323],
+          [20032, 10327],
+          [20033, 10367],
+          [20043, 10388],
+          [20045, 10399],
+          [20050, 10403],
+          [20052, 10406],
+          [20122, 10456],
+          [20181, 10447],
+          [20189, 10441],
+          [20192, 10441],
+          [20198, 10435],
+          [20239, 10409],
+          [20288, 10358],
+          [20297, 10269],
+          [20267, 10223],
+          [20202, 10194],
+          [20159, 10194]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19518, 12358],
+          [19469, 12374],
+          [19416, 12411],
+          [19380, 12463],
+          [19381, 12489],
+          [19407, 12531],
+          [19443, 12555],
+          [19463, 12559],
+          [19464, 12562],
+          [19473, 12561],
+          [19495, 12566],
+          [19535, 12561],
+          [19538, 12558],
+          [19543, 12558],
+          [19579, 12523],
+          [19608, 12499],
+          [19619, 12471],
+          [19617, 12423],
+          [19609, 12412],
+          [19600, 12388],
+          [19573, 12364],
+          [19545, 12364],
+          [19518, 12358]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19796, 14801],
+          [19660, 14848],
+          [19653, 14860],
+          [19650, 14861],
+          [19646, 14876],
+          [19625, 14921],
+          [19628, 14953],
+          [19626, 14964],
+          [19631, 14984],
+          [19634, 15003],
+          [19642, 15021],
+          [19646, 15033],
+          [19652, 15042],
+          [19658, 15054],
+          [19664, 15058],
+          [19682, 15084],
+          [19749, 15127],
+          [19751, 15126],
+          [19753, 15128],
+          [19762, 15125],
+          [19824, 15117],
+          [19861, 15096],
+          [19873, 15093],
+          [19874, 15089],
+          [19882, 15085],
+          [19912, 15019],
+          [19917, 14983],
+          [19919, 14979],
+          [19919, 14970],
+          [19924, 14936],
+          [19919, 14928],
+          [19919, 14918],
+          [19853, 14825],
+          [19796, 14801]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20412, 14552],
+          [20339, 14561],
+          [20338, 14561],
+          [20333, 14562],
+          [20284, 14606],
+          [20259, 14628],
+          [20258, 14630],
+          [20257, 14632],
+          [20256, 14655],
+          [20251, 14726],
+          [20256, 14735],
+          [20256, 14739],
+          [20260, 14743],
+          [20272, 14765],
+          [20304, 14787],
+          [20310, 14793],
+          [20347, 14803],
+          [20423, 14795],
+          [20423, 14794],
+          [20436, 14795],
+          [20490, 14761],
+          [20532, 14701],
+          [20532, 14664],
+          [20502, 14619],
+          [20451, 14569],
+          [20428, 14559],
+          [20421, 14554],
+          [20417, 14554],
+          [20412, 14552]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20128, 16908],
+          [20120, 16909],
+          [20072, 16909],
+          [20055, 16917],
+          [20033, 16920],
+          [19922, 16982],
+          [19892, 17039],
+          [19906, 17095],
+          [19972, 17149],
+          [20072, 17193],
+          [20102, 17192],
+          [20141, 17203],
+          [20164, 17192],
+          [20172, 17192],
+          [20187, 17181],
+          [20208, 17172],
+          [20218, 17160],
+          [20224, 17157],
+          [20227, 17151],
+          [20241, 17137],
+          [20256, 17105],
+          [20265, 17092],
+          [20266, 17031],
+          [20253, 17006],
+          [20243, 16984],
+          [20240, 16981],
+          [20238, 16977],
+          [20230, 16972],
+          [20188, 16932],
+          [20135, 16909],
+          [20129, 16909],
+          [20128, 16908]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19991, 16612],
+          [19987, 16614],
+          [19978, 16614],
+          [19973, 16624],
+          [19924, 16658],
+          [19918, 16730],
+          [19941, 16765],
+          [19976, 16776],
+          [19978, 16782],
+          [20002, 16793],
+          [20057, 16795],
+          [20068, 16791],
+          [20070, 16792],
+          [20074, 16790],
+          [20107, 16782],
+          [20124, 16762],
+          [20127, 16752],
+          [20129, 16750],
+          [20131, 16738],
+          [20138, 16720],
+          [20137, 16713],
+          [20138, 16713],
+          [20137, 16711],
+          [20137, 16693],
+          [20131, 16681],
+          [20130, 16676],
+          [20126, 16673],
+          [20122, 16664],
+          [20087, 16631],
+          [20070, 16624],
+          [20053, 16617],
+          [20013, 16615],
+          [19991, 16612]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19589, 17634],
+          [19558, 17644],
+          [19539, 17657],
+          [19500, 17677],
+          [19467, 17709],
+          [19466, 17712],
+          [19449, 17726],
+          [19438, 17751],
+          [19447, 17796],
+          [19476, 17825],
+          [19480, 17835],
+          [19498, 17848],
+          [19508, 17858],
+          [19525, 17868],
+          [19585, 17911],
+          [19659, 17921],
+          [19701, 17889],
+          [19728, 17836],
+          [19727, 17834],
+          [19730, 17830],
+          [19721, 17740],
+          [19720, 17709],
+          [19719, 17708],
+          [19719, 17707],
+          [19709, 17697],
+          [19660, 17645],
+          [19654, 17644],
+          [19653, 17643],
+          [19589, 17634]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20308, 17440],
+          [20197, 17450],
+          [20143, 17508],
+          [20131, 17521],
+          [20130, 17522],
+          [20127, 17527],
+          [20130, 17538],
+          [20130, 17561],
+          [20151, 17610],
+          [20152, 17611],
+          [20153, 17613],
+          [20159, 17617],
+          [20211, 17668],
+          [20229, 17673],
+          [20236, 17679],
+          [20248, 17679],
+          [20261, 17684],
+          [20303, 17684],
+          [20344, 17687],
+          [20393, 17670],
+          [20410, 17658],
+          [20415, 17656],
+          [20420, 17651],
+          [20441, 17637],
+          [20444, 17629],
+          [20445, 17629],
+          [20447, 17622],
+          [20467, 17577],
+          [20466, 17567],
+          [20469, 17560],
+          [20465, 17550],
+          [20465, 17536],
+          [20456, 17523],
+          [20455, 17522],
+          [20440, 17501],
+          [20412, 17480],
+          [20406, 17474],
+          [20402, 17472],
+          [20388, 17462],
+          [20328, 17444],
+          [20320, 17444],
+          [20308, 17440]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20191, 18580],
+          [20130, 18593],
+          [20105, 18599],
+          [20104, 18599],
+          [20102, 18600],
+          [20086, 18628],
+          [20033, 18711],
+          [20033, 18723],
+          [20026, 18736],
+          [20033, 18748],
+          [20033, 18764],
+          [20056, 18790],
+          [20074, 18822],
+          [20109, 18850],
+          [20113, 18855],
+          [20115, 18856],
+          [20117, 18857],
+          [20132, 18862],
+          [20206, 18890],
+          [20212, 18889],
+          [20216, 18891],
+          [20259, 18888],
+          [20328, 18843],
+          [20354, 18781],
+          [20364, 18771],
+          [20378, 18725],
+          [20376, 18717],
+          [20376, 18671],
+          [20366, 18655],
+          [20365, 18647],
+          [20358, 18642],
+          [20349, 18627],
+          [20292, 18599],
+          [20273, 18587],
+          [20241, 18584],
+          [20191, 18580]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20081, 19021],
+          [20068, 19027],
+          [20054, 19028],
+          [19960, 19088],
+          [19947, 19130],
+          [19959, 19203],
+          [19995, 19247],
+          [20027, 19296],
+          [20036, 19297],
+          [20043, 19305],
+          [20115, 19318],
+          [20137, 19313],
+          [20150, 19316],
+          [20167, 19308],
+          [20181, 19306],
+          [20185, 19300],
+          [20203, 19293],
+          [20247, 19240],
+          [20246, 19231],
+          [20254, 19223],
+          [20246, 19169],
+          [20246, 19102],
+          [20233, 19073],
+          [20232, 19065],
+          [20227, 19061],
+          [20225, 19055],
+          [20195, 19030],
+          [20189, 19029],
+          [20186, 19027],
+          [20159, 19027],
+          [20081, 19021]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19856, 21199],
+          [19831, 21205],
+          [19819, 21221],
+          [19795, 21250],
+          [19789, 21264],
+          [19784, 21273],
+          [19784, 21280],
+          [19783, 21283],
+          [19784, 21302],
+          [19784, 21338],
+          [19786, 21345],
+          [19787, 21359],
+          [19793, 21367],
+          [19797, 21379],
+          [19822, 21408],
+          [19824, 21410],
+          [19836, 21412],
+          [19849, 21417],
+          [19854, 21417],
+          [19859, 21418],
+          [19867, 21417],
+          [19895, 21417],
+          [19915, 21411],
+          [19924, 21410],
+          [19933, 21405],
+          [19957, 21399],
+          [19958, 21394],
+          [19963, 21393],
+          [19978, 21367],
+          [19985, 21311],
+          [19962, 21247],
+          [19917, 21215],
+          [19895, 21209],
+          [19856, 21199]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20198, 21699],
+          [20195, 21700],
+          [20190, 21700],
+          [20136, 21725],
+          [20110, 21754],
+          [20107, 21807],
+          [20108, 21807],
+          [20108, 21809],
+          [20176, 21865],
+          [20178, 21864],
+          [20183, 21868],
+          [20260, 21856],
+          [20291, 21854],
+          [20292, 21852],
+          [20295, 21852],
+          [20317, 21823],
+          [20319, 21795],
+          [20322, 21782],
+          [20301, 21746],
+          [20281, 21705],
+          [20278, 21704],
+          [20277, 21702],
+          [20222, 21700],
+          [20198, 21699]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20550, 9493],
+          [20535, 9505],
+          [20530, 9505],
+          [20519, 9517],
+          [20515, 9521],
+          [20513, 9524],
+          [20504, 9536],
+          [20485, 9598],
+          [20483, 9660],
+          [20496, 9707],
+          [20497, 9707],
+          [20499, 9731],
+          [20553, 9804],
+          [20598, 9841],
+          [20642, 9854],
+          [20715, 9803],
+          [20734, 9750],
+          [20734, 9678],
+          [20724, 9659],
+          [20724, 9653],
+          [20678, 9564],
+          [20667, 9555],
+          [20663, 9548],
+          [20600, 9505],
+          [20550, 9493]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20806, 14110],
+          [20700, 14120],
+          [20650, 14161],
+          [20648, 14164],
+          [20642, 14170],
+          [20630, 14217],
+          [20605, 14292],
+          [20610, 14303],
+          [20609, 14308],
+          [20612, 14309],
+          [20631, 14352],
+          [20785, 14396],
+          [20886, 14341],
+          [20920, 14268],
+          [20919, 14262],
+          [20920, 14262],
+          [20919, 14260],
+          [20919, 14227],
+          [20912, 14216],
+          [20911, 14204],
+          [20877, 14151],
+          [20830, 14120],
+          [20822, 14120],
+          [20806, 14110]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [21109, 14966],
+          [20963, 15064],
+          [20943, 15134],
+          [20985, 15218],
+          [21028, 15265],
+          [21035, 15266],
+          [21037, 15269],
+          [21132, 15292],
+          [21139, 15289],
+          [21142, 15290],
+          [21146, 15287],
+          [21167, 15281],
+          [21174, 15272],
+          [21182, 15268],
+          [21197, 15245],
+          [21208, 15233],
+          [21208, 15228],
+          [21216, 15218],
+          [21225, 15097],
+          [21220, 15087],
+          [21217, 15064],
+          [21177, 14992],
+          [21174, 14990],
+          [21174, 14989],
+          [21171, 14987],
+          [21142, 14968],
+          [21112, 14967],
+          [21109, 14966]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [21288, 15925],
+          [21279, 15927],
+          [21246, 15935],
+          [21240, 15939],
+          [21235, 15941],
+          [21209, 15965],
+          [21203, 15971],
+          [21200, 15978],
+          [21182, 16011],
+          [21180, 16039],
+          [21178, 16048],
+          [21180, 16055],
+          [21180, 16061],
+          [21187, 16079],
+          [21194, 16101],
+          [21198, 16105],
+          [21200, 16110],
+          [21238, 16153],
+          [21246, 16155],
+          [21255, 16164],
+          [21309, 16172],
+          [21310, 16171],
+          [21312, 16172],
+          [21352, 16155],
+          [21395, 16117],
+          [21397, 16113],
+          [21402, 16109],
+          [21402, 16104],
+          [21412, 16089],
+          [21413, 16044],
+          [21394, 15989],
+          [21358, 15940],
+          [21288, 15925]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [21245, 19048],
+          [21234, 19049],
+          [21188, 19057],
+          [21125, 19088],
+          [21124, 19088],
+          [21124, 19089],
+          [21120, 19093],
+          [21070, 19151],
+          [21070, 19152],
+          [21070, 19153],
+          [21070, 19155],
+          [21071, 19202],
+          [21071, 19203],
+          [21072, 19204],
+          [21076, 19211],
+          [21116, 19288],
+          [21117, 19289],
+          [21190, 19332],
+          [21196, 19332],
+          [21198, 19333],
+          [21200, 19332],
+          [21225, 19332],
+          [21260, 19309],
+          [21262, 19309],
+          [21262, 19308],
+          [21263, 19308],
+          [21317, 19196],
+          [21316, 19195],
+          [21317, 19195],
+          [21309, 19110],
+          [21280, 19067],
+          [21274, 19064],
+          [21271, 19059],
+          [21249, 19049],
+          [21246, 19048],
+          [21245, 19048]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20620, 22103],
+          [20591, 22108],
+          [20573, 22104],
+          [20516, 22122],
+          [20506, 22124],
+          [20504, 22125],
+          [20504, 22126],
+          [20484, 22148],
+          [20483, 22150],
+          [20443, 22200],
+          [20438, 22313],
+          [20518, 22380],
+          [20519, 22382],
+          [20522, 22384],
+          [20556, 22396],
+          [20566, 22396],
+          [20593, 22404],
+          [20607, 22396],
+          [20610, 22396],
+          [20649, 22375],
+          [20651, 22372],
+          [20672, 22361],
+          [20708, 22317],
+          [20709, 22304],
+          [20711, 22303],
+          [20710, 22298],
+          [20720, 22236],
+          [20701, 22174],
+          [20664, 22125],
+          [20661, 22124],
+          [20658, 22120],
+          [20620, 22103]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [21583, 15983],
+          [21540, 15993],
+          [21524, 16006],
+          [21520, 16008],
+          [21515, 16013],
+          [21507, 16021],
+          [21506, 16025],
+          [21433, 16124],
+          [21435, 16213],
+          [21460, 16262],
+          [21493, 16287],
+          [21515, 16290],
+          [21516, 16292],
+          [21527, 16292],
+          [21573, 16299],
+          [21585, 16292],
+          [21587, 16293],
+          [21653, 16260],
+          [21670, 16253],
+          [21670, 16252],
+          [21680, 16248],
+          [21707, 16212],
+          [21732, 16142],
+          [21724, 16078],
+          [21720, 16074],
+          [21720, 16068],
+          [21671, 16007],
+          [21657, 16000],
+          [21651, 15993],
+          [21639, 15991],
+          [21627, 15985],
+          [21591, 15984],
+          [21583, 15983]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [22128, 17105],
+          [22117, 17108],
+          [22111, 17108],
+          [22108, 17110],
+          [22094, 17115],
+          [22059, 17157],
+          [22058, 17159],
+          [22058, 17160],
+          [22058, 17179],
+          [22057, 17222],
+          [22058, 17226],
+          [22059, 17227],
+          [22073, 17258],
+          [22125, 17376],
+          [22141, 17410],
+          [22173, 17436],
+          [22228, 17447],
+          [22255, 17429],
+          [22290, 17358],
+          [22289, 17332],
+          [22291, 17269],
+          [22288, 17262],
+          [22288, 17253],
+          [22275, 17235],
+          [22257, 17194],
+          [22232, 17172],
+          [22212, 17144],
+          [22172, 17122],
+          [22163, 17114],
+          [22153, 17111],
+          [22149, 17109],
+          [22142, 17108],
+          [22128, 17105]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [21751, 18448],
+          [21708, 18457],
+          [21692, 18467],
+          [21689, 18468],
+          [21685, 18471],
+          [21648, 18496],
+          [21627, 18530],
+          [21611, 18548],
+          [21611, 18559],
+          [21608, 18565],
+          [21614, 18638],
+          [21615, 18653],
+          [21616, 18656],
+          [21657, 18691],
+          [21673, 18696],
+          [21714, 18712],
+          [21723, 18712],
+          [21730, 18714],
+          [21745, 18712],
+          [21756, 18712],
+          [21760, 18709],
+          [21775, 18708],
+          [21808, 18687],
+          [21814, 18685],
+          [21816, 18682],
+          [21824, 18678],
+          [21844, 18655],
+          [21854, 18646],
+          [21854, 18643],
+          [21860, 18638],
+          [21865, 18617],
+          [21871, 18602],
+          [21869, 18598],
+          [21872, 18589],
+          [21848, 18541],
+          [21832, 18500],
+          [21821, 18489],
+          [21816, 18479],
+          [21806, 18474],
+          [21791, 18459],
+          [21761, 18449],
+          [21755, 18450],
+          [21751, 18448]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [23583, 18240],
+          [23573, 18241],
+          [23570, 18245],
+          [23569, 18249],
+          [23569, 18250],
+          [23569, 18251],
+          [23569, 18252],
+          [23570, 18257],
+          [23571, 18259],
+          [23585, 18267],
+          [23592, 18272],
+          [23602, 18272],
+          [23604, 18263],
+          [23602, 18260],
+          [23603, 18259],
+          [23600, 18254],
+          [23598, 18249],
+          [23596, 18247],
+          [23591, 18243],
+          [23583, 18240]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17899, 11110],
+          [17781, 11127],
+          [17781, 11130],
+          [17778, 11130],
+          [17680, 11162],
+          [17680, 11165],
+          [17680, 11167],
+          [17680, 11170],
+          [17680, 11180],
+          [17680, 11260],
+          [17680, 11262],
+          [17738, 11398],
+          [17741, 11398],
+          [17831, 11428],
+          [17831, 11426],
+          [17833, 11426],
+          [17836, 11428],
+          [17838, 11426],
+          [17846, 11423],
+          [17929, 11388],
+          [17931, 11388],
+          [17996, 11345],
+          [17999, 11345],
+          [18016, 11305],
+          [18016, 11250],
+          [18011, 11150],
+          [17966, 11127],
+          [17901, 11110],
+          [17899, 11110]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20457, 11680],
+          [20354, 11701],
+          [20353, 11701],
+          [20351, 11702],
+          [20312, 11727],
+          [20311, 11728],
+          [20302, 11751],
+          [20302, 11752],
+          [20302, 11753],
+          [20295, 11783],
+          [20295, 11784],
+          [20295, 11786],
+          [20295, 11788],
+          [20295, 11790],
+          [20298, 11813],
+          [20299, 11813],
+          [20301, 11814],
+          [20302, 11816],
+          [20302, 11818],
+          [20320, 11896],
+          [20346, 11917],
+          [20347, 11917],
+          [20348, 11918],
+          [20349, 11918],
+          [20355, 11921],
+          [20408, 11936],
+          [20409, 11936],
+          [20409, 11935],
+          [20411, 11935],
+          [20464, 11942],
+          [20465, 11942],
+          [20466, 11941],
+          [20516, 11924],
+          [20516, 11922],
+          [20516, 11921],
+          [20543, 11876],
+          [20544, 11876],
+          [20544, 11875],
+          [20559, 11852],
+          [20560, 11827],
+          [20577, 11790],
+          [20577, 11789],
+          [20535, 11731],
+          [20535, 11730],
+          [20534, 11729],
+          [20533, 11728],
+          [20464, 11680],
+          [20457, 11680]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [20156, 12053],
+          [20124, 12067],
+          [20124, 12068],
+          [20123, 12070],
+          [20112, 12091],
+          [20112, 12092],
+          [20112, 12093],
+          [20112, 12096],
+          [20112, 12099],
+          [20112, 12131],
+          [20112, 12132],
+          [20113, 12135],
+          [20114, 12141],
+          [20116, 12188],
+          [20116, 12191],
+          [20116, 12195],
+          [20123, 12210],
+          [20124, 12212],
+          [20146, 12249],
+          [20148, 12252],
+          [20153, 12255],
+          [20191, 12270],
+          [20227, 12260],
+          [20253, 12248],
+          [20253, 12247],
+          [20247, 12116],
+          [20227, 12080],
+          [20204, 12062],
+          [20203, 12062],
+          [20157, 12053],
+          [20156, 12053]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19224, 13298],
+          [19220, 13300],
+          [19189, 13331],
+          [19188, 13332],
+          [19188, 13333],
+          [19186, 13336],
+          [19178, 13369],
+          [19178, 13370],
+          [19178, 13371],
+          [19178, 13376],
+          [19183, 13405],
+          [19183, 13406],
+          [19183, 13407],
+          [19189, 13414],
+          [19193, 13414],
+          [19217, 13422],
+          [19218, 13422],
+          [19219, 13423],
+          [19223, 13424],
+          [19237, 13425],
+          [19242, 13425],
+          [19279, 13418],
+          [19292, 13410],
+          [19292, 13409],
+          [19314, 13384],
+          [19315, 13384],
+          [19295, 13335],
+          [19225, 13298],
+          [19224, 13298]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [21549, 13658],
+          [21491, 13667],
+          [21489, 13668],
+          [21484, 13668],
+          [21446, 13671],
+          [21445, 13672],
+          [21445, 13673],
+          [21442, 13675],
+          [21440, 13680],
+          [21422, 13705],
+          [21420, 13706],
+          [21392, 13749],
+          [21392, 13750],
+          [21392, 13751],
+          [21392, 13752],
+          [21394, 13785],
+          [21395, 13786],
+          [21395, 13787],
+          [21395, 13790],
+          [21396, 13792],
+          [21423, 13855],
+          [21423, 13856],
+          [21424, 13856],
+          [21424, 13857],
+          [21427, 13859],
+          [21429, 13861],
+          [21475, 13898],
+          [21476, 13898],
+          [21527, 13894],
+          [21527, 13892],
+          [21528, 13892],
+          [21575, 13879],
+          [21577, 13879],
+          [21604, 13844],
+          [21617, 13802],
+          [21612, 13739],
+          [21550, 13659],
+          [21550, 13658],
+          [21549, 13658]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18404, 15816],
+          [18334, 15855],
+          [18334, 15857],
+          [18332, 15857],
+          [18249, 15959],
+          [18249, 15963],
+          [18249, 15964],
+          [18255, 16013],
+          [18258, 16013],
+          [18351, 16050],
+          [18352, 16052],
+          [18357, 16052],
+          [18361, 16054],
+          [18413, 16065],
+          [18415, 16064],
+          [18447, 16045],
+          [18447, 16043],
+          [18514, 16000],
+          [18534, 15966],
+          [18551, 15947],
+          [18551, 15946],
+          [18553, 15946],
+          [18554, 15927],
+          [18553, 15927],
+          [18553, 15924],
+          [18551, 15919],
+          [18516, 15853],
+          [18477, 15826],
+          [18404, 15816]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17290, 19846],
+          [17287, 19847],
+          [17286, 19847],
+          [17224, 19875],
+          [17222, 19877],
+          [17222, 19878],
+          [17219, 19879],
+          [17216, 19881],
+          [17187, 19929],
+          [17187, 19930],
+          [17182, 19967],
+          [17182, 19969],
+          [17183, 19971],
+          [17187, 19973],
+          [17189, 19976],
+          [17205, 19996],
+          [17206, 19998],
+          [17209, 20002],
+          [17312, 20081],
+          [17313, 20081],
+          [17313, 20082],
+          [17314, 20082],
+          [17376, 20100],
+          [17425, 20096],
+          [17425, 20094],
+          [17471, 20061],
+          [17471, 20059],
+          [17492, 20021],
+          [17493, 20021],
+          [17501, 19991],
+          [17493, 19951],
+          [17472, 19921],
+          [17473, 19921],
+          [17411, 19857],
+          [17291, 19846],
+          [17290, 19846]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [16033, 19802],
+          [15994, 19813],
+          [15994, 19814],
+          [15993, 19815],
+          [15970, 19832],
+          [15970, 19833],
+          [15970, 19834],
+          [15970, 19836],
+          [15970, 19837],
+          [15970, 19839],
+          [15963, 19862],
+          [15964, 19863],
+          [15964, 19865],
+          [15964, 19866],
+          [15964, 19868],
+          [15973, 19886],
+          [15974, 19887],
+          [15974, 19888],
+          [15974, 19892],
+          [15994, 19912],
+          [15995, 19912],
+          [16033, 19908],
+          [16034, 19909],
+          [16079, 19896],
+          [16079, 19895],
+          [16082, 19894],
+          [16085, 19894],
+          [16105, 19879],
+          [16107, 19860],
+          [16107, 19859],
+          [16083, 19813],
+          [16082, 19813],
+          [16034, 19802],
+          [16033, 19802]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [13329, 20852],
+          [13265, 20876],
+          [13265, 20877],
+          [13263, 20879],
+          [13262, 20881],
+          [13221, 20955],
+          [13221, 20957],
+          [13221, 20958],
+          [13221, 20960],
+          [13228, 21002],
+          [13231, 21004],
+          [13231, 21005],
+          [13231, 21007],
+          [13258, 21041],
+          [13368, 21054],
+          [13437, 21034],
+          [13437, 21032],
+          [13447, 20990],
+          [13447, 20945],
+          [13423, 20867],
+          [13422, 20867],
+          [13422, 20866],
+          [13332, 20852],
+          [13329, 20852]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17425, 28084],
+          [17332, 28120],
+          [17297, 28202],
+          [17297, 28205],
+          [17297, 28207],
+          [17297, 28210],
+          [17304, 28283],
+          [17383, 28323],
+          [17385, 28323],
+          [17434, 28330],
+          [17498, 28305],
+          [17511, 28239],
+          [17506, 28205],
+          [17503, 28168],
+          [17425, 28084]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [17888, 28554],
+          [17888, 28556],
+          [17846, 28591],
+          [17844, 28593],
+          [17842, 28596],
+          [17841, 28599],
+          [17795, 28643],
+          [17782, 28699],
+          [17790, 28756],
+          [17792, 28758],
+          [17794, 28758],
+          [17827, 28800],
+          [17827, 28802],
+          [17827, 28803],
+          [17829, 28805],
+          [17831, 28812],
+          [17886, 28881],
+          [17944, 28899],
+          [18011, 28898],
+          [18011, 28896],
+          [18065, 28859],
+          [18066, 28859],
+          [18066, 28857],
+          [18068, 28852],
+          [18068, 28849],
+          [18093, 28786],
+          [18093, 28785],
+          [18093, 28783],
+          [18082, 28726],
+          [18112, 28736],
+          [18114, 28738],
+          [18115, 28738],
+          [18117, 28734],
+          [18124, 28712],
+          [18124, 28711],
+          [18124, 28709],
+          [18125, 28684],
+          [18083, 28663],
+          [18082, 28663],
+          [18053, 28648],
+          [18028, 28630],
+          [17986, 28571],
+          [17890, 28554],
+          [17888, 28554]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [18472, 26919],
+          [18472, 26920],
+          [18470, 26920],
+          [18470, 26922],
+          [18464, 26924],
+          [18396, 26925],
+          [18361, 26959],
+          [18361, 26961],
+          [18361, 26963],
+          [18341, 27000],
+          [18341, 27001],
+          [18341, 27003],
+          [18341, 27005],
+          [18344, 27042],
+          [18344, 27043],
+          [18344, 27045],
+          [18363, 27072],
+          [18363, 27074],
+          [18369, 27094],
+          [18373, 27128],
+          [18373, 27129],
+          [18373, 27131],
+          [18373, 27133],
+          [18384, 27197],
+          [18386, 27197],
+          [18386, 27200],
+          [18389, 27202],
+          [18427, 27240],
+          [18432, 27240],
+          [18432, 27242],
+          [18433, 27244],
+          [18437, 27246],
+          [18512, 27252],
+          [18511, 27251],
+          [18511, 27249],
+          [18576, 27220],
+          [18576, 27219],
+          [18576, 27217],
+          [18624, 27144],
+          [18632, 27107],
+          [18632, 27106],
+          [18632, 27104],
+          [18637, 27060],
+          [18627, 27025],
+          [18610, 27008],
+          [18575, 26995],
+          [18533, 26929],
+          [18472, 26919]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19966, 14245],
+          [19907, 14277],
+          [19907, 14278],
+          [19868, 14327],
+          [19868, 14329],
+          [19865, 14337],
+          [19847, 14386],
+          [19847, 14388],
+          [19847, 14391],
+          [19847, 14393],
+          [19847, 14394],
+          [19843, 14415],
+          [19857, 14457],
+          [19857, 14458],
+          [19905, 14541],
+          [19953, 14571],
+          [19954, 14571],
+          [20028, 14583],
+          [20081, 14561],
+          [20082, 14561],
+          [20082, 14560],
+          [20106, 14502],
+          [20118, 14480],
+          [20123, 14447],
+          [20133, 14369],
+          [20087, 14280],
+          [19966, 14245]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [14953, 7597],
+          [14906, 7609],
+          [14906, 7610],
+          [14905, 7613],
+          [14904, 7615],
+          [14884, 7654],
+          [14893, 7688],
+          [14894, 7688],
+          [14894, 7690],
+          [14894, 7692],
+          [14895, 7694],
+          [14892, 7722],
+          [14891, 7725],
+          [14891, 7727],
+          [14888, 7729],
+          [14878, 7746],
+          [14878, 7747],
+          [14883, 7789],
+          [14893, 7799],
+          [14900, 7799],
+          [14977, 7780],
+          [14977, 7779],
+          [15017, 7708],
+          [15021, 7637],
+          [14953, 7598],
+          [14953, 7597]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [14102, 21781],
+          [14101, 21782],
+          [14061, 21794],
+          [14061, 21795],
+          [14060, 21795],
+          [14059, 21797],
+          [14059, 21798],
+          [14056, 21799],
+          [14046, 21820],
+          [14046, 21821],
+          [14046, 21823],
+          [14046, 21826],
+          [14052, 21869],
+          [14052, 21871],
+          [14054, 21875],
+          [14076, 21905],
+          [14077, 21905],
+          [14077, 21906],
+          [14081, 21907],
+          [14084, 21909],
+          [14111, 21919],
+          [14112, 21918],
+          [14114, 21918],
+          [14119, 21917],
+          [14165, 21910],
+          [14193, 21894],
+          [14193, 21893],
+          [14198, 21875],
+          [14196, 21846],
+          [14156, 21791],
+          [14156, 21790],
+          [14104, 21781],
+          [14102, 21781]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [19438, 17866],
+          [19367, 17881],
+          [19366, 17881],
+          [19365, 17882],
+          [19333, 17909],
+          [19333, 17912],
+          [19333, 17913],
+          [19333, 17915],
+          [19338, 17932],
+          [19339, 17932],
+          [19341, 17936],
+          [19366, 17963],
+          [19366, 17964],
+          [19374, 17966],
+          [19461, 17982],
+          [19463, 17983],
+          [19465, 17984],
+          [19518, 17985],
+          [19523, 17985],
+          [19565, 17967],
+          [19564, 17967],
+          [19563, 17945],
+          [19554, 17919],
+          [19519, 17881],
+          [19441, 17866],
+          [19438, 17866]
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "glomerulus",
+        "colorRGB": -3140401
+      },
+      "isLocked": true,
+      "measurements": []
+    }
+  }
+]

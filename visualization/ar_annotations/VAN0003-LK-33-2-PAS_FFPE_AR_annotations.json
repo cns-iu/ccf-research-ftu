@@ -60,7 +60,6 @@
       "type": "MultiPolygon",
       "coordinates": [
         [
-          [
             [5987, 1052],
             [5651, 1244],
             [5627, 1244],
@@ -120,15 +119,29 @@
             [6853, 1533],
             [6324, 1172],
             [5987, 1052]
-          ]
-        ],
+        ]
+      ]
+    },
+    "properties": {
+      "classification": {
+        "name": "Cortex",
+        "colorRGB": -1091353
+      },
+      "isLocked": false,
+      "measurements": []
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "PathAnnotationObject",
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
         [
-          [
             [6564.28, 12639.67],
             [6565, 12642],
             [6565, 12634],
             [6564.28, 12639.67]
-          ]
         ]
       ]
     },

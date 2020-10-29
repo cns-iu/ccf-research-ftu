@@ -229,6 +229,16 @@ if __name__ == '__main__':
     crop_patch(ML_same_x_list, ML_same_y_list, ML_same_list, "ML",
                sub_x_list=VU_same_x_list, sub_y_list=VU_same_y_list, remarks=conf_remarks)
 
+    # for confidence filter
+    # thre = 0.99
+    # VU_same_x_list = [A_x_list[i] for i in VU_same_list if confidences[ML_same_list[VU_same_list.index(i)]] < thre]
+    # VU_same_y_list = [A_y_list[i] for i in VU_same_list if confidences[ML_same_list[VU_same_list.index(i)]] < thre]
+    # ML_same_x_list = [[tl_x[i], tl_x[i], br_x[i], br_x[i], tl_x[i]] for i in ML_same_list if confidences[i] < thre]
+    # ML_same_y_list = [[tl_y[i], br_y[i], br_y[i], tl_y[i], tl_y[i]] for i in ML_same_list if confidences[i] < thre]
+    # conf_remarks = [f'Confidence = {confidences[i]}' for i in ML_same_list if confidences[i] < thre]
+    # crop_patch(ML_same_x_list, ML_same_y_list, ML_same_list, "ML",
+    #            sub_x_list=VU_same_x_list, sub_y_list=VU_same_y_list, remarks=conf_remarks)
+
     # visualization
     tools_list = "pan," \
                  "box_select," \

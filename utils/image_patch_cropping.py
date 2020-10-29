@@ -24,9 +24,11 @@ def make_dir(path):
         os.makedirs(path)
 
 
-def crop_patch(x_list, y_list, id_list, title):
-    _i = 0
-    for xs, ys in zip(x_list, y_list):
+def crop_patch(x_list, y_list, id_list, title, sub_x_list=None, sub_y_list=None, remarks=None):
+    _id = 0
+    for _i in range(len(x_list)):
+        xs = x_list[_i]
+        ys = y_list[_i]
         max_x = max(xs)
         min_x = min(xs)
         max_y = max(ys)
@@ -59,7 +61,7 @@ def crop_patch(x_list, y_list, id_list, title):
 
         # left - image processing
         img = Image.fromarray(cropped_patch, 'RGB')
-        text = f'{file_prefix}_{title}_{id_list[_i]}'
+        text = f'{file_prefix}_{title}_{id_list[_id]}'
         font_path = r"c:\windows\fonts\bahnschrift.ttf"
         font = ImageFont.truetype(font_path, 24)
         ImageDraw.Draw(img).text((20, 20), f'{text}', font=font)
@@ -69,10 +71,19 @@ def crop_patch(x_list, y_list, id_list, title):
         ImageDraw.Draw(img).text((100, 100), f'Raw', font=font)
         ImageDraw.Draw(img).rectangle(((15, 95), (95, 150)), outline="white", width=2)
         ImageDraw.Draw(img).rectangle(((95, 95), (175, 150)), outline="white", width=2)
+        if remarks is not None:
+            ImageDraw.Draw(img).text((20, 160), f'{remarks[_i]}', font=font)
         polygon = [(xs[j] - (mid_x - int(edge // 2)), ys[j] - (mid_y - int(edge // 2))) for j in range(len(xs))]
         ImageDraw.Draw(img).line(polygon, fill="#4666FF", width=5)
-        left = np.array(img)
 
+        if sub_x_list is not None and sub_y_list is not None:
+            sub_xs = sub_x_list[_i]
+            sub_ys = sub_y_list[_i]
+            polygon = [(sub_xs[j] - (mid_x - int(edge // 2)), sub_ys[j] - (mid_y - int(edge // 2))) for j in
+                       range(len(sub_xs))]
+            ImageDraw.Draw(img).line(polygon, fill="#FF8C00", width=5)
+
+        left = np.array(img)
         margin = np.zeros((cropped_patch.shape[0], 10, 3))
         margin = 255 - margin
         merge = np.concatenate((left, margin, cropped_patch), axis=1)
@@ -80,7 +91,7 @@ def crop_patch(x_list, y_list, id_list, title):
         output_path = os.path.join(output_dir, f'{text}.jpg')
         io.imsave(output_path, merge.astype("uint8"))
         print(f"Image saved to {output_path}")
-        _i += 1
+        _id += 1
 
 
 if __name__ == '__main__':
@@ -143,6 +154,7 @@ if __name__ == '__main__':
     # B - ML
     B_x_list, B_y_list, widths, heights = [], [], [], []
     tl_x, tl_y, br_x, br_y = [], [], [], []
+    confidences = []
     with open(file_B_path, newline='') as inputfile:
         for row in csv.reader(inputfile):
             tlx = int(row[-5]) // file_B_index
@@ -157,6 +169,7 @@ if __name__ == '__main__':
             tl_y.append(tly)
             br_x.append(brx)
             br_y.append(bry)
+            confidences.append(float(row[-1]))
 
     # find difference
     center_list_VU = []
@@ -169,6 +182,8 @@ if __name__ == '__main__':
 
     VU_false_positive_list = []
     ML_false_positive_list = []
+    VU_same_list = []
+    ML_same_list = []
 
     threshold = 200 // file_A_index
     for x, y in center_list_VU:
@@ -176,6 +191,8 @@ if __name__ == '__main__':
         for _x, _y in center_list_ML:
             if (x - _x) ** 2 + (y - _y) ** 2 <= threshold ** 2:
                 _flag = True
+                VU_same_list.append(center_list_VU.index((x, y)))
+                ML_same_list.append(center_list_ML.index((_x, _y)))
                 break
         if not _flag:
             VU_false_positive_list.append(center_list_VU.index((x, y)))
@@ -199,7 +216,18 @@ if __name__ == '__main__':
                          for i in range(len(B_x_list)) if i in ML_false_positive_list]
     selected_B_y_list = [[tl_y[i], br_y[i], br_y[i], tl_y[i], tl_y[i]]
                          for i in range(len(B_y_list)) if i in ML_false_positive_list]
-    crop_patch(selected_B_x_list, selected_B_y_list, ML_false_positive_list, "ML")
+    selected_conf_remarks = [f'Confidence = {confidences[i]}' for i in range(len(B_y_list)) if
+                             i in ML_false_positive_list]
+    crop_patch(selected_B_x_list, selected_B_y_list, ML_false_positive_list, "ML", remarks=selected_conf_remarks)
+
+    # export same images
+    VU_same_x_list = [A_x_list[i] for i in VU_same_list]
+    VU_same_y_list = [A_y_list[i] for i in VU_same_list]
+    ML_same_x_list = [[tl_x[i], tl_x[i], br_x[i], br_x[i], tl_x[i]] for i in ML_same_list]
+    ML_same_y_list = [[tl_y[i], br_y[i], br_y[i], tl_y[i], tl_y[i]] for i in ML_same_list]
+    conf_remarks = [f'Confidence = {confidences[i]}' for i in ML_same_list]
+    crop_patch(ML_same_x_list, ML_same_y_list, ML_same_list, "ML",
+               sub_x_list=VU_same_x_list, sub_y_list=VU_same_y_list, remarks=conf_remarks)
 
     # visualization
     tools_list = "pan," \
@@ -210,7 +238,7 @@ if __name__ == '__main__':
                  "reset," \
                  "save," \
                  "help," \
-                 # "hover"
+        # "hover"
     custom_tooltip = [
         ("id", "$id"),
         # ("(x,y)", "($x, $y)"),

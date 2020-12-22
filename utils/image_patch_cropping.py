@@ -9,8 +9,10 @@ from PIL import Image, ImageDraw, ImageFont
 from bokeh.io import output_file
 from bokeh.plotting import figure
 from bokeh.models import HoverTool, ColumnDataSource
-from bokeh.palettes import Set2_5
 from bokeh.plotting import save, show
+
+
+# from bokeh.palettes import Set2_5
 
 
 # from read_roi import read_roi_zip
@@ -104,9 +106,9 @@ if __name__ == '__main__':
 
     edge = 1000
     shift_dict = {
-        "VAN0009-LK-102-7-PAS": (1, 0, -6, 0, 1, -3),
-        "VAN0010-LK-155-40-PAS": (1, 0, -14, 0, 1, -5),
-        "VAN0016-LK-202-89-PAS": (1, 0, -3, 0, 1, -3),
+        "_VAN0009-LK-102-7-PAS": (1, 0, -6, 0, 1, -3),
+        "_VAN0010-LK-155-40-PAS": (1, 0, -14, 0, 1, -5),
+        "_VAN0016-LK-202-89-PAS_registered": (1, 0, -3, 0, 1, -3),
     }
 
     if len(sys.argv) >= 4:
@@ -126,7 +128,7 @@ if __name__ == '__main__':
         print('raw image shape is not 3 or 5: exit')
         sys.exit()
 
-    file_prefix = raw_image_path.split('\\')[-1].split('_registered')[0]
+    file_prefix = raw_image_path.split('\\')[-1].split('.ome')[0]
     output_dir = os.path.join(os.path.dirname(raw_image_path), file_prefix)
     make_dir(output_dir)
 
@@ -173,8 +175,8 @@ if __name__ == '__main__':
     # find difference
     center_list_VU = []
     for i in range(len(A_x_list)):
-        mean_x = sum(A_x_list[i]) / len(A_x_list[i])
-        mean_y = sum(A_y_list[i]) / len(A_y_list[i])
+        mean_x = (sum(A_x_list[i]) - A_x_list[i][-1]) / (len(A_x_list[i]) - 1)
+        mean_y = (sum(A_y_list[i]) - A_y_list[i][-1]) / (len(A_y_list[i]) - 1)
         center_list_VU.append((mean_x, mean_y))
 
     center_list_ML = [(B_x_list[i], B_y_list[i]) for i in range(len(B_x_list))]
@@ -184,7 +186,7 @@ if __name__ == '__main__':
     VU_same_list = []
     ML_same_list = []
 
-    threshold = 200 // file_A_index
+    threshold = 250 // file_A_index
     for x, y in center_list_VU:
         _flag = False
         for _x, _y in center_list_ML:
@@ -217,7 +219,7 @@ if __name__ == '__main__':
                          for i in range(len(B_y_list)) if i in ML_false_positive_list]
     selected_conf_remarks = [f'Confidence = {confidences[i]}' for i in range(len(B_y_list)) if
                              i in ML_false_positive_list]
-    crop_patch(selected_B_x_list, selected_B_y_list, ML_false_positive_list, "ML", remarks=selected_conf_remarks)
+    # crop_patch(selected_B_x_list, selected_B_y_list, ML_false_positive_list, "ML", remarks=selected_conf_remarks)
 
     # export same images
     VU_same_x_list = [A_x_list[i] for i in VU_same_list]
@@ -225,8 +227,9 @@ if __name__ == '__main__':
     ML_same_x_list = [[tl_x[i], tl_x[i], br_x[i], br_x[i], tl_x[i]] for i in ML_same_list]
     ML_same_y_list = [[tl_y[i], br_y[i], br_y[i], tl_y[i], tl_y[i]] for i in ML_same_list]
     conf_remarks = [f'Confidence = {confidences[i]}' for i in ML_same_list]
-    crop_patch(ML_same_x_list, ML_same_y_list, ML_same_list, "ML",
-               sub_x_list=VU_same_x_list, sub_y_list=VU_same_y_list, remarks=conf_remarks)
+    # crop_patch(ML_same_x_list, ML_same_y_list, ML_same_list, "ML",
+    #           sub_x_list=VU_same_x_list, sub_y_list=VU_same_y_list, remarks=conf_remarks)
+    crop_patch(VU_same_x_list, VU_same_y_list, VU_same_list, "SAME", )
 
     # for confidence filter
     # thre = 0.99
@@ -257,6 +260,8 @@ if __name__ == '__main__':
     image_type = types[0]
 
     image_name = f'../visualization/result/images/{image_type}/{file_prefix}_registered_8.jpg'
+    if len(sys.argv) >= 7:
+        image_name = sys.argv[6]
     html_name = f"{file_prefix}"
     output_file(os.path.join(output_dir, f'{html_name}.html'))
     background_img = Image.open(image_name).convert('RGBA')
@@ -307,7 +312,7 @@ if __name__ == '__main__':
 
     for data_source, color, name in zip(
             (VU_source, ML_source),
-            (Set2_5[0], 'red'),
+            ('yellow', 'red'),
             ('VU_false_positive', 'ML_false_positive')):
         p.patches(xs='x_list',
                   ys='y_list',

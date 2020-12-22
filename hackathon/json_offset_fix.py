@@ -14,7 +14,7 @@ offset = [0, 0]  # + right down  - left up
 index = 2
 
 if len(sys.argv) >= 3:
-    index = int(sys.argv[2])
+    index = float(sys.argv[2])
 
 for row in json_object:
     old_list = row["geometry"]["coordinates"]

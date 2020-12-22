@@ -6,6 +6,7 @@ from bokeh.models import HoverTool
 import numpy as np
 from PIL import Image
 import os
+from bokeh.palettes import Set1_6
 
 Image.MAX_IMAGE_PIXELS = None
 
@@ -35,9 +36,10 @@ if __name__ == '__main__':
                  "help," \
         # "hover"
 
-    folder_index = 3
+    folder_index = 1
 
     annotation_folder = rf'X:\hackathon_new\{folder_index}\annotations'
+    ar_annotation_folder = annotation_folder.replace('annotations', 'ar_annotations')
     image_folder = annotation_folder.replace('annotations', 'images_8')
     output_folder = annotation_folder.replace('annotations', 'visualization')
     file_names = os.listdir(annotation_folder)
@@ -159,5 +161,37 @@ if __name__ == '__main__':
                               tooltips=None))
 
         p.patches(x_list, y_list, fill_alpha=0, line_alpha=0.5, color='black', line_width=3, hover_line_alpha=0.05)
+
+        ar_viz = True
+        if ar_viz:
+            ALL_TYPE_LIST = ['Medulla', 'Inner Medulla', 'Cortex', 'Outer Medulla', 'Outer Stripe']
+            with open(os.path.join(ar_annotation_folder, annotation_file_name)) as data_file:
+                data = json.load(data_file)
+
+            coor_list = []
+            type_list = []
+            color_list = []
+            color_list_2 = []
+
+            for item in data:
+                coor_list.extend(item["geometry"]["coordinates"])
+                type_list.append(item["properties"]["classification"]["name"])
+                color_list.append(
+                    f'{"#{:06x}".format(abs(int(item["properties"]["classification"]["colorRGB"])))}')
+                color_list_2.append(Set1_6[ALL_TYPE_LIST.index(type_list[-1].title())])
+            ALL_TYPE_LIST.extend(type_list)
+            x_list = [[xy[0] // rescale_index for xy in coor] for coor in coor_list]
+            y_list = [[xy[1] // rescale_index for xy in coor] for coor in coor_list]
+            for xs, ys, color, legend_title in zip(x_list, y_list, color_list_2, type_list):
+                p.patch(xs, ys,
+                        fill_alpha=0.5, line_alpha=0.6, color=color, line_width=3,
+                        hover_line_alpha=0.05,
+                        hover_fill_alpha=0.05,
+                        muted_alpha=0,
+                        muted=False,
+                        legend_label=legend_title, )
+            p.legend.location = "top_left"
+            p.legend.click_policy = "mute"
+
         show(p)
         print(f"output html: {html_name}")

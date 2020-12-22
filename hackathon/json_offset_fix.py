@@ -1,12 +1,12 @@
 import json
 
-file_path = 'X:\c68fe75ea.json'
+file_path = r'X:\hackathon_new\1\annotations\VAN0012-RK-103-75-PAS_registered.ome.json'
 
 a_file = open(file_path, "r")
 json_object = json.load(a_file)
 a_file.close()
 
-offset = [-112, -40]
+offset = [-6, -6] # + right down  - left up
 
 for row in json_object:
     old_list = row["geometry"]["coordinates"]

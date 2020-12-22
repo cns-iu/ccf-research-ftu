@@ -1,0 +1,384 @@
+python detect_glomus_test.py     --target_list=VU_test_data/05/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/05/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/05/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/06/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/06/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/06/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/07/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/07/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/07/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/08/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/08/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/08/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/09/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/09/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/09/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/10/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/10/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/10/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/12/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/12/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/12/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/13/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/13/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/13/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/14/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/14/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/14/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/16/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/16/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/16/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/52/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/52/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/52/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+
+python merge_overlapped_glomus.py     --target_list=VU_test_data/05/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/05/output/OPT_PASPNG.csv     --data_dir=VU_test_data/05/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/05/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/06/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/06/output/OPT_PASPNG.csv     --data_dir=VU_test_data/06/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/06/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/07/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/07/output/OPT_PASPNG.csv     --data_dir=VU_test_data/07/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/07/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/08/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/08/output/OPT_PASPNG.csv     --data_dir=VU_test_data/08/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/08/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/09/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/09/output/OPT_PASPNG.csv     --data_dir=VU_test_data/09/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/09/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/10/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/10/output/OPT_PASPNG.csv     --data_dir=VU_test_data/10/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/10/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/12/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/12/output/OPT_PASPNG.csv     --data_dir=VU_test_data/12/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/12/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/13/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/13/output/OPT_PASPNG.csv     --data_dir=VU_test_data/13/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/13/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/14/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/14/output/OPT_PASPNG.csv     --data_dir=VU_test_data/14/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/14/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/16/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/16/output/OPT_PASPNG.csv     --data_dir=VU_test_data/16/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/16/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/52/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/52/output/OPT_PASPNG.csv     --data_dir=VU_test_data/52/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/52/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/05/     --target_list=VU_test_data/05/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/05/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/05/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/06/     --target_list=VU_test_data/06/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/06/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/06/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/07/     --target_list=VU_test_data/07/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/07/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/07/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/08/     --target_list=VU_test_data/08/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/08/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/08/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/09/     --target_list=VU_test_data/09/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/09/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/09/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/10/     --target_list=VU_test_data/10/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/10/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/10/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/12/     --target_list=VU_test_data/12/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/12/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/12/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/13/     --target_list=VU_test_data/13/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/13/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/13/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/14/     --target_list=VU_test_data/14/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/14/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/14/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/16/     --target_list=VU_test_data/16/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/16/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/16/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/52/     --target_list=VU_test_data/52/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/52/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/52/output     --iou_threshold=0.5
+
+source venv3/bin/activate
+cd /l/vision/v5/yiju/glomeruli_detection/
+PATH=/l/vision/v5/yiju/openslide/bin:$PATH
+export PATH
+LD_LIBRARY_PATH=/l/vision/v5/yiju/openslide/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+
+
+python image_patch_cropping.py X:\hackathon_new\1\annotations\VAN0005-RK-1-1-PAS_registered.ome.json X:\VU_test_data\05\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\1\images\VAN0005-RK-1-1-PAS_registered.ome.tiff 1 1 X:\hackathon_new\1\images_8\VAN0005-RK-1-1-PAS_registered.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\1\annotations\VAN0005-RK-4-172-PAS_registered.ome.json X:\VU_test_data\52\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\1\images\VAN0005-RK-4-172-PAS_registered.ome.tiff 1 1 X:\hackathon_new\1\images_8\VAN0005-RK-4-172-PAS_registered.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\1\annotations\VAN0006-LK-2-85-PAS_registered.ome.json X:\VU_test_data\06\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\1\images\VAN0006-LK-2-85-PAS_registered.ome.tiff 1 1 X:\hackathon_new\1\images_8\VAN0006-LK-2-85-PAS_registered.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\1\annotations\VAN0007-LK-203-103-PAS_registered.ome.json X:\VU_test_data\07\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\1\images\VAN0007-LK-203-103-PAS_registered.ome.tiff 1 1 X:\hackathon_new\1\images_8\VAN0007-LK-203-103-PAS_registered.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\1\annotations\VAN0008-RK-403-100-PAS_registered.ome.json X:\VU_test_data\08\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\1\images\VAN0008-RK-403-100-PAS_registered.ome.tiff 1 1 X:\hackathon_new\1\images_8\VAN0008-RK-403-100-PAS_registered.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\1\annotations\VAN0009-LK-102-7-PAS_registered.ome.json X:\VU_test_data\09\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\1\images\VAN0009-LK-102-7-PAS_registered.ome.tiff 1 1 X:\hackathon_new\1\images_8\VAN0009-LK-102-7-PAS_registered.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\1\annotations\VAN0010-LK-155-40-PAS_registered.ome.json X:\VU_test_data\10\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\1\images\VAN0010-LK-155-40-PAS_registered.ome.tiff 1 1 X:\hackathon_new\1\images_8\VAN0010-LK-155-40-PAS_registered.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\1\annotations\VAN0012-RK-103-75-PAS_registered.ome.json X:\VU_test_data\12\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\1\images\VAN0012-RK-103-75-PAS_registered.ome.tiff 1 1 X:\hackathon_new\1\images_8\VAN0012-RK-103-75-PAS_registered.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\1\annotations\VAN0013-LK-202-96-PAS_registered.ome.json X:\VU_test_data\13\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\1\images\VAN0013-LK-202-96-PAS_registered.ome.tiff 1 1 X:\hackathon_new\1\images_8\VAN0013-LK-202-96-PAS_registered.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\1\annotations\VAN0014-LK-203-108-PAS_registered.ome.json X:\VU_test_data\14\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\1\images\VAN0014-LK-203-108-PAS_registered.ome.tiff 1 1 X:\hackathon_new\1\images_8\VAN0014-LK-203-108-PAS_registered.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\1\annotations\VAN0016-LK-202-89-PAS_registered.ome.json X:\VU_test_data\16\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\1\images\VAN0016-LK-202-89-PAS_registered.ome.tiff 1 1 X:\hackathon_new\1\images_8\VAN0016-LK-202-89-PAS_registered.ome.jpg
+
+
+
+python tifffile_test.py X:\VAN0005-RK-1-1-PAS_registered.ome.tiff
+python tifffile_test.py X:\VAN0005-RK-4-172-PAS_registered.ome.tiff
+python tifffile_test.py X:\VAN0006-LK-2-85-PAS_registered.ome.tiff
+python tifffile_test.py X:\VAN0007-LK-203-103-PAS_registered.ome.tiff
+python tifffile_test.py X:\VAN0008-RK-403-100-PAS_registered.ome.tiff
+python tifffile_test.py X:\VAN0009-LK-102-7-PAS_registered.ome.tiff
+python tifffile_test.py X:\VAN0010-LK-155-40-PAS_registered.ome.tiff
+python tifffile_test.py X:\VAN0012-RK-103-75-PAS_registered.ome.tiff
+python tifffile_test.py X:\VAN0013-LK-202-96-PAS_registered.ome.tiff
+python tifffile_test.py X:\VAN0014-LK-203-108-PAS_registered.ome.tiff
+python tifffile_test.py X:\VAN0016-LK-202-89-PAS_registered.ome.tiff
+
+python tifffile_test.py X:\VAN0003-LK-33-2-PAS_FFPE.ome.tiff
+python tifffile_test.py X:\VAN0003-LK-33-2-PAS_FFPE_16.ome.tiff
+python tifffile_test.py X:\VAN0003-LK-33-2-PAS_FFPE_2.ome.tiff
+python tifffile_test.py X:\VAN0003-LK-33-2-PAS_FFPE_4.ome.tiff
+python tifffile_test.py X:\VAN0003-LK-33-2-PAS_FFPE_8.ome.tiff
+python tifffile_test.py X:\VAN0005-RK-8-2-PAS_FFPE.ome.tiff
+python tifffile_test.py X:\VAN0006-LK-7-2-PAS_FFPE.ome.tiff
+python tifffile_test.py X:\VAN0009-LK-106-2-PAS_FFPE.ome.tiff
+python tifffile_test.py X:\VAN0010-LK-160-2-PAS_FFPE.ome.tiff
+python tifffile_test.py X:\VAN0011-RK-33-2-PAS_FFPE.ome.tiff
+python tifffile_test.py X:\VAN0013-LK-206-2-PAS_FFPE.ome.tiff
+python tifffile_test.py X:\VAN0014-LK-207-2-PAS_FFPE.ome.tiff
+python tifffile_test.py X:\VAN0016-LK-208-2-PAS_FFPE.ome.tiff
+
+
+
+# batch 2 FFPE
+
+python detect_glomus_test.py     --target_list=VU_test_data/FF03/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/FF03/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF03/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/FF05/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/FF05/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF05/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/FF06/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/FF06/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF06/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/FF09/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/FF09/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF09/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/FF10/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/FF10/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF10/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/FF11/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/FF11/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF11/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/FF13/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/FF13/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF13/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/FF14/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/FF14/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF14/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/FF16/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/FF16/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF16/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+
+python merge_overlapped_glomus.py     --target_list=VU_test_data/FF03/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/FF03/output/OPT_PASPNG.csv     --data_dir=VU_test_data/FF03/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF03/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/FF05/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/FF05/output/OPT_PASPNG.csv     --data_dir=VU_test_data/FF05/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF05/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/FF06/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/FF06/output/OPT_PASPNG.csv     --data_dir=VU_test_data/FF06/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF06/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/FF09/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/FF09/output/OPT_PASPNG.csv     --data_dir=VU_test_data/FF09/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF09/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/FF10/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/FF10/output/OPT_PASPNG.csv     --data_dir=VU_test_data/FF10/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF10/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/FF11/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/FF11/output/OPT_PASPNG.csv     --data_dir=VU_test_data/FF11/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF11/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/FF13/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/FF13/output/OPT_PASPNG.csv     --data_dir=VU_test_data/FF13/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF13/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/FF14/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/FF14/output/OPT_PASPNG.csv     --data_dir=VU_test_data/FF14/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF14/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/FF16/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/FF16/output/OPT_PASPNG.csv     --data_dir=VU_test_data/FF16/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF16/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/FF03/     --target_list=VU_test_data/FF03/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/FF03/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF03/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/FF05/     --target_list=VU_test_data/FF05/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/FF05/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF05/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/FF06/     --target_list=VU_test_data/FF06/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/FF06/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF06/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/FF09/     --target_list=VU_test_data/FF09/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/FF09/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF09/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/FF10/     --target_list=VU_test_data/FF10/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/FF10/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF10/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/FF11/     --target_list=VU_test_data/FF11/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/FF11/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF11/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/FF13/     --target_list=VU_test_data/FF13/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/FF13/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF13/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/FF14/     --target_list=VU_test_data/FF14/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/FF14/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF14/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/FF16/     --target_list=VU_test_data/FF16/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/FF16/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/FF16/output     --iou_threshold=0.5
+
+
+python image_patch_cropping.py X:\hackathon_new\2\annotations\VAN0003-LK-33-2-PAS_FFPE.ome.json X:\VU_test_data\FF03\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\2\images\VAN0003-LK-33-2-PAS_FFPE.ome.tiff 1 1 X:\hackathon_new\2\images_8\VAN0003-LK-33-2-PAS_FFPE.ome.jpg 
+python image_patch_cropping.py X:\hackathon_new\2\annotations\VAN0005-RK-8-2-PAS_FFPE.ome.json X:\VU_test_data\FF05\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\2\images\VAN0005-RK-8-2-PAS_FFPE.ome.tiff 1 1 X:\hackathon_new\2\images_8\VAN0005-RK-8-2-PAS_FFPE.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\2\annotations\VAN0006-LK-7-2-PAS_FFPE.ome.json X:\VU_test_data\FF06\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\2\images\VAN0006-LK-7-2-PAS_FFPE.ome.tiff 1 1 X:\hackathon_new\2\images_8\VAN0006-LK-7-2-PAS_FFPE.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\2\annotations\VAN0009-LK-106-2-PAS_FFPE.ome.json X:\VU_test_data\FF09\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\2\images\VAN0009-LK-106-2-PAS_FFPE.ome.tiff 1 1 X:\hackathon_new\2\images_8\VAN0009-LK-106-2-PAS_FFPE.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\2\annotations\VAN0010-LK-160-2-PAS_FFPE.ome.json X:\VU_test_data\FF10\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\2\images\VAN0010-LK-160-2-PAS_FFPE.ome.tiff 1 1 X:\hackathon_new\2\images_8\VAN0010-LK-160-2-PAS_FFPE.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\2\annotations\VAN0011-RK-33-2-PAS_FFPE.ome.json X:\VU_test_data\FF11\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\2\images\VAN0011-RK-33-2-PAS_FFPE.ome.tiff 1 1 X:\hackathon_new\2\images_8\VAN0011-RK-33-2-PAS_FFPE.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\2\annotations\VAN0013-LK-206-2-PAS_FFPE.ome.json X:\VU_test_data\FF13\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\2\images\VAN0013-LK-206-2-PAS_FFPE.ome.tiff 1 1 X:\hackathon_new\2\images_8\VAN0013-LK-206-2-PAS_FFPE.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\2\annotations\VAN0014-LK-207-2-PAS_FFPE.ome.json X:\VU_test_data\FF14\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\2\images\VAN0014-LK-207-2-PAS_FFPE.ome.tiff 1 1 X:\hackathon_new\2\images_8\VAN0014-LK-207-2-PAS_FFPE.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\2\annotations\VAN0016-LK-208-2-PAS_FFPE.ome.json X:\VU_test_data\FF16\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\2\images\VAN0016-LK-208-2-PAS_FFPE.ome.tiff 1 1 X:\hackathon_new\2\images_8\VAN0016-LK-208-2-PAS_FFPE.ome.jpg
+
+
+
+python mask_generator.py X:\VAN0003-LK-33-2-PAS_FFPE_glom_annotations.json X:\VAN0003-LK-33-2-PAS_FFPE.ome.tiff
+python mask_generator.py X:\VAN0005-RK-1-1-AF_preIMS_registered_glomerulus_detections.json X:\VAN0005-RK-1-1-PAS_registered.ome.tiff
+python mask_generator.py X:\VAN0005-RK-4-172-AF_preIMS_registered_glomerulus_detections.json X:\VAN0005-RK-4-172-PAS_registered.ome.tiff
+python mask_generator.py X:\VAN0005-RK-8-2-PAS_FFPE_glom_annotations.json X:\VAN0005-RK-8-2-PAS_FFPE.ome.tiff
+python mask_generator.py X:\VAN0006-LK-2-85-AF_preIMS_registered_glomerulus_detections.json X:\VAN0006-LK-2-85-PAS_registered.ome.tiff
+python mask_generator.py X:\VAN0006-LK-7-2-PAS_FFPE_glom_annotations.json X:\VAN0006-LK-7-2-PAS_FFPE.ome.tiff
+python mask_generator.py X:\VAN0007-LK-203-103-AF_preIMS_registered_glomerulus_detections.json X:\VAN0007-LK-203-103-PAS_registered.ome.tiff
+python mask_generator.py X:\VAN0008-RK-403-100-AF_preIMS_registered_glomerulus_detections.json X:\VAN0008-RK-403-100-PAS_registered.ome.tiff
+python mask_generator.py X:\VAN0009-LK-102-7-AF_preIMS_registered_glomerulus_detections.json X:\VAN0009-LK-102-7-PAS_registered.ome.tiff
+python mask_generator.py X:\VAN0009-LK-106-2-PAS_FFPE_glom_annotations.json X:\VAN0009-LK-106-2-PAS_FFPE.ome.tiff
+python mask_generator.py X:\VAN0010-LK-155-40-AF_preIMS_registered_glomerulus_detections.json X:\VAN0010-LK-155-40-PAS_registered.ome.tiff
+python mask_generator.py X:\VAN0010-LK-160-2-PAS_FFPE_glom_annotations.json X:\VAN0010-LK-160-2-PAS_FFPE.ome.tiff
+python mask_generator.py X:\VAN0011-RK-33-2-PAS_FFPE_glom_annotations.json X:\VAN0011-RK-33-2-PAS_FFPE.ome.tiff
+python mask_generator.py X:\VAN0012-RK-103-75-AF_preIMS_registered_glomerulus_detections.json X:\VAN0012-RK-103-75-PAS_registered.ome.tiff
+python mask_generator.py X:\VAN0013-LK-202-96-AF_preIMS_registered_glomerulus_detections.json X:\VAN0013-LK-202-96-PAS_registered.ome.tiff
+python mask_generator.py X:\VAN0013-LK-206-2-PAS_FFPE_glom_annotations.json X:\VAN0013-LK-206-2-PAS_FFPE.ome.tiff
+python mask_generator.py X:\VAN0014-LK-203-108-AF_preIMS_registered_glomerulus_detections.json X:\VAN0014-LK-203-108-PAS_registered.ome.tiff
+python mask_generator.py X:\VAN0014-LK-207-2-PAS_FFPE_glom_annotations.json X:\VAN0014-LK-207-2-PAS_FFPE.ome.tiff
+python mask_generator.py X:\VAN0016-LK-202-89-AF_preIMS_registered_glomerulus_detections.json X:\VAN0016-LK-202-89-PAS_registered.ome.tiff
+python mask_generator.py X:\VAN0016-LK-208-2-PAS_FFPE_glom_annotations.json X:\VAN0016-LK-208-2-PAS_FFPE.ome.tiff
+
+python tifffile_test.py X:\test\images\26dc41664.tiff 8
+python tifffile_test.py X:\test\images\afa5e8098.tiff 8
+python tifffile_test.py X:\test\images\b2dc8411c.tiff 8
+python tifffile_test.py X:\test\images\b9a3865fc.tiff 8
+python tifffile_test.py X:\test\images\c68fe75ea.tiff 8
+
+
+
+
+
+
+
+
+
+# 3rd batch
+
+
+python detect_glomus_test.py     --target_list=VU_test_data/NE01/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/NE01/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE01/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/NE02/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/NE02/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE02/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/NE03/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/NE03/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE03/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/NE04/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/NE04/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE04/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/NE05/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/NE05/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE05/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/NE64/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/NE64/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE64/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/NE65/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/NE65/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE65/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/NE70/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/NE70/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE70/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/NE71/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/NE71/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE71/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+python detect_glomus_test.py     --target_list=VU_test_data/NE72/02_PAS/opt_pas_test_list.txt     --data_dir=VU_test_data/NE72/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE72/output    --output_file_ext=PNG     --model=model/pas_train1/     --window_size=1000     --overlap_ratio=0.75     --conf_threshold=0.2
+
+python merge_overlapped_glomus.py     --target_list=VU_test_data/NE01/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/NE01/output/OPT_PASPNG.csv     --data_dir=VU_test_data/NE01/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE01/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/NE02/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/NE02/output/OPT_PASPNG.csv     --data_dir=VU_test_data/NE02/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE02/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/NE03/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/NE03/output/OPT_PASPNG.csv     --data_dir=VU_test_data/NE03/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE03/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/NE04/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/NE04/output/OPT_PASPNG.csv     --data_dir=VU_test_data/NE04/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE04/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/NE05/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/NE05/output/OPT_PASPNG.csv     --data_dir=VU_test_data/NE05/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE05/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/NE64/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/NE64/output/OPT_PASPNG.csv     --data_dir=VU_test_data/NE64/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE64/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/NE65/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/NE65/output/OPT_PASPNG.csv     --data_dir=VU_test_data/NE65/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE65/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/NE70/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/NE70/output/OPT_PASPNG.csv     --data_dir=VU_test_data/NE70/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE70/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/NE71/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/NE71/output/OPT_PASPNG.csv     --data_dir=VU_test_data/NE71/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE71/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+python merge_overlapped_glomus.py     --target_list=VU_test_data/NE72/02_PAS/opt_pas_test_list.txt     --detected_list=VU_test_data/NE72/output/OPT_PASPNG.csv     --data_dir=VU_test_data/NE72/     --staining=OPT_PAS     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE72/output     --output_file_ext=PNG     --conf_threshold=0.9     --overlap_threshold=0.35
+
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/NE01/     --target_list=VU_test_data/NE01/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/NE01/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE01/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/NE02/     --target_list=VU_test_data/NE02/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/NE02/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE02/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/NE03/     --target_list=VU_test_data/NE03/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/NE03/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE03/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/NE04/     --target_list=VU_test_data/NE04/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/NE04/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE04/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/NE05/     --target_list=VU_test_data/NE05/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/NE05/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE05/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/NE64/     --target_list=VU_test_data/NE64/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/NE64/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE64/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/NE65/     --target_list=VU_test_data/NE65/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/NE65/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE65/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/NE70/     --target_list=VU_test_data/NE70/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/NE70/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE70/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/NE71/     --target_list=VU_test_data/NE71/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/NE71/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE71/output     --iou_threshold=0.5
+python -u eval_recall_precision_test.py     --staining=OPT_PAS     --data_dir=VU_test_data/NE72/     --target_list=VU_test_data/NE72/02_PAS/opt_pas_test_list.txt     --merged_list=VU_test_data/NE72/output/OPT_PAS_GlomusMergedList_PNG.csv     --output_dir=/l/vision/v5/yiju/glomeruli_detection/VU_test_data/NE72/output     --iou_threshold=0.5
+
+
+
+python image_patch_cropping.py X:\hackathon_new\3\annotations\FrFr_S101_kaggle.ome.json X:\VU_test_data\NE01\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\3\images\FrFr_S101_kaggle.ome.tiff 1 1 X:\hackathon_new\3\images_8\FrFr_S101_kaggle.ome.jpg 
+python image_patch_cropping.py X:\hackathon_new\3\annotations\FrFr_S102_kaggle.ome.json X:\VU_test_data\NE02\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\3\images\FrFr_S102_kaggle.ome.tiff 1 1 X:\hackathon_new\3\images_8\FrFr_S102_kaggle.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\3\annotations\FrFr_S103_kaggle.ome.json X:\VU_test_data\NE03\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\3\images\FrFr_S103_kaggle.ome.tiff 1 1 X:\hackathon_new\3\images_8\FrFr_S103_kaggle.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\3\annotations\FrFr_S104_kaggle.ome.json X:\VU_test_data\NE04\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\3\images\FrFr_S104_kaggle.ome.tiff 1 1 X:\hackathon_new\3\images_8\FrFr_S104_kaggle.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\3\annotations\FrFr_S105_kaggle.ome.json X:\VU_test_data\NE05\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\3\images\FrFr_S105_kaggle.ome.tiff 1 1 X:\hackathon_new\3\images_8\FrFr_S105_kaggle.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\3\annotations\FFPE_S164_kaggle.ome.json X:\VU_test_data\NE64\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\3\images\FFPE_S164_kaggle.ome.tiff 1 1 X:\hackathon_new\3\images_8\FFPE_S164_kaggle.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\3\annotations\FFPE_S165_kaggle.ome.json X:\VU_test_data\NE65\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\3\images\FFPE_S165_kaggle.ome.tiff 1 1 X:\hackathon_new\3\images_8\FFPE_S165_kaggle.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\3\annotations\FFPE_S170_kaggle.ome.json X:\VU_test_data\NE70\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\3\images\FFPE_S170_kaggle.ome.tiff 1 1 X:\hackathon_new\3\images_8\FFPE_S170_kaggle.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\3\annotations\FFPE_S171_kaggle.ome.json X:\VU_test_data\NE71\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\3\images\FFPE_S171_kaggle.ome.tiff 1 1 X:\hackathon_new\3\images_8\FFPE_S171_kaggle.ome.jpg
+python image_patch_cropping.py X:\hackathon_new\3\annotations\FFPE_S172_kaggle.ome.json X:\VU_test_data\NE72\output\OPT_PAS_GlomusMergedList_PNG.csv X:\hackathon_new\3\images\FFPE_S172_kaggle.ome.tiff 1 1 X:\hackathon_new\3\images_8\FFPE_S172_kaggle.ome.jpg
+
+
+NE01
+NE02
+NE03
+NE04
+NE05
+NE64
+NE65
+NE70
+NE71
+NE72
+
+
+X:\hackathon_new\3\annotations\FrFr_S101_kaggle.ome.json
+X:\hackathon_new\3\annotations\FrFr_S102_kaggle.ome.json
+X:\hackathon_new\3\annotations\FrFr_S103_kaggle.ome.json
+X:\hackathon_new\3\annotations\FrFr_S104_kaggle.ome.json
+X:\hackathon_new\3\annotations\FrFr_S105_kaggle.ome.json
+X:\hackathon_new\3\annotations\FFPE_S164_kaggle.ome.json
+X:\hackathon_new\3\annotations\FFPE_S165_kaggle.ome.json
+X:\hackathon_new\3\annotations\FFPE_S170_kaggle.ome.json
+X:\hackathon_new\3\annotations\FFPE_S171_kaggle.ome.json
+X:\hackathon_new\3\annotations\FFPE_S172_kaggle.ome.json
+
+
+X:\hackathon_new\3\images\FrFr_S101_kaggle.ome.tiff
+X:\hackathon_new\3\images\FrFr_S102_kaggle.ome.tiff
+X:\hackathon_new\3\images\FrFr_S103_kaggle.ome.tiff
+X:\hackathon_new\3\images\FrFr_S104_kaggle.ome.tiff
+X:\hackathon_new\3\images\FrFr_S105_kaggle.ome.tiff
+X:\hackathon_new\3\images\FFPE_S164_kaggle.ome.tiff
+X:\hackathon_new\3\images\FFPE_S165_kaggle.ome.tiff
+X:\hackathon_new\3\images\FFPE_S170_kaggle.ome.tiff
+X:\hackathon_new\3\images\FFPE_S171_kaggle.ome.tiff
+X:\hackathon_new\3\images\FFPE_S172_kaggle.ome.tiff
+
+X:\hackathon_new\3\images_8\FrFr_S101_kaggle.ome.jpg
+X:\hackathon_new\3\images_8\FrFr_S102_kaggle.ome.jpg
+X:\hackathon_new\3\images_8\FrFr_S103_kaggle.ome.jpg
+X:\hackathon_new\3\images_8\FrFr_S104_kaggle.ome.jpg
+X:\hackathon_new\3\images_8\FrFr_S105_kaggle.ome.jpg
+X:\hackathon_new\3\images_8\FFPE_S164_kaggle.ome.jpg
+X:\hackathon_new\3\images_8\FFPE_S165_kaggle.ome.jpg
+X:\hackathon_new\3\images_8\FFPE_S170_kaggle.ome.jpg
+X:\hackathon_new\3\images_8\FFPE_S171_kaggle.ome.jpg
+X:\hackathon_new\3\images_8\FFPE_S172_kaggle.ome.jpg
+
+X:\hackathon_new\2\annotations\VAN0003-LK-33-2-PAS_FFPE.ome.json
+X:\hackathon_new\2\annotations\VAN0005-RK-8-2-PAS_FFPE.ome.json
+X:\hackathon_new\2\annotations\VAN0006-LK-7-2-PAS_FFPE.ome.json
+X:\hackathon_new\2\annotations\VAN0009-LK-106-2-PAS_FFPE.ome.json
+X:\hackathon_new\2\annotations\VAN0010-LK-160-2-PAS_FFPE.ome.json
+X:\hackathon_new\2\annotations\VAN0011-RK-33-2-PAS_FFPE.ome.json
+X:\hackathon_new\2\annotations\VAN0013-LK-206-2-PAS_FFPE.ome.json
+X:\hackathon_new\2\annotations\VAN0014-LK-207-2-PAS_FFPE.ome.json
+X:\hackathon_new\2\annotations\VAN0016-LK-208-2-PAS_FFPE.ome.json
+
+X:\hackathon_new\2\images\VAN0003-LK-33-2-PAS_FFPE.ome.tiff
+X:\hackathon_new\2\images\VAN0005-RK-8-2-PAS_FFPE.ome.tiff
+X:\hackathon_new\2\images\VAN0006-LK-7-2-PAS_FFPE.ome.tiff
+X:\hackathon_new\2\images\VAN0009-LK-106-2-PAS_FFPE.ome.tiff
+X:\hackathon_new\2\images\VAN0010-LK-160-2-PAS_FFPE.ome.tiff
+X:\hackathon_new\2\images\VAN0011-RK-33-2-PAS_FFPE.ome.tiff
+X:\hackathon_new\2\images\VAN0013-LK-206-2-PAS_FFPE.ome.tiff
+X:\hackathon_new\2\images\VAN0014-LK-207-2-PAS_FFPE.ome.tiff
+X:\hackathon_new\2\images\VAN0016-LK-208-2-PAS_FFPE.ome.tiff
+
+X:\hackathon_new\2\images_8\VAN0003-LK-33-2-PAS_FFPE.ome.jpg
+X:\hackathon_new\2\images_8\VAN0005-RK-8-2-PAS_FFPE.ome.jpg
+X:\hackathon_new\2\images_8\VAN0006-LK-7-2-PAS_FFPE.ome.jpg
+X:\hackathon_new\2\images_8\VAN0009-LK-106-2-PAS_FFPE.ome.jpg
+X:\hackathon_new\2\images_8\VAN0010-LK-160-2-PAS_FFPE.ome.jpg
+X:\hackathon_new\2\images_8\VAN0011-RK-33-2-PAS_FFPE.ome.jpg
+X:\hackathon_new\2\images_8\VAN0013-LK-206-2-PAS_FFPE.ome.jpg
+X:\hackathon_new\2\images_8\VAN0014-LK-207-2-PAS_FFPE.ome.jpg
+X:\hackathon_new\2\images_8\VAN0016-LK-208-2-PAS_FFPE.ome.jpg
+
+X:\hackathon_new\1\annotations\VAN0005-RK-1-1-PAS_registered.ome.json
+X:\hackathon_new\1\annotations\VAN0005-RK-4-172-PAS_registered.ome.json
+X:\hackathon_new\1\annotations\VAN0006-LK-2-85-PAS_registered.ome.json
+X:\hackathon_new\1\annotations\VAN0007-LK-203-103-PAS_registered.ome.json
+X:\hackathon_new\1\annotations\VAN0008-RK-403-100-PAS_registered.ome.json
+X:\hackathon_new\1\annotations\VAN0009-LK-102-7-PAS_registered.ome.json
+X:\hackathon_new\1\annotations\VAN0010-LK-155-40-PAS_registered.ome.json
+X:\hackathon_new\1\annotations\VAN0012-RK-103-75-PAS_registered.ome.json
+X:\hackathon_new\1\annotations\VAN0013-LK-202-96-PAS_registered.ome.json
+X:\hackathon_new\1\annotations\VAN0014-LK-203-108-PAS_registered.ome.json
+X:\hackathon_new\1\annotations\VAN0016-LK-202-89-PAS_registered.ome.json
+
+X:\hackathon_new\1\images\VAN0005-RK-1-1-PAS_registered.ome.tiff
+X:\hackathon_new\1\images\VAN0005-RK-4-172-PAS_registered.ome.tiff
+X:\hackathon_new\1\images\VAN0006-LK-2-85-PAS_registered.ome.tiff
+X:\hackathon_new\1\images\VAN0007-LK-203-103-PAS_registered.ome.tiff
+X:\hackathon_new\1\images\VAN0008-RK-403-100-PAS_registered.ome.tiff
+X:\hackathon_new\1\images\VAN0009-LK-102-7-PAS_registered.ome.tiff
+X:\hackathon_new\1\images\VAN0010-LK-155-40-PAS_registered.ome.tiff
+X:\hackathon_new\1\images\VAN0012-RK-103-75-PAS_registered.ome.tiff
+X:\hackathon_new\1\images\VAN0013-LK-202-96-PAS_registered.ome.tiff
+X:\hackathon_new\1\images\VAN0014-LK-203-108-PAS_registered.ome.tiff
+X:\hackathon_new\1\images\VAN0016-LK-202-89-PAS_registered.ome.tiff
+
+X:\hackathon_new\1\images_8\VAN0005-RK-1-1-PAS_registered.ome.jpg
+X:\hackathon_new\1\images_8\VAN0005-RK-4-172-PAS_registered.ome.jpg
+X:\hackathon_new\1\images_8\VAN0006-LK-2-85-PAS_registered.ome.jpg
+X:\hackathon_new\1\images_8\VAN0007-LK-203-103-PAS_registered.ome.jpg
+X:\hackathon_new\1\images_8\VAN0008-RK-403-100-PAS_registered.ome.jpg
+X:\hackathon_new\1\images_8\VAN0009-LK-102-7-PAS_registered.ome.jpg
+X:\hackathon_new\1\images_8\VAN0010-LK-155-40-PAS_registered.ome.jpg
+X:\hackathon_new\1\images_8\VAN0012-RK-103-75-PAS_registered.ome.jpg
+X:\hackathon_new\1\images_8\VAN0013-LK-202-96-PAS_registered.ome.jpg
+X:\hackathon_new\1\images_8\VAN0014-LK-203-108-PAS_registered.ome.jpg
+X:\hackathon_new\1\images_8\VAN0016-LK-202-89-PAS_registered.ome.jpg
+
+
+VAN0005-RK-4-172-PAS_registered.ome.tiff
+VAN0006-LK-2-85-PAS_registered.ome.tiff
+VAN0008-RK-403-100-PAS_registered.ome.tiff
+VAN0009-LK-102-7-PAS_registered.ome.tiff
+VAN0010-LK-155-40-PAS_registered.ome.tiff
+VAN0012-RK-103-75-PAS_registered.ome.tiff
+VAN0013-LK-202-96-PAS_registered.ome.tiff
+
+VAN0003-LK-33-2-PAS_FFPE.ome.tiff
+VAN0005-RK-8-2-PAS_FFPE.ome.tiff
+VAN0006-LK-7-2-PAS_FFPE.ome.tiff
+VAN0009-LK-106-2-PAS_FFPE.ome.tiff
+VAN0011-RK-33-2-PAS_FFPE.ome.tiff
+VAN0014-LK-207-2-PAS_FFPE.ome.tiff
+
+FFPE_S164_kaggle.ome.tiff
+FFPE_S165_kaggle.ome.tiff
+FFPE_S170_kaggle.ome.tiff
+FFPE_S171_kaggle.ome.tiff
+FFPE_S172_kaggle.ome.tiff
+FrFr_S101_kaggle.ome.tiff
+FrFr_S102_kaggle.ome.tiff
+FrFr_S103_kaggle.ome.tiff
+FrFr_S104_kaggle.ome.tiff
+FrFr_S105_kaggle.ome.tiff
+
+python json_filter.py X:\hackathon_new\1\annotations\VAN0005-RK-1-1-PAS_registered.ome.json
+python json_filter.py X:\hackathon_new\1\annotations\VAN0006-LK-2-85-PAS_registered.ome.json
+python json_filter.py X:\hackathon_new\1\annotations\VAN0007-LK-203-103-PAS_registered.ome.json
+python json_filter.py X:\hackathon_new\1\annotations\VAN0008-RK-403-100-PAS_registered.ome.json
+python json_filter.py X:\hackathon_new\1\annotations\VAN0009-LK-102-7-PAS_registered.ome.json
+python json_filter.py X:\hackathon_new\1\annotations\VAN0010-LK-155-40-PAS_registered.ome.json
+python json_filter.py X:\hackathon_new\1\annotations\VAN0012-RK-103-75-PAS_registered.ome.json
+python json_filter.py X:\hackathon_new\1\annotations\VAN0013-LK-202-96-PAS_registered.ome.json
+python json_filter.py X:\hackathon_new\1\annotations\VAN0014-LK-203-108-PAS_registered.ome.json
+python json_filter.py X:\hackathon_new\1\annotations\VAN0016-LK-202-89-PAS_registered.ome.json
+python json_filter.py X:\hackathon_new\2\annotations\VAN0003-LK-33-2-PAS_FFPE.ome.json
+python json_filter.py X:\hackathon_new\2\annotations\VAN0005-RK-8-2-PAS_FFPE.ome.json
+python json_filter.py X:\hackathon_new\2\annotations\VAN0006-LK-7-2-PAS_FFPE.ome.json
+python json_filter.py X:\hackathon_new\2\annotations\VAN0009-LK-106-2-PAS_FFPE.ome.json
+python json_filter.py X:\hackathon_new\2\annotations\VAN0010-LK-160-2-PAS_FFPE.ome.json
+python json_filter.py X:\hackathon_new\2\annotations\VAN0011-RK-33-2-PAS_FFPE.ome.json
+python json_filter.py X:\hackathon_new\2\annotations\VAN0013-LK-206-2-PAS_FFPE.ome.json
+python json_filter.py X:\hackathon_new\2\annotations\VAN0014-LK-207-2-PAS_FFPE.ome.json
+python json_filter.py X:\hackathon_new\2\annotations\VAN0016-LK-208-2-PAS_FFPE.ome.json
+python json_filter.py X:\hackathon_new\3\annotations\FFPE_S164_kaggle.ome.json
+python json_filter.py X:\hackathon_new\3\annotations\FFPE_S165_kaggle.ome.json
+python json_filter.py X:\hackathon_new\3\annotations\FFPE_S170_kaggle.ome.json
+python json_filter.py X:\hackathon_new\3\annotations\FFPE_S171_kaggle.ome.json
+python json_filter.py X:\hackathon_new\3\annotations\FFPE_S172_kaggle.ome.json
+python json_filter.py X:\hackathon_new\3\annotations\FrFr_S101_kaggle.ome.json
+python json_filter.py X:\hackathon_new\3\annotations\FrFr_S102_kaggle.ome.json
+python json_filter.py X:\hackathon_new\3\annotations\FrFr_S103_kaggle.ome.json
+python json_filter.py X:\hackathon_new\3\annotations\FrFr_S104_kaggle.ome.json
+python json_filter.py X:\hackathon_new\3\annotations\FrFr_S105_kaggle.ome.json

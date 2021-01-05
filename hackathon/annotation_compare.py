@@ -1,23 +1,9 @@
 import json
-import csv
 import shutil
 import os
 import sys
 from shapely.geometry import Polygon
-from skimage import io
-import numpy as np
-from PIL import Image, ImageDraw, ImageFont
-from bokeh.io import output_file
-from bokeh.plotting import figure
-from bokeh.models import HoverTool, ColumnDataSource
-from bokeh.plotting import save, show
 
-
-# from bokeh.palettes import Set2_5
-
-
-# from read_roi import read_roi_zip
-# from collections import OrderedDict
 
 def make_dir(path):
     if not os.path.exists(path):
@@ -112,7 +98,8 @@ if __name__ == '__main__':
 
     removed_count = len(center_list_old)
     print("before\tafter\tsame\trevised\tadded\tdeleted")
-    print(f"{len(A_x_list)}\t{len(B_x_list)}\t{len(new_same_list)}\t{len(new_revised_list)}\t{len(new_added_list)}\t{removed_count}")
+    print(f"{len(A_x_list)}\t{len(B_x_list)}\t{len(new_same_list)}\t{len(new_revised_list)}"
+          f"\t{len(new_added_list)}\t{removed_count}")
     # print(f"{len(new_same_list)} same")
     # print(f"{len(new_revised_list)} revised")
     # print(f"{len(new_added_list)} added")

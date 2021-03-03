@@ -174,11 +174,19 @@ if __name__ == '__main__':
             color_list_2 = []
 
             for item in data:
-                coor_list.extend(item["geometry"]["coordinates"])
-                type_list.append(item["properties"]["classification"]["name"])
-                color_list.append(
-                    f'{"#{:06x}".format(abs(int(item["properties"]["classification"]["colorRGB"])))}')
-                color_list_2.append(Set1_6[ALL_TYPE_LIST.index(type_list[-1].title())])
+                if item["geometry"]["type"] != "MultiPolygon":
+                    coor_list.extend(item["geometry"]["coordinates"])
+                    type_list.append(item["properties"]["classification"]["name"])
+                    color_list.append(
+                        f'{"#{:06x}".format(abs(int(item["properties"]["classification"]["colorRGB"])))}')
+                    color_list_2.append(Set1_6[ALL_TYPE_LIST.index(type_list[-1].title())])
+                else:
+                    for polygon in item["geometry"]["coordinates"]:
+                        coor_list.extend(polygon)
+                        type_list.append(item["properties"]["classification"]["name"])
+                        color_list.append(
+                            f'{"#{:06x}".format(abs(int(item["properties"]["classification"]["colorRGB"])))}')
+                        color_list_2.append(Set1_6[ALL_TYPE_LIST.index(type_list[-1].title())])
             ALL_TYPE_LIST.extend(type_list)
             x_list = [[xy[0] // rescale_index for xy in coor] for coor in coor_list]
             y_list = [[xy[1] // rescale_index for xy in coor] for coor in coor_list]

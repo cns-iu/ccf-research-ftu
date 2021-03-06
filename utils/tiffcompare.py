@@ -30,6 +30,8 @@ for image_path in (image_path_A, image_path_B):
 
     # data = imread(image_path)
     data = imageio.imread(image_path)
+    if len(data.shape) == 2:
+        data = imageio.volread(image_path)
     print("raw size: ", data.shape, "\tdata type: ", data.dtype)
 
     if len(data.shape) == 5:

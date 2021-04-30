@@ -26,16 +26,30 @@ color_table = [[255, 255, 255],  # 'white',
                [255, 255, 0],  # 'yellow',
                [0, 255, 0], ]  # 'green'
 
-new_image = np.zeros((image.shape[0], image.shape[1], 3))
+color_dict = {}
 
-for i in range(len(image)):
-    for j in range(len(image[i])):
-        for k in range(len(centers)):
-            center = centers[k]
-            if center - offset <= image[i][j] <= center + offset:
-                new_image[i][j] = color_table[k]
-                break
-    if i % 10 == 0:
-        print(i)
+for k in range(len(centers)):
+    center = centers[k]
+    for i in range(-offset, offset + 1):
+        color_dict[center + i] = color_table[k]
+
+new_image = np.zeros((image.shape[0], image.shape[1], 3), dtype='uint8')
+
+# for i in range(len(image)):
+#     # quick background conversion
+#     if np.amax(image[i]) == 0:
+#         new_image[i] = 255
+#         continue
+#
+#     for j in range(len(image[i])):
+#         for k in range(len(centers)):
+#             new_image[i][j] = color_dict[image[i][j]]
+#     if i % 100 == 0:
+#         print(i)
+
+for value in values:
+    mask = (image == value)
+    new_image[mask] = color_dict[value]
+    print(value)
 
 io.imsave(image_path.replace("jpg", "png"), new_image)

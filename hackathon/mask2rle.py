@@ -31,7 +31,10 @@ for image_file_name in file_names[:]:
 
     img = imageio.imread(image_path)
 
-    mask = np.array(img[:, :, 0])
+    if len(img.shape) == 2:
+        mask = img
+    else:
+        mask = np.array(img[:, :, 0])
 
     mask_2 = np.where(mask > 127, 1, 0)
 

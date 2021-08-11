@@ -62,7 +62,7 @@ def crop_patch(x_list, y_list, id_list, title):
         ys = y_list[_i]
 
         polygon = [(xs[j] - x_start, ys[j] - y_start) for j in range(len(xs))]
-        ImageDraw.Draw(img).line(polygon, fill="#4666FF", width=5)
+        ImageDraw.Draw(img).polygon(polygon, fill="#4666FF", width=5)
 
     left = np.array(img)
     margin = np.zeros((cropped_patch.shape[0], 10, 3))
@@ -124,14 +124,14 @@ def crop_patch_mxif(x_list, y_list, id_list, title, sub_x_list=None, sub_y_list=
         if remarks is not None:
             ImageDraw.Draw(img).text((20, 160), f'{remarks[_i]}', font=font)
         polygon = [(xs[j] - (mid_x - int(edge // 2)), ys[j] - (mid_y - int(edge // 2))) for j in range(len(xs))]
-        ImageDraw.Draw(img).line(polygon, fill="#4666FF", width=5)
+        ImageDraw.Draw(img).polygon(polygon, fill="#4666FF", width=5)
 
         if sub_x_list is not None and sub_y_list is not None:
             sub_xs = sub_x_list[_i]
             sub_ys = sub_y_list[_i]
             polygon = [(sub_xs[j] - (mid_x - int(edge // 2)), sub_ys[j] - (mid_y - int(edge // 2))) for j in
                        range(len(sub_xs))]
-            ImageDraw.Draw(img).line(polygon, fill="#FF8C00", width=5)
+            ImageDraw.Draw(img).polygon(polygon, fill="#FF8C00", width=5)
 
         left = np.array(img)
         margin = np.zeros((cropped_patch.shape[0], 10, 3))

@@ -1,4 +1,5 @@
 import json
+from re import split
 import shutil
 import os
 import sys
@@ -19,12 +20,15 @@ def dice(a, b):
 
 
 if __name__ == '__main__':
-    file_A_path = r'G:\HuBMAP\hackathon_new\3\annotations\FFPE_S164_kaggle.ome.json'
-    file_B_path = r'G:\HuBMAP\hackathon_new\history\anno_shifted\FFPE_S164_kaggle.ome.json'
+    file_A_path = r'C:\Users\yiju\Desktop\Copy\Scripts\masks\1-tom-mask\pred_2ec3f1bb9.json'
+    file_B_path = r'C:\Users\yiju\Desktop\Copy\Scripts\masks\1-tom-mask\gt_2ec3f1bb9.json'
 
     if len(sys.argv) >= 3:
         file_A_path = sys.argv[1]
         file_B_path = sys.argv[2]
+
+    A_name = file_A_path.split('\\')[-1].split('.')[0]
+    B_name = file_B_path.split('\\')[-1].split('.')[0]
 
     # A - new json
     with open(file_A_path) as data_file:
@@ -67,16 +71,26 @@ if __name__ == '__main__':
     new_revised_list = []
     op_list = []
 
-    threshold = 250
+    positon_threshold = 500
+    dice_threshold = 0.8
+
+    average_area = sum([Polygon(coor_list_a[i]).area for i in A_id_list]) / len(coor_list_a)
+    print("average area size: ", average_area)
+
+    ignore_count = 0
     for i in A_id_list:
         x, y = center_list_new[i]
         new_p = Polygon(coor_list_a[i])
+        if new_p.area < average_area / 50:
+            print("ignore", new_p.area)
+            ignore_count += 1
+            continue
         min_f1 = 0
         min_j = -1
         for j in range(len(center_list_old)):
             _x, _y = center_list_old[j]
             old_p = Polygon(coor_list_b[j])
-            if (x - _x) ** 2 + (y - _y) ** 2 <= threshold ** 2:
+            if (x - _x) ** 2 + (y - _y) ** 2 <= positon_threshold ** 2:
                 f1 = dice(new_p, old_p)
                 if f1 > min_f1:
                     min_f1 = f1
@@ -84,12 +98,13 @@ if __name__ == '__main__':
         if min_f1 > 0.999:
             _flag = f"Same\t{min_f1}"
             new_same_list.append(i)
-        elif min_f1 > 0.2:
+        elif min_f1 > dice_threshold:
             _flag = f"Revised\t{min_f1}"
             new_revised_list.append(i)
         else:
             _flag = f"Added\t{min_f1}"
             new_added_list.append(i)
+            # print(min_f1)
         if _flag.startswith("Same") or _flag.startswith("Revised"):
             if min_j != -1:
                 coor_list_b.pop(min_j)
@@ -97,9 +112,10 @@ if __name__ == '__main__':
         # print(i, _flag)
 
     removed_count = len(center_list_old)
-    print("before\tafter\tsame\trevised\tadded\tdeleted")
-    print(f"{len(A_x_list)}\t{len(B_x_list)}\t{len(new_same_list)}\t{len(new_revised_list)}"
+    print(f"{A_name}\t{B_name}\tsame\trevised\tadded\tdeleted")
+    print(f"{len(A_x_list)- ignore_count}\t{len(B_x_list)}\t{len(new_same_list)}\t{len(new_revised_list)}"
           f"\t{len(new_added_list)}\t{removed_count}")
+    print(f"[{len(new_added_list)}/{len(A_x_list) - ignore_count}]")
     # print(f"{len(new_same_list)} same")
     # print(f"{len(new_revised_list)} revised")
     # print(f"{len(new_added_list)} added")

@@ -20,8 +20,8 @@ def dice(a, b):
 
 
 if __name__ == '__main__':
-    file_A_path = r'C:\Users\yiju\Desktop\Copy\Scripts\masks\1-tom-mask\pred_2ec3f1bb9.json'
-    file_B_path = r'C:\Users\yiju\Desktop\Copy\Scripts\masks\1-tom-mask\gt_2ec3f1bb9.json'
+    file_A_path = r'C:\Users\yiju\Desktop\Copy\Scripts\masks\1-tom-mask\pred_colon_4_CL_HandE_1234_B004_bottomleft.json'
+    file_B_path = r'C:\Users\yiju\Desktop\Copy\Scripts\masks\1-tom-mask\gt_colon_CL_HandE_1234_B004_bottomleft.json'
 
     if len(sys.argv) >= 3:
         file_A_path = sys.argv[1]
@@ -29,15 +29,28 @@ if __name__ == '__main__':
 
     A_name = file_A_path.split('\\')[-1].split('.')[0]
     B_name = file_B_path.split('\\')[-1].split('.')[0]
+    print("A: ", A_name)
+    print("B: ", B_name)
 
     # A - new json
     with open(file_A_path) as data_file:
         data = json.load(data_file)
 
+
+    average_area = sum([Polygon(item["geometry"]["coordinates"][0]).area for item in data]) / len(data)
+    area_threshold = average_area / 50
+    print("average area size: ", average_area)
+    print("size threshold: ", area_threshold)
+
     coor_list_a = []
 
     for item in data:
-        coor_list_a.extend(item["geometry"]["coordinates"])
+        coor = item["geometry"]["coordinates"]
+        poly = Polygon(coor[0])
+        if poly.area > area_threshold:
+            coor_list_a.extend(item["geometry"]["coordinates"])
+        else:
+            print("A ignore", poly.area)
     A_x_list = [[xy[0] for xy in coor] for coor in coor_list_a]
     A_y_list = [[xy[1] for xy in coor] for coor in coor_list_a]
     A_id_list = [i for i in range(len(coor_list_a))]
@@ -49,7 +62,12 @@ if __name__ == '__main__':
     coor_list_b = []
 
     for item in data:
-        coor_list_b.extend(item["geometry"]["coordinates"])
+        coor = item["geometry"]["coordinates"]
+        poly = Polygon(coor[0])
+        if poly.area > area_threshold:
+            coor_list_b.extend(item["geometry"]["coordinates"])
+        else:
+            print("B ignore", poly.area)
     B_x_list = [[xy[0] for xy in coor] for coor in coor_list_b]
     B_y_list = [[xy[1] for xy in coor] for coor in coor_list_b]
 
@@ -72,19 +90,12 @@ if __name__ == '__main__':
     op_list = []
 
     positon_threshold = 500
-    dice_threshold = 0.8
-
-    average_area = sum([Polygon(coor_list_a[i]).area for i in A_id_list]) / len(coor_list_a)
-    print("average area size: ", average_area)
+    dice_threshold = 0.5
 
     ignore_count = 0
     for i in A_id_list:
         x, y = center_list_new[i]
         new_p = Polygon(coor_list_a[i])
-        if new_p.area < average_area / 50:
-            print("ignore", new_p.area)
-            ignore_count += 1
-            continue
         min_f1 = 0
         min_j = -1
         for j in range(len(center_list_old)):
@@ -112,10 +123,11 @@ if __name__ == '__main__':
         # print(i, _flag)
 
     removed_count = len(center_list_old)
-    print(f"{A_name}\t{B_name}\tsame\trevised\tadded\tdeleted")
-    print(f"{len(A_x_list)- ignore_count}\t{len(B_x_list)}\t{len(new_same_list)}\t{len(new_revised_list)}"
+    print(f"A\tB\tsame\tmatch\tadded\tdeleted")
+    print(f"{len(A_x_list)}\t{len(B_x_list)}\t{len(new_same_list)}\t{len(new_revised_list)}"
           f"\t{len(new_added_list)}\t{removed_count}")
-    print(f"[{len(new_added_list)}/{len(A_x_list) - ignore_count}]")
+    print(f"[FP: {len(new_added_list)}/{len(A_x_list)}]")
+    print(f"[FN: {removed_count}/{len(B_x_list)}]")
     # print(f"{len(new_same_list)} same")
     # print(f"{len(new_revised_list)} revised")
     # print(f"{len(new_added_list)} added")

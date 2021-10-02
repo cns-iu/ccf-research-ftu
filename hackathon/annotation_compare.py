@@ -16,7 +16,7 @@ def make_dir(path):
 
 def dice(a, b):
     # print(a.intersection(b).area)
-    return a.intersection(b).area / a.union(b).area
+    return 2 * a.intersection(b).area / (a.area + b.area)
 
 
 if __name__ == '__main__':
@@ -106,10 +106,10 @@ if __name__ == '__main__':
                 if f1 > min_f1:
                     min_f1 = f1
                     min_j = j
-        if min_f1 > 0.999:
+        if min_f1 >= 0.999:
             _flag = f"Same\t{min_f1}"
             new_same_list.append(i)
-        elif min_f1 > dice_threshold:
+        elif min_f1 >= dice_threshold:
             _flag = f"Revised\t{min_f1}"
             new_revised_list.append(i)
         else:

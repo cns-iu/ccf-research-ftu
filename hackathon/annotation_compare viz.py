@@ -19,7 +19,7 @@ def make_dir(path):
 
 def dice(a, b):
     # print(a.intersection(b).area)
-    return a.intersection(b).area / a.union(b).area
+    return 2 * a.intersection(b).area / (a.area + b.area)
 
 
 def find_diff(dice_thred=0.5):
@@ -99,10 +99,10 @@ def find_diff(dice_thred=0.5):
                 if f1 > min_f1:
                     min_f1 = f1
                     min_j = j
-        if min_f1 > 0.999:
+        if min_f1 >= 0.999:
             _flag = f"Same\t{min_f1}"
             new_same_list.append(i)
-        elif min_f1 > dice_threshold:
+        elif min_f1 >= dice_threshold:
             _flag = f"Revised\t{min_f1}"
             new_revised_list.append(i)
         else:
@@ -156,19 +156,27 @@ def find_diff(dice_thred=0.5):
     for i in new_added_list:
         coor_tuple = [(xy[1], xy[0]) for xy in coor_list_a[i]]
         # print(coor_tuple)
-        ImageDraw.Draw(img).line(coor_tuple, fill="yellow", width=5)
+        ImageDraw.Draw(img).line(coor_tuple, fill="yellow", width=4)
         # text
         f1 = new_added_f1_list[new_added_list.index(i)]
         if f1 > 0:
-            text = "{:.3f}".format(f1)
+            text = "{:.3f}".format(f1)  # + f",{Polygon(coor_list_a[i]).area}"
             ImageDraw.Draw(img).text(
-                (center_list_new[i][1] - 40, center_list_new[i][0] + 60), text, font=font
+                (center_list_new[i][1] - 40, center_list_new[i][0] + 60),
+                text,
+                font=font,
             )
 
     for coor_b in coor_list_b:
         coor_tuple = [(xy[1], xy[0]) for xy in coor_b]
         # print(coor_tuple)
-        ImageDraw.Draw(img).line(coor_tuple, fill="red", width=5)
+        ImageDraw.Draw(img).line(coor_tuple, fill="red", width=4)
+        # text = f",{Polygon(coor_b).area}"
+        # ImageDraw.Draw(img).text(
+        #     (coor_tuple[0][0], coor_tuple[0][1]),
+        #     text,
+        #     font=font,
+        # )
     img = np.array(img).astype("uint8")
     output_path = image_ref_path.replace(
         ".png", f'_{str(dice_thred).replace(".","_")}.png'

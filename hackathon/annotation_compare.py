@@ -5,6 +5,8 @@ import os
 import sys
 from shapely.geometry import Polygon
 
+Image.MAX_IMAGE_PIXELS = None
+
 
 def make_dir(path):
     if not os.path.exists(path):
@@ -63,9 +65,10 @@ if __name__ == '__main__':
 
     for item in data:
         coor = item["geometry"]["coordinates"]
+        coor = [[[xy[1], xy[0]] for xy in coor[0]]] # for some json. Comment this line if needed
         poly = Polygon(coor[0])
         if poly.area > area_threshold:
-            coor_list_b.extend(item["geometry"]["coordinates"])
+            coor_list_b.extend(coor)
         else:
             print("B ignore", poly.area)
     B_x_list = [[xy[0] for xy in coor] for coor in coor_list_b]

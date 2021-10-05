@@ -8,6 +8,8 @@ from PIL import Image, ImageDraw, ImageFont
 from skimage import io
 from shapely.geometry import Polygon
 
+Image.MAX_IMAGE_PIXELS = None
+
 
 def make_dir(path):
     if not os.path.exists(path):
@@ -55,9 +57,10 @@ def find_diff(dice_thred=0.5):
 
     for item in data:
         coor = item["geometry"]["coordinates"]
+        coor = [[[xy[1], xy[0]] for xy in coor[0]]] # for some json. Comment this line if needed
         poly = Polygon(coor[0])
         if poly.area > area_threshold:
-            coor_list_b.extend(item["geometry"]["coordinates"])
+            coor_list_b.extend(coor)
         else:
             print("B ignore", poly.area)
     B_x_list = [[xy[0] for xy in coor] for coor in coor_list_b]
@@ -156,7 +159,7 @@ def find_diff(dice_thred=0.5):
     for i in new_added_list:
         coor_tuple = [(xy[1], xy[0]) for xy in coor_list_a[i]]
         # print(coor_tuple)
-        ImageDraw.Draw(img).line(coor_tuple, fill="yellow", width=4)
+        ImageDraw.Draw(img).line(coor_tuple, fill="yellow", width=6)
         # text
         f1 = new_added_f1_list[new_added_list.index(i)]
         if f1 > 0:
@@ -170,7 +173,7 @@ def find_diff(dice_thred=0.5):
     for coor_b in coor_list_b:
         coor_tuple = [(xy[1], xy[0]) for xy in coor_b]
         # print(coor_tuple)
-        ImageDraw.Draw(img).line(coor_tuple, fill="red", width=4)
+        ImageDraw.Draw(img).line(coor_tuple, fill="red", width=6)
         # text = f",{Polygon(coor_b).area}"
         # ImageDraw.Draw(img).text(
         #     (coor_tuple[0][0], coor_tuple[0][1]),
@@ -186,18 +189,22 @@ def find_diff(dice_thred=0.5):
 
 
 if __name__ == "__main__":
-    file_A_path = r"C:\Users\yiju\Desktop\Copy\Scripts\masks\1-tom-mask\pred_colon_4_CL_HandE_1234_B004_bottomleft.json"
-    file_B_path = r"C:\Users\yiju\Desktop\Copy\Scripts\masks\1-tom-mask\gt_colon_CL_HandE_1234_B004_bottomleft.json"
-    image_ref_path = file_A_path.replace("json", "png")
+    file_A_path = (
+        r"C:\Users\yiju\Desktop\Copy\Scripts\masks\1-tom-new-kidney\pred_00a67c839.json"
+    )
+    file_B_path = (
+        r"C:\Users\yiju\Desktop\Copy\Data\hubmap-kidney-segmentation\test\00a67c839.json"
+    )
 
     if len(sys.argv) >= 3:
         file_A_path = sys.argv[1]
         file_B_path = sys.argv[2]
+    image_ref_path = file_A_path.replace("json", "png")
 
     A_name = file_A_path.split("\\")[-1].split(".")[0]
     B_name = file_B_path.split("\\")[-1].split(".")[0]
     print("A: ", A_name)
     print("B: ", B_name)
 
-    for d in [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
+    for d in [0.5]:  # [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
         find_diff(dice_thred=d)

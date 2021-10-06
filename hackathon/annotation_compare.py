@@ -4,7 +4,7 @@ import shutil
 import os
 import sys
 from shapely.geometry import Polygon
-
+from PIL import Image
 Image.MAX_IMAGE_PIXELS = None
 
 

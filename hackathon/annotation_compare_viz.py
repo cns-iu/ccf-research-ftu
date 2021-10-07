@@ -83,7 +83,7 @@ def find_diff(dice_thred=0.5):
     new_added_f1_list = []
     new_same_list = []
     new_revised_list = []
-    op_list = []
+    f1_list = []
 
     positon_threshold = 500
     dice_threshold = dice_thred
@@ -108,6 +108,7 @@ def find_diff(dice_thred=0.5):
         elif min_f1 >= dice_threshold:
             _flag = f"Revised\t{min_f1}"
             new_revised_list.append(i)
+            f1_list.append(min_f1)
         else:
             _flag = f"Added\t{min_f1}"
             new_added_list.append(i)
@@ -186,6 +187,12 @@ def find_diff(dice_thred=0.5):
     )
     io.imsave(output_path, img)
     print(f"Image saved to {output_path}")
+
+    # write f1
+    txt_path = file_A_path.replace("json", "txt")
+    with open(txt_path, 'w') as f:
+        for item in f1_list:
+            f.write("%s\n" % item)
 
 
 if __name__ == "__main__":

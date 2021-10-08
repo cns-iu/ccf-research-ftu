@@ -20,11 +20,18 @@ def make_dir(path):
 
 
 def dice(a, b):
-    # print(a.intersection(b).area)
     return 2 * a.intersection(b).area / (a.area + b.area)
 
 
-def find_diff(dice_thred=0.5):
+def recall(a, b):
+    return a.intersection(b).area / b.area
+
+
+def precision(a, b):
+    return a.intersection(b).area / a.area
+
+
+def find_diff(dice_thred=0.5, draw_preview=True, log_score=True):
     # A - new json
     with open(file_A_path) as data_file:
         data = json.load(data_file)
@@ -57,7 +64,9 @@ def find_diff(dice_thred=0.5):
 
     for item in data:
         coor = item["geometry"]["coordinates"]
-        coor = [[[xy[1], xy[0]] for xy in coor[0]]] # for some json. Comment this line if needed
+        coor = [
+            [[xy[1], xy[0]] for xy in coor[0]]
+        ]  # for some json. Comment this line if needed
         poly = Polygon(coor[0])
         if poly.area > area_threshold:
             coor_list_b.extend(coor)
@@ -94,6 +103,7 @@ def find_diff(dice_thred=0.5):
         new_p = Polygon(coor_list_a[i])
         min_f1 = 0
         min_j = -1
+        _recall, _precision = -1, -1
         for j in range(len(center_list_old)):
             _x, _y = center_list_old[j]
             old_p = Polygon(coor_list_b[j])
@@ -102,13 +112,16 @@ def find_diff(dice_thred=0.5):
                 if f1 > min_f1:
                     min_f1 = f1
                     min_j = j
+                    _recall = recall(new_p, old_p)
+                    _precision = precision(new_p, old_p)
+
         if min_f1 >= 0.999:
             _flag = f"Same\t{min_f1}"
             new_same_list.append(i)
         elif min_f1 >= dice_threshold:
             _flag = f"Revised\t{min_f1}"
             new_revised_list.append(i)
-            f1_list.append(min_f1)
+            f1_list.append((min_f1, _recall, _precision))
         else:
             _flag = f"Added\t{min_f1}"
             new_added_list.append(i)
@@ -134,74 +147,77 @@ def find_diff(dice_thred=0.5):
     # print(f"{removed_count} deleted")
 
     # draw visualization
-    ref_image = io.imread(image_ref_path)
-    background = np.zeros(shape=ref_image.shape, dtype=np.uint8)
-    img = Image.fromarray(background, "L")
-    img = img.convert("RGB")
-    font_path = r"c:\windows\fonts\bahnschrift.ttf"
-    font = ImageFont.truetype(font_path, size=48)
-    title_font = ImageFont.truetype(font_path, size=72)
-    ImageDraw.Draw(img).text(
-        (100, 400), text=f"DICE Threshold = {dice_thred}", font=title_font, fill="white"
-    )
-    ImageDraw.Draw(img).text(
-        (100, 480),
-        text=f"PREDICTION [FP: {len(new_added_list)}/{len(A_x_list)}]",
-        font=title_font,
-        fill="yellow",
-    )
-    ImageDraw.Draw(img).text(
-        (100, 560),
-        text=f"GROUND TRUTH [FN: {removed_count}/{len(B_x_list)}]",
-        font=title_font,
-        fill="red",
-    )
+    if draw_preview:
+        ref_image = io.imread(image_ref_path)
+        background = np.zeros(shape=ref_image.shape, dtype=np.uint8)
+        img = Image.fromarray(background, "L")
+        img = img.convert("RGB")
+        font_path = r"c:\windows\fonts\bahnschrift.ttf"
+        font = ImageFont.truetype(font_path, size=48)
+        title_font = ImageFont.truetype(font_path, size=72)
+        ImageDraw.Draw(img).text(
+            (100, 400),
+            text=f"DICE Threshold = {dice_thred}",
+            font=title_font,
+            fill="white",
+        )
+        ImageDraw.Draw(img).text(
+            (100, 480),
+            text=f"PREDICTION [FP: {len(new_added_list)}/{len(A_x_list)}]",
+            font=title_font,
+            fill="yellow",
+        )
+        ImageDraw.Draw(img).text(
+            (100, 560),
+            text=f"GROUND TRUTH [FN: {removed_count}/{len(B_x_list)}]",
+            font=title_font,
+            fill="red",
+        )
 
-    for i in new_added_list:
-        coor_tuple = [(xy[1], xy[0]) for xy in coor_list_a[i]]
-        # print(coor_tuple)
-        ImageDraw.Draw(img).line(coor_tuple, fill="yellow", width=6)
-        # text
-        f1 = new_added_f1_list[new_added_list.index(i)]
-        if f1 > 0:
-            text = "{:.3f}".format(f1)  # + f",{Polygon(coor_list_a[i]).area}"
-            ImageDraw.Draw(img).text(
-                (center_list_new[i][1] - 40, center_list_new[i][0] + 60),
-                text,
-                font=font,
-            )
+        for i in new_added_list:
+            coor_tuple = [(xy[1], xy[0]) for xy in coor_list_a[i]]
+            # print(coor_tuple)
+            ImageDraw.Draw(img).line(coor_tuple, fill="yellow", width=6)
+            # text
+            f1 = new_added_f1_list[new_added_list.index(i)]
+            if f1 > 0:
+                text = "{:.3f}".format(f1)  # + f",{Polygon(coor_list_a[i]).area}"
+                ImageDraw.Draw(img).text(
+                    (center_list_new[i][1] - 40, center_list_new[i][0] + 60),
+                    text,
+                    font=font,
+                )
 
-    for coor_b in coor_list_b:
-        coor_tuple = [(xy[1], xy[0]) for xy in coor_b]
-        # print(coor_tuple)
-        ImageDraw.Draw(img).line(coor_tuple, fill="red", width=6)
-        # text = f",{Polygon(coor_b).area}"
-        # ImageDraw.Draw(img).text(
-        #     (coor_tuple[0][0], coor_tuple[0][1]),
-        #     text,
-        #     font=font,
-        # )
-    img = np.array(img).astype("uint8")
-    output_path = image_ref_path.replace(
-        ".png", f'_{str(dice_thred).replace(".","_")}.png'
-    )
-    io.imsave(output_path, img)
-    print(f"Image saved to {output_path}")
+        for coor_b in coor_list_b:
+            coor_tuple = [(xy[1], xy[0]) for xy in coor_b]
+            # print(coor_tuple)
+            ImageDraw.Draw(img).line(coor_tuple, fill="red", width=6)
+            # text = f",{Polygon(coor_b).area}"
+            # ImageDraw.Draw(img).text(
+            #     (coor_tuple[0][0], coor_tuple[0][1]),
+            #     text,
+            #     font=font,
+            # )
+        img = np.array(img).astype("uint8")
+        output_path = image_ref_path.replace(
+            ".png", f'_{str(dice_thred).replace(".","_")}.png'
+        )
+        io.imsave(output_path, img)
+        print(f"Image saved to {output_path}")
 
-    # write f1
-    txt_path = file_A_path.replace("json", "txt")
-    with open(txt_path, 'w') as f:
-        for item in f1_list:
-            f.write("%s\n" % item)
+    # write score
+    if log_score:
+        txt_path = file_A_path.replace("json", "txt")
+        with open(txt_path, "w") as f:
+            for item in f1_list:
+                f.write(f"{item[0]},{item[1]},{item[2]}\n")
 
 
 if __name__ == "__main__":
     file_A_path = (
         r"C:\Users\yiju\Desktop\Copy\Scripts\masks\1-tom-new-kidney\pred_00a67c839.json"
     )
-    file_B_path = (
-        r"C:\Users\yiju\Desktop\Copy\Data\hubmap-kidney-segmentation\test\00a67c839.json"
-    )
+    file_B_path = r"C:\Users\yiju\Desktop\Copy\Data\hubmap-kidney-segmentation\test\00a67c839.json"
 
     if len(sys.argv) >= 3:
         file_A_path = sys.argv[1]
@@ -214,4 +230,4 @@ if __name__ == "__main__":
     print("B: ", B_name)
 
     for d in [0.5]:  # [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
-        find_diff(dice_thred=d)
+        find_diff(dice_thred=d, draw_preview=True, log_score=True)

@@ -34,62 +34,10 @@ opacity_dict = {'glom': 0.7,
                 'slide': 0.7}
 legend_dict = {'glom': 'Glomeruli level',
                'slide': 'Slide level'}
-slide_data_list = {
-    'dice':
-        {
-            '1-tom': [0.943188165, 0.961079137, 0.953428156, 0.934357092, 0.933479359, 0.956694982, 0.967721166,
-                      0.933724396,
-                      0.96592582, 0.965591155],
-            '2-gleb': [0.952393116, 0.959397398, 0.951393511, 0.928915237, 0.926595914, 0.944041508, 0.968221226,
-                       0.931576114,
-                       0.968755056, 0.968521052],
-            '3-wgo': [0.953199401, 0.95804897, 0.953169426, 0.926983793, 0.927142513, 0.945892562, 0.9680104,
-                      0.935391002,
-                      0.969020473, 0.967366009],
-            '4-dl': [0.947306437, 0.960884703, 0.954412276, 0.923693008, 0.933107576, 0.947617832, 0.96712454,
-                     0.937107882,
-                     0.965831476, 0.966191028],
-            '5-df2': [0.941346549, 0.956528184, 0.952521864, 0.92435312, 0.929414823, 0.952783557, 0.962843223,
-                      0.930907936,
-                      0.961034402, 0.962762678]
-        },
-    'recall':
-        {
-            '1-tom': [0.970925027, 0.976576622, 0.957900326, 0.925077842, 0.940247264, 0.951788203, 0.98073709,
-                      0.936513533,
-                      0.986834767, 0.975264422],
-            '2-gleb': [0.971597264, 0.967761765, 0.949523745, 0.919829879, 0.921580618, 0.919853279, 0.978042208,
-                       0.929255096,
-                       0.985338446, 0.976697462],
-            '3-wgo': [0.970736419, 0.966151386, 0.955430145, 0.923189017, 0.929370667, 0.924454622, 0.9782275,
-                      0.949752007,
-                      0.984654408, 0.976339429],
-            '4-dl': [0.97277197, 0.974315405, 0.952385169, 0.921179507, 0.940634557, 0.943403175, 0.980633463,
-                     0.941371297,
-                     0.985799959, 0.97687656],
-            '5-df2': [0.978186874, 0.976401924, 0.964576081, 0.945606181, 0.945032876, 0.954610658, 0.986160451,
-                      0.942748206,
-                      0.990072082, 0.983927639]
-        },
-    'precision':
-        {
-            '1-tom': [0.916992031, 0.946065835, 0.94899755, 0.943824385, 0.926808189, 0.961652614, 0.9550462,
-                      0.930951824,
-                      0.945884522, 0.956107894],
-            '2-gleb': [0.933933415, 0.951176379, 0.953270655, 0.938181862, 0.931666095, 0.969536187, 0.958595517,
-                       0.933908756,
-                       0.952720628, 0.960480402],
-            '3-wgo': [0.936284775, 0.950081322, 0.950919381, 0.930809895, 0.924925018, 0.968348391, 0.958004519,
-                      0.921457827,
-                      0.953875237, 0.958556035],
-            '4-dl': [0.923140181, 0.947819245, 0.956448031, 0.926220263, 0.925700102, 0.951870316, 0.953982751,
-                     0.93288291,
-                     0.9466559, 0.955736733],
-            '5-df2': [0.907180457, 0.937447328, 0.94076521, 0.904034409, 0.914304599, 0.950963436, 0.940603173,
-                      0.919361389,
-                      0.933651474, 0.942489088]
-        },
-}
+location_dict = {'dice': [1, 1],
+                 'recall': [1, 2],
+                 'precision': [2, 2],
+                 }
 
 data_types = ['dice', 'recall', 'precision']
 glom_data_list = {
@@ -97,6 +45,12 @@ glom_data_list = {
     'recall': {},
     'precision': {},
 }
+slide_data_list = {
+    'dice': {},
+    'recall': {},
+    'precision': {},
+}
+
 for team in team_names:
     file_path = target_root_path + rf"\{team}.txt"
     with open(file_path, 'r') as f:
@@ -104,9 +58,13 @@ for team in team_names:
         glom_data_list['dice'][team] = [float(line.split(',')[0]) for line in lines if len(line) > 1]
         glom_data_list['recall'][team] = [float(line.split(',')[1]) for line in lines if len(line) > 1]
         glom_data_list['precision'][team] = [float(line.split(',')[2]) for line in lines if len(line) > 1]
-    # matching_data_list[team] = []
 
-print(glom_data_list)
+    slide_file_path = target_root_path + rf"\{team}_sum.txt"
+    with open(slide_file_path, 'r') as f:
+        lines = f.read().splitlines()
+        slide_data_list['dice'][team] = [float(line.split(',')[0]) for line in lines if len(line) > 1]
+        slide_data_list['recall'][team] = [float(line.split(',')[1]) for line in lines if len(line) > 1]
+        slide_data_list['precision'][team] = [float(line.split(',')[2]) for line in lines if len(line) > 1]
 
 # display box and scatter plot along with violin plot
 # fig = pt.violin(n_data, y="distance", x="Age", color="Skin Type",
@@ -116,17 +74,17 @@ print(glom_data_list)
 # fig = go.Figure()
 
 fig = make_subplots(
-    rows=3, cols=1,
-    row_heights=[0.5, 0.25, 0.25],
+    rows=2, cols=2,
+    row_heights=[0.5, 0.5],
     # specs=[[{"type": "Scatter3d", "colspan": 4}, None, None, None],
     #        [{"type": "Histogram"}, {"type": "Histogram"}, {"type": "Histogram"}, {"type": "Histogram"}]],
     shared_xaxes=True,
-    vertical_spacing=0.02,
+    vertical_spacing=0.04,
+    horizontal_spacing=0.04,
     # subplot_titles=[f'All', 'CD68 / Macrophage', 'T-Helper', 'T-Regulatory'],
-    subplot_titles=[f'Dice coefficient', 'Recall', 'Precision', ],
-    specs=[[{"secondary_y": False}],
-           [{"secondary_y": False}],
-           [{"secondary_y": False}], ]
+    subplot_titles=[f'Dice coefficient', 'Recall', '', 'Precision', ],
+    specs=[[{"secondary_y": False, "rowspan": 2}, {"secondary_y": False}],
+           [None, {"secondary_y": False}], ]
 )
 
 # fig.add_trace(go.Violin(x=n_data['Region'][n_data['Skin Type'] == 'Sun-Exposed'],
@@ -178,7 +136,7 @@ for data_type in data_types:
                           legendgrouptitle_text=legend_dict[level_type],
                           box_visible=True, box_fillcolor='white',
                           line_color=color_dict[f'{team}-{level_type}'], meanline_visible=True, ),
-                secondary_y=False, row=data_types.index(data_type) + 1, col=1
+                secondary_y=False, row=location_dict[data_type][0], col=location_dict[data_type][1],
             )
 
 # fig.update_traces(# meanline_visible=False,
@@ -192,9 +150,8 @@ fig.update_layout(
     yaxis_zeroline=False)
 # fig.update_yaxes(title_text="glom level (~2000 gloms) \n/ slide level (10 slides)", )
 fig.update_yaxes(title_text="Dice", row=1, col=1)
-fig.update_yaxes(title_text="Recall", row=2, col=1)
-fig.update_yaxes(title_text="Precision", row=3, col=1)
-
+fig.update_yaxes(title_text="Recall", row=1, col=2)
+fig.update_yaxes(title_text="Precision", row=2, col=2)
 
 fig.write_html(os.path.join(target_root_path, f"result.html"))
 fig.show()

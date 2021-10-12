@@ -1,7 +1,8 @@
 import os
 import plotly.graph_objects as go
-import pandas as pd
 from plotly.subplots import make_subplots
+
+# import pandas as pd
 
 target_list = ['glom', 'crypt']
 target = 0
@@ -167,5 +168,5 @@ for i in fig['layout']['annotations']:
 fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.92, 0.94, 0.96, 0.98, 1.0])
 fig.update_yaxes(tickfont=dict(size=14), col=2)
 
-fig.write_html(os.path.join(target_root_path, f"result.html"))
+fig.write_html(os.path.join(target_root_path, f"kaggle_{target_list[target]}_violin.html"))
 fig.show()

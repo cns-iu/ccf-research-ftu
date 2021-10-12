@@ -5,7 +5,7 @@ from plotly.subplots import make_subplots
 # import pandas as pd
 
 target_list = ['glom', 'crypt']
-target = 0
+target = 1
 target_root_path = rf"violin_data/{target_list[target]}"
 team_names = ['1-tom', '2-gleb', '3-wgo', '4-dl', '5-df2']
 
@@ -21,20 +21,33 @@ color_dict = {'1-tom-glom': 'black',
               '5-df2-slide': 'violet',
               }
 
-point_position_dict = {'1-tom-slide': 0.8,
-                       '1-tom-glom': -1.1,
-                       '2-gleb-slide': 0.8,
-                       '2-gleb-glom': -1.1,
-                       '3-wgo-slide': 0.8,
-                       '3-wgo-glom': -1.1,
-                       '4-dl-slide': 0.8,
-                       '4-dl-glom': -1.1,
-                       '5-df2-slide': 0.8,
-                       '5-df2-glom': -1.1,
-                       }
+point_position_dict = {
+    'glom': {'1-tom-slide': 0.75,
+             '1-tom-glom': -1.05,
+             '2-gleb-slide': 0.75,
+             '2-gleb-glom': -1.05,
+             '3-wgo-slide': 0.65,
+             '3-wgo-glom': -1.05,
+             '4-dl-slide': 0.80,
+             '4-dl-glom': -1.05,
+             '5-df2-slide': 0.75,
+             '5-df2-glom': -1.05,
+             },
+    'crypt': {'1-tom-slide': 0.35,
+              '1-tom-glom': -0.8,
+              '2-gleb-slide': 0.25,
+              '2-gleb-glom': -0.8,
+              '3-wgo-slide': 0.25,
+              '3-wgo-glom': -0.4,
+              '4-dl-slide': 0.25,
+              '4-dl-glom': -0.8,
+              '5-df2-slide': 0.35,
+              '5-df2-glom': -1.1,
+              },
+}
 
-opacity_dict = {'glom': 0.7,
-                'slide': 0.7}
+opacity_dict = {'glom': 0.8,
+                'slide': 0.8}
 legend_dict = {'glom': {'glom': 'Glomeruli level',
                         'slide': 'Slide level'},
                'crypt': {'glom': 'Crypt level',
@@ -134,11 +147,12 @@ for data_type in data_types:
                              if level_type == 'glom' else slide_data_list[data_type][team]),
                           name=team,
                           points="all", opacity=opacity_dict[level_type],
-                          pointpos=point_position_dict[f'{team}-{level_type}'],
+                          pointpos=point_position_dict[target_list[target]][f'{team}-{level_type}'],
                           side=('positive' if level_type == 'slide' else 'negative'),
                           legendgroup=level_type, showlegend=True if data_type == 'dice' else False,
                           scalemode='width', scalegroup="all", width=0,  # level_type + data_type,
-                          jitter=0.05, marker_opacity=0.5, marker_size=2, line_width=1, spanmode='soft',
+                          jitter=0.05, marker_opacity=0.85, marker_size=1 if level_type == 'glom' else 4,
+                          line_width=1.5, spanmode='soft',
                           legendgrouptitle_text=legend_dict[target_list[target]][level_type],
                           box_visible=True, box_fillcolor='white',
                           line_color=color_dict[f'{team}-{level_type}'], meanline_visible=True, ),
@@ -158,15 +172,17 @@ fig.update_layout(
     yaxis_zeroline=False,
     font=dict(
         family="Bahnschrift, Arial",
-        size=16,
+        size=20,
         # color="RebeccaPurple"
     ))
 # sub plot title font size
 for i in fig['layout']['annotations']:
-    i['font'] = dict(size=22)
+    i['font'] = dict(size=28)
 
-fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.92, 0.94, 0.96, 0.98, 1.0])
-fig.update_yaxes(tickfont=dict(size=14), col=2)
+fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.92, 0.94, 0.96, 0.98, 1.0], col=1)
+fig.update_yaxes(tickfont=dict(size=20), col=2)
+fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1.0], col=2)
+fig.update_yaxes(tickfont=dict(size=18), col=2)
 
 fig.write_html(os.path.join(target_root_path, f"kaggle_{target_list[target]}_violin.html"))
 fig.show()

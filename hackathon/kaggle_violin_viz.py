@@ -3,7 +3,9 @@ import plotly.graph_objects as go
 import pandas as pd
 from plotly.subplots import make_subplots
 
-target_root_path = r"C:\Users\yiju\Desktop\crypt"
+target_list = ['glom', 'crypt']
+target = 0
+target_root_path = rf"violin_data/{target_list[target]}"
 team_names = ['1-tom', '2-gleb', '3-wgo', '4-dl', '5-df2']
 
 color_dict = {'1-tom-glom': 'black',
@@ -32,8 +34,11 @@ point_position_dict = {'1-tom-slide': 0.8,
 
 opacity_dict = {'glom': 0.7,
                 'slide': 0.7}
-legend_dict = {'glom': 'Glomeruli level',
-               'slide': 'Slide level'}
+legend_dict = {'glom': {'glom': 'Glomeruli level',
+                        'slide': 'Slide level'},
+               'crypt': {'glom': 'Crypt level',
+                         'slide': 'Slide level'}
+               }
 location_dict = {'dice': [1, 1],
                  'recall': [1, 2],
                  'precision': [2, 2],
@@ -82,9 +87,9 @@ fig = make_subplots(
     vertical_spacing=0.04,
     horizontal_spacing=0.04,
     # subplot_titles=[f'All', 'CD68 / Macrophage', 'T-Helper', 'T-Regulatory'],
-    subplot_titles=[f'Dice coefficient', 'Recall', '', 'Precision', ],
+    subplot_titles=[f'Dice coefficient', 'Recall', 'Precision', ],
     specs=[[{"secondary_y": False, "rowspan": 2}, {"secondary_y": False}],
-           [None, {"secondary_y": False}], ]
+           [None, {"secondary_y": False}], ],
 )
 
 # fig.add_trace(go.Violin(x=n_data['Region'][n_data['Skin Type'] == 'Sun-Exposed'],
@@ -131,9 +136,9 @@ for data_type in data_types:
                           pointpos=point_position_dict[f'{team}-{level_type}'],
                           side=('positive' if level_type == 'slide' else 'negative'),
                           legendgroup=level_type, showlegend=True if data_type == 'dice' else False,
-                          scalegroup='', scalemode='width',
-                          jitter=0.05, marker_opacity=0.5, marker_size=2, line_width=2,
-                          legendgrouptitle_text=legend_dict[level_type],
+                          scalemode='width', scalegroup="all", width=0,  # level_type + data_type,
+                          jitter=0.05, marker_opacity=0.5, marker_size=2, line_width=1, spanmode='soft',
+                          legendgrouptitle_text=legend_dict[target_list[target]][level_type],
                           box_visible=True, box_fillcolor='white',
                           line_color=color_dict[f'{team}-{level_type}'], meanline_visible=True, ),
                 secondary_y=False, row=location_dict[data_type][0], col=location_dict[data_type][1],
@@ -141,22 +146,26 @@ for data_type in data_types:
 
 # fig.update_traces(# meanline_visible=False,
 #                   scalemode='count')  # scale violin plot area with total count
+title_texts = ["Kidney - dice/recall/precision  [glom level (~2000 matching gloms) \n/ slide level (10 slides)]",
+               "Colon - dice/recall/precision  [crypt level (~160 matching crypts) \n/ slide level (2 slides)]"]
 fig.update_layout(
-    title="Kidney - dice/recall/precision data  [glom level (~2000 matching gloms) \n/ slide level (10 slides)]",
+    title=title_texts[target],
     # x1axis_title="Age",
     # yaxis_title="Dice",
-    violingap=0.3, violingroupgap=0,
+    violingap=0, violingroupgap=0,
     violinmode='overlay',
     yaxis_zeroline=False,
     font=dict(
-        #family="Courier New, monospace",
-        size=18,
-        #color="RebeccaPurple"
+        family="Bahnschrift, Arial",
+        size=16,
+        # color="RebeccaPurple"
     ))
-# fig.update_yaxes(title_text="glom level (~2000 gloms) \n/ slide level (10 slides)", )
-# fig.update_yaxes(title_text="Dice", row=1, col=1, title_standoff = 25)
-# fig.update_yaxes(title_text="Recall", row=1, col=2, title_standoff = 25)
-# fig.update_yaxes(title_text="Precision", row=2, col=2, title_standoff = 25)
+# sub plot title font size
+for i in fig['layout']['annotations']:
+    i['font'] = dict(size=22)
+
+fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.92, 0.94, 0.96, 0.98, 1.0])
+fig.update_yaxes(tickfont=dict(size=14), col=2)
 
 fig.write_html(os.path.join(target_root_path, f"result.html"))
 fig.show()

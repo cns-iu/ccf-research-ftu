@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 import pandas as pd
 from plotly.subplots import make_subplots
 
-target_root_path = r"C:\Users\bunny\Desktop\glom"
+target_root_path = r"C:\Users\yiju\Desktop\crypt"
 team_names = ['1-tom', '2-gleb', '3-wgo', '4-dl', '5-df2']
 
 color_dict = {'1-tom-glom': 'black',
@@ -147,11 +147,16 @@ fig.update_layout(
     # yaxis_title="Dice",
     violingap=0.3, violingroupgap=0,
     violinmode='overlay',
-    yaxis_zeroline=False)
+    yaxis_zeroline=False,
+    font=dict(
+        #family="Courier New, monospace",
+        size=18,
+        #color="RebeccaPurple"
+    ))
 # fig.update_yaxes(title_text="glom level (~2000 gloms) \n/ slide level (10 slides)", )
-fig.update_yaxes(title_text="Dice", row=1, col=1)
-fig.update_yaxes(title_text="Recall", row=1, col=2)
-fig.update_yaxes(title_text="Precision", row=2, col=2)
+# fig.update_yaxes(title_text="Dice", row=1, col=1, title_standoff = 25)
+# fig.update_yaxes(title_text="Recall", row=1, col=2, title_standoff = 25)
+# fig.update_yaxes(title_text="Precision", row=2, col=2, title_standoff = 25)
 
 fig.write_html(os.path.join(target_root_path, f"result.html"))
 fig.show()

@@ -5,54 +5,64 @@ from plotly.subplots import make_subplots
 # import pandas as pd
 
 target_list = ['glom', 'crypt']
-target = 1
-target_root_path = rf"violin_data/{target_list[target]}"
+target_root_path = rf"violin_data/"
 team_names = ['1-tom', '2-gleb', '3-wgo', '4-dl', '5-df2']
 
 color_dict = {'1-tom-glom': 'black',
-              '1-tom-slide': 'grey',
+              '1-tom-crypt': 'grey',
               '2-gleb-glom': 'orangered',
-              '2-gleb-slide': 'orange',
+              '2-gleb-crypt': 'orange',
               '3-wgo-glom': 'midnightblue',
-              '3-wgo-slide': 'royalblue',
+              '3-wgo-crypt': 'royalblue',
               '4-dl-glom': 'darkolivegreen',
-              '4-dl-slide': 'mediumseagreen',
+              '4-dl-crypt': 'mediumseagreen',
               '5-df2-glom': 'purple',
-              '5-df2-slide': 'violet',
+              '5-df2-crypt': 'violet',
               }
 
 point_position_dict = {
-    'glom': {'1-tom-slide': 0.75,
-             '1-tom-glom': -1.05,
-             '2-gleb-slide': 0.75,
-             '2-gleb-glom': -1.05,
-             '3-wgo-slide': 0.65,
-             '3-wgo-glom': -1.05,
-             '4-dl-slide': 0.80,
-             '4-dl-glom': -1.05,
-             '5-df2-slide': 0.75,
-             '5-df2-glom': -1.05,
-             },
-    'crypt': {'1-tom-slide': 0.35,
-              '1-tom-glom': -0.8,
-              '2-gleb-slide': 0.25,
-              '2-gleb-glom': -0.8,
-              '3-wgo-slide': 0.25,
-              '3-wgo-glom': -0.4,
-              '4-dl-slide': 0.25,
-              '4-dl-glom': -0.8,
-              '5-df2-slide': 0.35,
-              '5-df2-glom': -1.1,
-              },
+    'dice': {
+        '1-tom-crypt': 0.75,
+        '1-tom-glom': -1.05,
+        '2-gleb-crypt': 0.80,
+        '2-gleb-glom': -1.05,
+        '3-wgo-crypt': 0.45,
+        '3-wgo-glom': -1.05,
+        '4-dl-crypt': 0.80,
+        '4-dl-glom': -1.05,
+        '5-df2-crypt': 0.30,
+        '5-df2-glom': -1.05,
+    },
+    'recall': {
+        '1-tom-crypt': 0.50,
+        '1-tom-glom': -1.05,
+        '2-gleb-crypt': 0.80,
+        '2-gleb-glom': -1.00,
+        '3-wgo-crypt': 0.30,
+        '3-wgo-glom': -1.00,
+        '4-dl-crypt': 0.50,
+        '4-dl-glom': -0.85,
+        '5-df2-crypt': 0.25,
+        '5-df2-glom': -1.05,
+    },
+    'precision': {
+        '1-tom-crypt': 0.50,
+        '1-tom-glom': -0.70,
+        '2-gleb-crypt': 0.40,
+        '2-gleb-glom': -0.70,
+        '3-wgo-crypt': 0.30,
+        '3-wgo-glom': -0.70,
+        '4-dl-crypt': 0.50,
+        '4-dl-glom': -0.65,
+        '5-df2-crypt': 1.05,
+        '5-df2-glom': -0.65,
+    },
 }
 
 opacity_dict = {'glom': 0.8,
-                'slide': 0.8}
-legend_dict = {'glom': {'glom': 'Glomeruli level',
-                        'slide': 'Slide level'},
-               'crypt': {'glom': 'Crypt level',
-                         'slide': 'Slide level'}
-               }
+                'crypt': 0.8}
+legend_dict = {'glom': 'Glomerulus-level',
+               'crypt': 'Crypt-level'}
 location_dict = {'dice': [1, 1],
                  'recall': [1, 2],
                  'precision': [2, 2],
@@ -64,26 +74,20 @@ glom_data_list = {
     'recall': {},
     'precision': {},
 }
-slide_data_list = {
+crypt_data_list = {
     'dice': {},
     'recall': {},
     'precision': {},
 }
 
-for team in team_names:
-    file_path = target_root_path + rf"\{team}.txt"
-    with open(file_path, 'r') as f:
-        lines = f.read().splitlines()
-        glom_data_list['dice'][team] = [float(line.split(',')[0]) for line in lines if len(line) > 1]
-        glom_data_list['recall'][team] = [float(line.split(',')[1]) for line in lines if len(line) > 1]
-        glom_data_list['precision'][team] = [float(line.split(',')[2]) for line in lines if len(line) > 1]
-
-    slide_file_path = target_root_path + rf"\{team}_sum.txt"
-    with open(slide_file_path, 'r') as f:
-        lines = f.read().splitlines()
-        slide_data_list['dice'][team] = [float(line.split(',')[0]) for line in lines if len(line) > 1]
-        slide_data_list['recall'][team] = [float(line.split(',')[1]) for line in lines if len(line) > 1]
-        slide_data_list['precision'][team] = [float(line.split(',')[2]) for line in lines if len(line) > 1]
+for target, data_list in zip(target_list, [glom_data_list, crypt_data_list]):
+    for team in team_names:
+        file_path = target_root_path + rf"{target}\{team}.txt"
+        with open(file_path, 'r') as f:
+            lines = f.read().splitlines()
+            data_list['dice'][team] = [float(line.split(',')[0]) for line in lines if len(line) > 1]
+            data_list['recall'][team] = [float(line.split(',')[1]) for line in lines if len(line) > 1]
+            data_list['precision'][team] = [float(line.split(',')[2]) for line in lines if len(line) > 1]
 
 # display box and scatter plot along with violin plot
 # fig = pt.violin(n_data, y="distance", x="Age", color="Skin Type",
@@ -139,21 +143,21 @@ fig = make_subplots(
 
 for data_type in data_types:
     for team in team_names:
-        for level_type in ['glom', 'slide']:
+        for level_type in ['glom', 'crypt']:
             fig.add_trace(
                 go.Violin(x=[team] * (len(glom_data_list[data_type][team])
-                                      if level_type == 'glom' else len(slide_data_list[data_type][team])),
+                                      if level_type == 'glom' else len(crypt_data_list[data_type][team])),
                           y=(glom_data_list[data_type][team]
-                             if level_type == 'glom' else slide_data_list[data_type][team]),
+                             if level_type == 'glom' else crypt_data_list[data_type][team]),
                           name=team,
                           points="all", opacity=opacity_dict[level_type],
-                          pointpos=point_position_dict[target_list[target]][f'{team}-{level_type}'],
-                          side=('positive' if level_type == 'slide' else 'negative'),
+                          pointpos=point_position_dict[data_type][f'{team}-{level_type}'],
+                          side=('positive' if level_type == 'crypt' else 'negative'),
                           legendgroup=level_type, showlegend=True if data_type == 'dice' else False,
                           scalemode='width', scalegroup="all", width=0,  # level_type + data_type,
-                          jitter=0.05, marker_opacity=0.85, marker_size=1 if level_type == 'glom' else 4,
+                          jitter=0.05, marker_opacity=0.85, marker_size=1 if level_type == 'glom' else 2.5,
                           line_width=1.5, spanmode='soft',
-                          legendgrouptitle_text=legend_dict[target_list[target]][level_type],
+                          legendgrouptitle_text=legend_dict[level_type],
                           box_visible=True, box_fillcolor='white',
                           line_color=color_dict[f'{team}-{level_type}'], meanline_visible=True, ),
                 secondary_y=False, row=location_dict[data_type][0], col=location_dict[data_type][1],
@@ -161,10 +165,15 @@ for data_type in data_types:
 
 # fig.update_traces(# meanline_visible=False,
 #                   scalemode='count')  # scale violin plot area with total count
-title_texts = ["Kidney - dice/recall/precision  [glom level (~2000 matching gloms) \n/ slide level (10 slides)]",
-               "Colon - dice/recall/precision  [crypt level (~160 matching crypts) \n/ slide level (2 slides)]"]
+sub_title_text = "[Glomerulus-level (~2000 matching gloms) \n/ Crypt-level (~160 matching crypts)]"
+title_text = f"Kidney/Colon - dice/recall/precision <br><sup>{sub_title_text}</sup>"
 fig.update_layout(
-    title=title_texts[target],
+    title={
+        'text': title_text,
+        # 'y':0.9,
+        'x': 0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'},
     # x1axis_title="Age",
     # yaxis_title="Dice",
     violingap=0, violingroupgap=0,
@@ -184,5 +193,5 @@ fig.update_yaxes(tickfont=dict(size=20), col=2)
 fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1.0], col=2)
 fig.update_yaxes(tickfont=dict(size=18), col=2)
 
-fig.write_html(os.path.join(target_root_path, f"kaggle_{target_list[target]}_violin.html"))
+fig.write_html(os.path.join(target_root_path, f"kaggle_violin.html"))
 fig.show()

@@ -194,4 +194,5 @@ fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1.
 fig.update_yaxes(tickfont=dict(size=18), col=2)
 
 fig.write_html(os.path.join(target_root_path, f"kaggle_violin.html"))
+fig.write_image(os.path.join(target_root_path, f"kaggle_violin.svg"), width=2560, height=1440)
 fig.show()

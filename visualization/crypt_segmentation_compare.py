@@ -39,7 +39,13 @@ if __name__ == '__main__':
         path_list.append(os.path.join(rf"{folder}\{i}", f"{i}{image_index}.json"))
     json_count = len(path_list)
 
-    color_list = ['yellow', "red", "green", "blue", "fuchsia", "cyan"]
+    color_dict = {"Ground Truth": 'yellow',
+                  'Tom': 'black',
+                  'Gleb': 'orangered',
+                  'Whats goin on': 'midnightblue',
+                  'Deeplive.exe': 'darkolivegreen',
+                  'Deepflash2': 'purple',
+                  }
 
     annotation_list = []
     for i in range(len(path_list)):
@@ -59,7 +65,7 @@ if __name__ == '__main__':
             annotation_list.append((y_list, x_list))
 
     for i in range(json_count):
-        print(name_list[i], color_list[i], '\t', path_list[i])
+        print(name_list[i], color_dict[name_list[i]], '\t', path_list[i])
     background_img = Image.open(image_name).convert('RGBA')
     new_size = (int(background_img.size[0] // rescale_index),
                 int(background_img.size[1] // rescale_index))
@@ -88,12 +94,12 @@ if __name__ == '__main__':
     p.add_tools(HoverTool(show_arrow=False,
                           line_policy='nearest',
                           tooltips=None))
-    for coord, name, color in zip(annotation_list, name_list, color_list):
+    for coord, name in zip(annotation_list, name_list):
         p.patches(coord[0], coord[1],
                   fill_alpha=0,
-                  line_alpha=1,
+                  line_alpha=1 if name in name_list[:1] else 0.7,
                   # color='pink',
-                  color=color,
+                  color=color_dict[name],
                   line_width=2.5,
                   hover_line_alpha=0,
                   muted_alpha=0,

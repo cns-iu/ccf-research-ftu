@@ -6,56 +6,63 @@ from plotly.subplots import make_subplots
 
 target_list = ['glom', 'crypt']
 target_root_path = rf"violin_data/"
-team_names = ['1-tom', '2-gleb', '3-wgo', '4-dl', '5-df2']
+team_names = ['Tom', 'Gleb', 'Whats goin on', 'Deeplive.exe', 'Deepflash2']
+team_files = {
+    'Tom': "1-tom",
+    'Gleb': "2-gleb",
+    'Whats goin on': "3-wgo",
+    'Deeplive.exe': "4-dl",
+    'Deepflash2': "5-df2",
+}
 
-color_dict = {'1-tom-glom': 'black',
-              '1-tom-crypt': 'grey',
-              '2-gleb-glom': 'orangered',
-              '2-gleb-crypt': 'orange',
-              '3-wgo-glom': 'midnightblue',
-              '3-wgo-crypt': 'royalblue',
-              '4-dl-glom': 'darkolivegreen',
-              '4-dl-crypt': 'mediumseagreen',
-              '5-df2-glom': 'purple',
-              '5-df2-crypt': 'violet',
+color_dict = {f'{team_names[0]}-glom': 'black',
+              f'{team_names[0]}-crypt': 'grey',
+              f'{team_names[1]}-glom': 'orangered',
+              f'{team_names[1]}-crypt': 'orange',
+              f'{team_names[2]}-glom': 'midnightblue',
+              f'{team_names[2]}-crypt': 'royalblue',
+              f'{team_names[3]}-glom': 'darkolivegreen',
+              f'{team_names[3]}-crypt': 'mediumseagreen',
+              f'{team_names[4]}-glom': 'purple',
+              f'{team_names[4]}-crypt': 'violet',
               }
 
 point_position_dict = {
     'dice': {
-        '1-tom-crypt': 0.75,
-        '1-tom-glom': -1.05,
-        '2-gleb-crypt': 0.80,
-        '2-gleb-glom': -1.05,
-        '3-wgo-crypt': 0.45,
-        '3-wgo-glom': -1.05,
-        '4-dl-crypt': 0.80,
-        '4-dl-glom': -1.05,
-        '5-df2-crypt': 0.30,
-        '5-df2-glom': -1.05,
+        f'{team_names[0]}-crypt': 0.75,
+        f'{team_names[0]}-glom': -1.05,
+        f'{team_names[1]}-crypt': 0.80,
+        f'{team_names[1]}-glom': -1.05,
+        f'{team_names[2]}-crypt': 0.45,
+        f'{team_names[2]}-glom': -1.05,
+        f'{team_names[3]}-crypt': 0.80,
+        f'{team_names[3]}-glom': -1.05,
+        f'{team_names[4]}-crypt': 0.30,
+        f'{team_names[4]}-glom': -1.05,
     },
     'recall': {
-        '1-tom-crypt': 0.50,
-        '1-tom-glom': -1.05,
-        '2-gleb-crypt': 0.80,
-        '2-gleb-glom': -1.00,
-        '3-wgo-crypt': 0.30,
-        '3-wgo-glom': -1.00,
-        '4-dl-crypt': 0.50,
-        '4-dl-glom': -0.85,
-        '5-df2-crypt': 0.25,
-        '5-df2-glom': -1.05,
+        f'{team_names[0]}-crypt': 0.50,
+        f'{team_names[0]}-glom': -1.05,
+        f'{team_names[1]}-crypt': 0.80,
+        f'{team_names[1]}-glom': -1.00,
+        f'{team_names[2]}-crypt': 0.30,
+        f'{team_names[2]}-glom': -1.00,
+        f'{team_names[3]}-crypt': 0.50,
+        f'{team_names[3]}-glom': -0.85,
+        f'{team_names[4]}-crypt': 0.25,
+        f'{team_names[4]}-glom': -1.05,
     },
     'precision': {
-        '1-tom-crypt': 0.50,
-        '1-tom-glom': -0.70,
-        '2-gleb-crypt': 0.40,
-        '2-gleb-glom': -0.70,
-        '3-wgo-crypt': 0.30,
-        '3-wgo-glom': -0.70,
-        '4-dl-crypt': 0.50,
-        '4-dl-glom': -0.65,
-        '5-df2-crypt': 1.05,
-        '5-df2-glom': -0.65,
+        f'{team_names[0]}-crypt': 0.50,
+        f'{team_names[0]}-glom': -0.70,
+        f'{team_names[1]}-crypt': 0.40,
+        f'{team_names[1]}-glom': -0.70,
+        f'{team_names[2]}-crypt': 0.30,
+        f'{team_names[2]}-glom': -0.70,
+        f'{team_names[3]}-crypt': 0.50,
+        f'{team_names[3]}-glom': -0.65,
+        f'{team_names[4]}-crypt': 1.05,
+        f'{team_names[4]}-glom': -0.65,
     },
 }
 
@@ -82,7 +89,7 @@ crypt_data_list = {
 
 for target, data_list in zip(target_list, [glom_data_list, crypt_data_list]):
     for team in team_names:
-        file_path = target_root_path + rf"{target}\{team}.txt"
+        file_path = target_root_path + rf"{target}\{team_files[team]}.txt"
         with open(file_path, 'r') as f:
             lines = f.read().splitlines()
             data_list['dice'][team] = [float(line.split(',')[0]) for line in lines if len(line) > 1]
@@ -169,7 +176,8 @@ sub_title_text = "[Glomerulus-level (~2000 matching gloms) \n/ Crypt-level (~160
 title_text = f"Kidney/Colon - dice/recall/precision <br><sup>{sub_title_text}</sup>"
 fig.update_layout(
     title={
-        'text': title_text,
+        # 'text': title_text,
+        'text': "",
         # 'y':0.9,
         'x': 0.5,
         'xanchor': 'center',

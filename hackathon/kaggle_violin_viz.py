@@ -188,7 +188,7 @@ fig.update_layout(
     violinmode='overlay',
     yaxis_zeroline=False,
     font=dict(
-        family="Bahnschrift, Arial",
+        family="Arial, Bahnschrift",
         size=20,
         # color="RebeccaPurple"
     ))

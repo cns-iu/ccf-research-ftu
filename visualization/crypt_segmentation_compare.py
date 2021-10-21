@@ -12,8 +12,6 @@ import os
 
 if __name__ == '__main__':
     tools_list = "pan," \
-                 "box_select," \
-                 "lasso_select," \
                  "box_zoom, " \
                  "wheel_zoom," \
                  "reset," \
@@ -79,7 +77,7 @@ if __name__ == '__main__':
 
     p = figure(match_aspect=True,
                plot_width=int(xdim), plot_height=int(ydim),
-               tools=tools_list,
+               tools=tools_list, toolbar_location="left",x_range=(0, int(xdim)), y_range=(0, int(ydim))
                # title='nuclei/vessel distance',
                )
 
@@ -106,7 +104,7 @@ if __name__ == '__main__':
                   muted=False if name in name_list[:2] else True,
                   legend_label=name)
 
-    p.legend.location = "top_left"
+    p.legend.location = (0, int(ydim)-160)
     p.legend.click_policy = "mute"
 
     show(p)

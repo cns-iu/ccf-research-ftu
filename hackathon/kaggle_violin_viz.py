@@ -5,7 +5,7 @@ from plotly.subplots import make_subplots
 # import pandas as pd
 
 target_list = ['glom', 'crypt']
-target_root_path = rf"violin_data/"
+target_root_path = rf"X:\temp\violin\hubmap/"
 team_names = ['Tom', 'Gleb', 'Whats goin on', 'Deeplive.exe', 'Deepflash2']
 team_files = {
     'Tom': "1-tom",
@@ -189,17 +189,25 @@ fig.update_layout(
     yaxis_zeroline=False,
     font=dict(
         family="Arial, Bahnschrift",
-        size=14, # 20 for paper
+        size=20,  # 20 for paper / 16 for web
         # color="RebeccaPurple"
     ))
+fig.update_layout(legend=dict(
+    yanchor="top",
+    y=-0.025,
+    xanchor="center",
+    x=0.5,
+    orientation="h",
+    font=dict(size=16) # 16 for paper / 12 for web
+))
 # sub plot title font size
 for i in fig['layout']['annotations']:
-    i['font'] = dict(size=16) # 28 for paper
+    i['font'] = dict(size=24)  # 28 for paper / 16 for web
 
 fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.92, 0.94, 0.96, 0.98, 1.0], col=1)
-fig.update_yaxes(tickfont=dict(size=14), col=2) # 20 for paper
+fig.update_yaxes(tickfont=dict(size=20), col=2)  # 20 for paper / 14 for web
 fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1.0], col=2)
-fig.update_yaxes(tickfont=dict(size=12), col=2) # 16 for paper
+fig.update_yaxes(tickfont=dict(size=16), col=2)  # 16 for paper / 12 for web
 
 fig.write_html(os.path.join(target_root_path, f"kaggle_violin.html"))
 fig.write_image(os.path.join(target_root_path, f"kaggle_violin.svg"), width=2560, height=1440)

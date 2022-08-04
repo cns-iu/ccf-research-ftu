@@ -27,6 +27,47 @@ color_dict = {f'{team_names[0]}-glom': 'black',
               f'{team_names[4]}-crypt': 'violet',
               }
 
+# hpa position info
+# point_position_dict = {
+#     'dice': {
+#         f'{team_names[0]}-crypt': 0.5,
+#         f'{team_names[0]}-glom': -0.5,
+#         f'{team_names[1]}-crypt': 0.50,
+#         f'{team_names[1]}-glom': -0.5,
+#         f'{team_names[2]}-crypt': 0.50,
+#         f'{team_names[2]}-glom': -0.5,
+#         f'{team_names[3]}-crypt': 0.50,
+#         f'{team_names[3]}-glom': -0.5,
+#         f'{team_names[4]}-crypt': 0.50,
+#         f'{team_names[4]}-glom': -0.5,
+#     },
+#     'recall': {
+#         f'{team_names[0]}-crypt': 0.5,
+#         f'{team_names[0]}-glom': -0.5,
+#         f'{team_names[1]}-crypt': 0.50,
+#         f'{team_names[1]}-glom': -0.5,
+#         f'{team_names[2]}-crypt': 0.50,
+#         f'{team_names[2]}-glom': -0.5,
+#         f'{team_names[3]}-crypt': 0.50,
+#         f'{team_names[3]}-glom': -0.5,
+#         f'{team_names[4]}-crypt': 0.50,
+#         f'{team_names[4]}-glom': -0.5,
+#     },
+#     'precision': {
+#         f'{team_names[0]}-crypt': 0.50,
+#         f'{team_names[0]}-glom': -1.25,
+#         f'{team_names[1]}-crypt': 0.50,
+#         f'{team_names[1]}-glom': -0.50,
+#         f'{team_names[2]}-crypt': 0.50,
+#         f'{team_names[2]}-glom': -0.50,
+#         f'{team_names[3]}-crypt': 0.50,
+#         f'{team_names[3]}-glom': -0.50,
+#         f'{team_names[4]}-crypt': 0.50,
+#         f'{team_names[4]}-glom': -0.50,
+#     },
+# }
+
+# hubmap position info
 point_position_dict = {
     'dice': {
         f'{team_names[0]}-crypt': 0.75,
@@ -41,28 +82,28 @@ point_position_dict = {
         f'{team_names[4]}-glom': -1.05,
     },
     'recall': {
-        f'{team_names[0]}-crypt': 0.50,
+        f'{team_names[0]}-crypt': 0.75,
         f'{team_names[0]}-glom': -1.05,
-        f'{team_names[1]}-crypt': 0.80,
+        f'{team_names[1]}-crypt': 0.50,
         f'{team_names[1]}-glom': -1.00,
         f'{team_names[2]}-crypt': 0.30,
         f'{team_names[2]}-glom': -1.00,
-        f'{team_names[3]}-crypt': 0.50,
-        f'{team_names[3]}-glom': -0.85,
-        f'{team_names[4]}-crypt': 0.25,
-        f'{team_names[4]}-glom': -1.05,
+        f'{team_names[3]}-crypt': 0.70,
+        f'{team_names[3]}-glom': -1.00,
+        f'{team_names[4]}-crypt': 0.35,
+        f'{team_names[4]}-glom': -1.10,
     },
     'precision': {
-        f'{team_names[0]}-crypt': 0.50,
-        f'{team_names[0]}-glom': -0.70,
-        f'{team_names[1]}-crypt': 0.40,
-        f'{team_names[1]}-glom': -0.70,
+        f'{team_names[0]}-crypt': 0.30,
+        f'{team_names[0]}-glom': -0.80,
+        f'{team_names[1]}-crypt': 0.30,
+        f'{team_names[1]}-glom': -0.80,
         f'{team_names[2]}-crypt': 0.30,
-        f'{team_names[2]}-glom': -0.70,
-        f'{team_names[3]}-crypt': 0.50,
-        f'{team_names[3]}-glom': -0.65,
-        f'{team_names[4]}-crypt': 1.05,
-        f'{team_names[4]}-glom': -0.65,
+        f'{team_names[2]}-glom': -0.80,
+        f'{team_names[3]}-crypt': 0.30,
+        f'{team_names[3]}-glom': -0.80,
+        f'{team_names[4]}-crypt': 0.30,
+        f'{team_names[4]}-glom': -0.80,
     },
 }
 
@@ -204,11 +245,11 @@ fig.update_layout(legend=dict(
 for i in fig['layout']['annotations']:
     i['font'] = dict(size=24)  # 28 for paper / 16 for web
 
-fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.92, 0.94, 0.96, 0.98, 1.0], col=1)
+fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1.0], col=1)
 fig.update_yaxes(tickfont=dict(size=20), col=2)  # 20 for paper / 14 for web
 fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1.0], col=2)
-fig.update_yaxes(tickfont=dict(size=16), col=2)  # 16 for paper / 12 for web
+fig.update_yaxes(tickfont=dict(size=18), col=2)  # 16 for paper / 12 for web
 
 fig.write_html(os.path.join(target_root_path, f"kaggle_violin.html"))
-fig.write_image(os.path.join(target_root_path, f"kaggle_violin.svg"), width=2560, height=1440)
+fig.write_image(os.path.join(target_root_path, f"kaggle_violin.svg"), width=2000, height=1500)
 fig.show()

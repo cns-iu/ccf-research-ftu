@@ -5,7 +5,10 @@ from plotly.subplots import make_subplots
 # import pandas as pd
 
 target_list = ['glom', 'crypt']
-target_root_path = rf"X:\temp\violin\hubmap/"
+data_source_list = ['hpa', 'hubmap']
+data_source_index = 0
+current_data_source = data_source_list[data_source_index]
+target_root_path = rf"X:\temp\violin\{current_data_source}/"
 team_names = ['Tom', 'Gleb', 'Whats goin on', 'Deeplive.exe', 'Deepflash2']
 team_files = {
     'Tom': "1-tom",
@@ -27,85 +30,87 @@ color_dict = {f'{team_names[0]}-glom': 'black',
               f'{team_names[4]}-crypt': 'violet',
               }
 
-# hpa position info
-# point_position_dict = {
-#     'dice': {
-#         f'{team_names[0]}-crypt': 0.5,
-#         f'{team_names[0]}-glom': -0.5,
-#         f'{team_names[1]}-crypt': 0.50,
-#         f'{team_names[1]}-glom': -0.5,
-#         f'{team_names[2]}-crypt': 0.50,
-#         f'{team_names[2]}-glom': -0.5,
-#         f'{team_names[3]}-crypt': 0.50,
-#         f'{team_names[3]}-glom': -0.5,
-#         f'{team_names[4]}-crypt': 0.50,
-#         f'{team_names[4]}-glom': -0.5,
-#     },
-#     'recall': {
-#         f'{team_names[0]}-crypt': 0.5,
-#         f'{team_names[0]}-glom': -0.5,
-#         f'{team_names[1]}-crypt': 0.50,
-#         f'{team_names[1]}-glom': -0.5,
-#         f'{team_names[2]}-crypt': 0.50,
-#         f'{team_names[2]}-glom': -0.5,
-#         f'{team_names[3]}-crypt': 0.50,
-#         f'{team_names[3]}-glom': -0.5,
-#         f'{team_names[4]}-crypt': 0.50,
-#         f'{team_names[4]}-glom': -0.5,
-#     },
-#     'precision': {
-#         f'{team_names[0]}-crypt': 0.50,
-#         f'{team_names[0]}-glom': -1.25,
-#         f'{team_names[1]}-crypt': 0.50,
-#         f'{team_names[1]}-glom': -0.50,
-#         f'{team_names[2]}-crypt': 0.50,
-#         f'{team_names[2]}-glom': -0.50,
-#         f'{team_names[3]}-crypt': 0.50,
-#         f'{team_names[3]}-glom': -0.50,
-#         f'{team_names[4]}-crypt': 0.50,
-#         f'{team_names[4]}-glom': -0.50,
-#     },
-# }
-
-# hubmap position info
-point_position_dict = {
-    'dice': {
-        f'{team_names[0]}-crypt': 0.75,
-        f'{team_names[0]}-glom': -1.05,
-        f'{team_names[1]}-crypt': 0.80,
-        f'{team_names[1]}-glom': -1.05,
-        f'{team_names[2]}-crypt': 0.45,
-        f'{team_names[2]}-glom': -1.05,
-        f'{team_names[3]}-crypt': 0.80,
-        f'{team_names[3]}-glom': -1.05,
-        f'{team_names[4]}-crypt': 0.30,
-        f'{team_names[4]}-glom': -1.05,
+# position info
+point_positions = {
+    'hpa': {
+        'dice': {
+            f'{team_names[0]}-crypt': 0.5,
+            f'{team_names[0]}-glom': -0.5,
+            f'{team_names[1]}-crypt': 0.50,
+            f'{team_names[1]}-glom': -0.5,
+            f'{team_names[2]}-crypt': 0.50,
+            f'{team_names[2]}-glom': -0.5,
+            f'{team_names[3]}-crypt': 0.50,
+            f'{team_names[3]}-glom': -0.5,
+            f'{team_names[4]}-crypt': 0.50,
+            f'{team_names[4]}-glom': -0.5,
+        },
+        'recall': {
+            f'{team_names[0]}-crypt': 0.5,
+            f'{team_names[0]}-glom': -0.5,
+            f'{team_names[1]}-crypt': 0.50,
+            f'{team_names[1]}-glom': -0.5,
+            f'{team_names[2]}-crypt': 0.50,
+            f'{team_names[2]}-glom': -0.5,
+            f'{team_names[3]}-crypt': 0.50,
+            f'{team_names[3]}-glom': -0.5,
+            f'{team_names[4]}-crypt': 0.50,
+            f'{team_names[4]}-glom': -0.5,
+        },
+        'precision': {
+            f'{team_names[0]}-crypt': 0.50,
+            f'{team_names[0]}-glom': -1.25,
+            f'{team_names[1]}-crypt': 0.50,
+            f'{team_names[1]}-glom': -0.50,
+            f'{team_names[2]}-crypt': 0.50,
+            f'{team_names[2]}-glom': -0.50,
+            f'{team_names[3]}-crypt': 0.50,
+            f'{team_names[3]}-glom': -0.50,
+            f'{team_names[4]}-crypt': 0.50,
+            f'{team_names[4]}-glom': -0.50,
+        },
     },
-    'recall': {
-        f'{team_names[0]}-crypt': 0.75,
-        f'{team_names[0]}-glom': -1.05,
-        f'{team_names[1]}-crypt': 0.50,
-        f'{team_names[1]}-glom': -1.00,
-        f'{team_names[2]}-crypt': 0.30,
-        f'{team_names[2]}-glom': -1.00,
-        f'{team_names[3]}-crypt': 0.70,
-        f'{team_names[3]}-glom': -1.00,
-        f'{team_names[4]}-crypt': 0.35,
-        f'{team_names[4]}-glom': -1.10,
-    },
-    'precision': {
-        f'{team_names[0]}-crypt': 0.30,
-        f'{team_names[0]}-glom': -0.80,
-        f'{team_names[1]}-crypt': 0.30,
-        f'{team_names[1]}-glom': -0.80,
-        f'{team_names[2]}-crypt': 0.30,
-        f'{team_names[2]}-glom': -0.80,
-        f'{team_names[3]}-crypt': 0.30,
-        f'{team_names[3]}-glom': -0.80,
-        f'{team_names[4]}-crypt': 0.30,
-        f'{team_names[4]}-glom': -0.80,
+    'hubmap': {
+        'dice': {
+            f'{team_names[0]}-crypt': 0.75,
+            f'{team_names[0]}-glom': -1.05,
+            f'{team_names[1]}-crypt': 0.80,
+            f'{team_names[1]}-glom': -1.05,
+            f'{team_names[2]}-crypt': 0.45,
+            f'{team_names[2]}-glom': -1.05,
+            f'{team_names[3]}-crypt': 0.80,
+            f'{team_names[3]}-glom': -1.05,
+            f'{team_names[4]}-crypt': 0.30,
+            f'{team_names[4]}-glom': -1.05,
+        },
+        'recall': {
+            f'{team_names[0]}-crypt': 0.75,
+            f'{team_names[0]}-glom': -1.05,
+            f'{team_names[1]}-crypt': 0.50,
+            f'{team_names[1]}-glom': -1.00,
+            f'{team_names[2]}-crypt': 0.30,
+            f'{team_names[2]}-glom': -1.00,
+            f'{team_names[3]}-crypt': 0.70,
+            f'{team_names[3]}-glom': -1.00,
+            f'{team_names[4]}-crypt': 0.35,
+            f'{team_names[4]}-glom': -1.10,
+        },
+        'precision': {
+            f'{team_names[0]}-crypt': 0.30,
+            f'{team_names[0]}-glom': -0.80,
+            f'{team_names[1]}-crypt': 0.30,
+            f'{team_names[1]}-glom': -0.80,
+            f'{team_names[2]}-crypt': 0.30,
+            f'{team_names[2]}-glom': -0.80,
+            f'{team_names[3]}-crypt': 0.30,
+            f'{team_names[3]}-glom': -0.80,
+            f'{team_names[4]}-crypt': 0.30,
+            f'{team_names[4]}-glom': -0.80,
+        },
     },
 }
+
+point_position_dict = point_positions[current_data_source]
 
 opacity_dict = {'glom': 0.8,
                 'crypt': 0.8}
@@ -235,20 +240,20 @@ fig.update_layout(
     ))
 fig.update_layout(legend=dict(
     yanchor="top",
-    y=-0.025,
+    y=-0.05,
     xanchor="center",
     x=0.5,
     orientation="h",
-    font=dict(size=16) # 16 for paper / 12 for web
+    font=dict(size=16)  # 16 for paper / 12 for web
 ))
 # sub plot title font size
 for i in fig['layout']['annotations']:
     i['font'] = dict(size=24)  # 28 for paper / 16 for web
 
 fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1.0], col=1)
-fig.update_yaxes(tickfont=dict(size=20), col=2)  # 20 for paper / 14 for web
+fig.update_yaxes(tickfont=dict(size=14), col=2)  # 20 for paper / 14 for web
 fig.update_yaxes(tickvals=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1.0], col=2)
-fig.update_yaxes(tickfont=dict(size=18), col=2)  # 16 for paper / 12 for web
+fig.update_yaxes(tickfont=dict(size=12), col=2)  # 16 for paper / 12 for web
 
 fig.write_html(os.path.join(target_root_path, f"kaggle_violin.html"))
 fig.write_image(os.path.join(target_root_path, f"kaggle_violin.svg"), width=2000, height=1500)

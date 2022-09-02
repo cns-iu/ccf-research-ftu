@@ -27,12 +27,12 @@ image_folder = annotation_folder.replace('annotations', 'images')
 file_names = os.listdir(annotation_folder)
 
 encodings = {}
-
+import codecs
 for annotation_file_name in file_names[:]:
     # file_name = './annotations/VAN0006-LK-2-85-AF_preIMS_registered_glomerulus_detections.json'
-    image_file_name = annotation_file_name.replace('.json', '.tiff')
+    image_file_name = annotation_file_name.replace('.json', '.tif')
     image_path = os.path.join(image_folder, image_file_name)
-    with open(os.path.join(annotation_folder, annotation_file_name)) as data_file:
+    with codecs.open(os.path.join(annotation_folder, annotation_file_name), 'r', 'utf-8-sig') as data_file:
         data = json.load(data_file)
 
     polys = []
@@ -57,8 +57,10 @@ for annotation_file_name in file_names[:]:
     img = Image.new('L', (shape[1], shape[0]), 0)  # (w, h)
     for i in range(len(polys)):
         poly = polys[i]
-        ImageDraw.Draw(img).polygon(tuple(map(tuple, poly[0])), outline=1, fill=1)
+        if len(poly)>1:
+            ImageDraw.Draw(img).polygon(poly[0], outline=1, fill=1)
 
+    img.save(rf'{image_folder}\test.png')
     mask_2 = np.array(img)
 
     encoding_2 = mask2rle(mask_2)

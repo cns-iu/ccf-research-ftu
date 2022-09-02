@@ -7,6 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image, ImageDraw
 from tifffile import imread, imwrite, TiffFile
+import codecs
 
 json_filename = r'X:\temp\Annotations\json\CL_HandE_1234_B004_topleft.json'
 image_filename = r'X:\temp\train\CL-HandE-1234-B004-topleft.tiff'
@@ -18,7 +19,7 @@ if len(sys.argv) >= 3:
 
 output_filename = json_filename.replace('.json', '.tiff')
 
-read_file = open(json_filename, "r")
+read_file = codecs.open(json_filename, "r", 'utf-8-sig')
 data = json.load(read_file)
 
 image_data = imread(image_filename)

@@ -28,9 +28,9 @@ if __name__ == '__main__':
     image_type = types[0]
 
     # VU "gold" standard reading
-    file_name = r'C:\Users\bunny\Desktop\00a67c839.json'
+    file_name = r'X:\00a67c839.json'
     output_name = file_name.split('\\')[-1].split('.')[0]
-    image_name = fr'C:\Users\bunny\Desktop\00a67c839.jpg'
+    image_name = fr'X:\00a67c839.jpg'
     html_name = fr"{output_name}_{image_type}_compare"
     output_file(f"result/{html_name}.html")
     path_list = [os.path.join(folder, file_name)]
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     # student json reading
     image_index_name = output_name = file_name.split('-')[0]
     name_list = ["ground_truth", "predicted", ]
-    path_list.append(os.path.join(r'C:\Users\bunny\Desktop', 'pred_00a67c839.json'))
+    path_list.append(r'X:\pred_00a67c839.json')
     json_count = len(path_list)
 
     annotation_list = []

@@ -34,7 +34,7 @@ if __name__ == '__main__':
     html_name = fr"{output_name}_{image_type}_compare"
     output_file(f"result/{html_name}.html")
     path_list = [os.path.join(folder, file_name)]
-    rescale_index_list = [8, 8, 4, 4, 4]
+    rescale_index_list = [8, 8, 8, 8, 8]
 
     # student json reading
     image_index_name = output_name = file_name.split('-')[0]

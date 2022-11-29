@@ -83,10 +83,11 @@ if __name__ == '__main__':
                           line_policy='nearest',
                           tooltips=None))
     for coord, name, color in zip(annotation_list[:json_count], name_list[:json_count],
-                                  Category10_10[2:2 + json_count]):
+                                  [(231,41,138),(102,166,30)]):
+                                  # Category10_10[2:2 + json_count]):
         p.patches(coord[0], coord[1],
                   fill_alpha=0,
-                  line_alpha=0.8,
+                  line_alpha=1,
                   # color='pink',
                   color=color,
                   line_width=3,
